@@ -38,7 +38,7 @@ const columns = [
     title: "Contact",
     links: [
       { label: "+1 (929) 512-0241", href: "tel:+19295120241" },
-      { label: "support@kovetrade.com", href: "mailto:support@kovetrade.com" },
+      { label: "support@covetrade.com", href: "mailto:support@covetrade.com" },
     ],
   },
 ];
@@ -117,7 +117,7 @@ const Footer = () => {
             <div>
               <Link href="/" className="inline-flex items-baseline gap-0.5">
                 <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">
-                  Kove
+                  Cove
                 </span>
                 <span className="text-3xl font-black tracking-tight text-[#5edc1f]">
                   Trade
@@ -183,21 +183,21 @@ const Footer = () => {
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-8 space-y-4 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
           <p>
             <span className="font-semibold text-gray-500 dark:text-gray-400">Disclaimer:</span>{" "}
-            KoveTrade (Europe) Ltd., authorised and regulated by the Cyprus
+            CoveTrade (Europe) Ltd., authorised and regulated by the Cyprus
             Securities Exchange Commission (CySEC) under license #109/10.
             Registered in Cyprus, Company No. HE 200595. Registered Office: 4
             Profiti Ilia Str., Kanika Business Centre, 7th floor, Germasogeia,
-            4046, Limassol, Cyprus. KoveTrade (UK) Ltd, authorised and regulated
+            4046, Limassol, Cyprus. CoveTrade (UK) Ltd, authorised and regulated
             by the Financial Conduct Authority (FCA) under FRN 583263. Registered
             Office: 24th floor, One Canada Square, Canary Wharf, London E14 5AB.
-            KoveTrade (USA) Ltd, authorised and regulated by the SEC; CRD 329900.
-            KoveTrade (ME) Limited, licensed and regulated by the Abu Dhabi Global
+            CoveTrade (USA) Ltd, authorised and regulated by the SEC; CRD 329900.
+            CoveTrade (ME) Limited, licensed and regulated by the Abu Dhabi Global
             Market (ADGM) Financial Services Regulatory Authority (FSRA) under
             Financial Services Permission Number 220073.
           </p>
           <p>
             Past performance is not an indication of future results. Trading with
-            KoveTrade by following and/or copying the trades of other traders
+            CoveTrade by following and/or copying the trades of other traders
             involves a high level of risk, even when following top-performing
             traders. You should seek advice from an independent and suitably
             licensed financial advisor and ensure that you have the risk appetite,
@@ -208,7 +208,7 @@ const Footer = () => {
         {/* ── Bottom bar ── */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            &copy; 2006–2026 KoveTrade — Your Social Investment Network. All
+            &copy; 2006–2026 CoveTrade — Your Social Investment Network. All
             rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-400 dark:text-gray-500">

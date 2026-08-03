@@ -27,6 +27,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: "https://kovetrade.com/sitemap.xml",
+    sitemap: "https://covetrade.com/sitemap.xml",
   };
 }

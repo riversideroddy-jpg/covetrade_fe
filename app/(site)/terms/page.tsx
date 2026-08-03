@@ -49,8 +49,8 @@ const SECTIONS = [
     n: 1,
     title: "Acceptance of Terms",
     content: [
-      'By accessing or using the KoveTrade platform, website, mobile applications, and any associated services (collectively, the "Services"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not access or use our Services.',
-      'These Terms constitute a legally binding agreement between you ("User," "you," or "your") and KoveTrade and its affiliated entities ("KoveTrade," "we," "us," or "our"). By using our Services, you represent and warrant that you are at least 18 years of age and have the legal capacity to enter into this agreement.',
+      'By accessing or using the CoveTrade platform, website, mobile applications, and any associated services (collectively, the "Services"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you must not access or use our Services.',
+      'These Terms constitute a legally binding agreement between you ("User," "you," or "your") and CoveTrade and its affiliated entities ("CoveTrade," "we," "us," or "our"). By using our Services, you represent and warrant that you are at least 18 years of age and have the legal capacity to enter into this agreement.',
     ],
   },
   {
@@ -58,17 +58,17 @@ const SECTIONS = [
     title: "Account Registration & Security",
     content: [
       "To access certain features of our Services, you must register for an account. When registering, you agree to provide accurate, current, and complete information and to update such information as necessary to maintain its accuracy.",
-      "You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You agree to notify KoveTrade immediately of any unauthorized use of your account or any other breach of security. KoveTrade will not be liable for any loss or damage arising from your failure to protect your account information.",
-      "You may not transfer, sell, or otherwise assign your account to any third party without prior written consent from KoveTrade. We reserve the right to suspend or terminate any account that we reasonably believe has been compromised or is being used in violation of these Terms.",
+      "You are solely responsible for maintaining the confidentiality of your account credentials, including your username and password. You agree to notify CoveTrade immediately of any unauthorized use of your account or any other breach of security. CoveTrade will not be liable for any loss or damage arising from your failure to protect your account information.",
+      "You may not transfer, sell, or otherwise assign your account to any third party without prior written consent from CoveTrade. We reserve the right to suspend or terminate any account that we reasonably believe has been compromised or is being used in violation of these Terms.",
     ],
   },
   {
     n: 3,
     title: "Trading Services",
     content: [
-      'KoveTrade provides access to a range of financial trading services, including but not limited to copy trading, futures trading, options trading, and contracts for difference (CFDs). These services are provided on an "as available" basis and may be subject to market conditions, regulatory requirements, and system availability.',
+      'CoveTrade provides access to a range of financial trading services, including but not limited to copy trading, futures trading, options trading, and contracts for difference (CFDs). These services are provided on an "as available" basis and may be subject to market conditions, regulatory requirements, and system availability.',
       "Copy trading allows users to automatically replicate the trading strategies of other traders on the platform. By using copy trading features, you acknowledge that past performance is not indicative of future results and that you bear full responsibility for any trades executed on your behalf.",
-      "KoveTrade does not provide investment advice, and no content on our platform should be construed as such. All trading decisions are made at your own discretion and risk. You should consult with a qualified financial advisor before making any investment decisions.",
+      "CoveTrade does not provide investment advice, and no content on our platform should be construed as such. All trading decisions are made at your own discretion and risk. You should consult with a qualified financial advisor before making any investment decisions.",
     ],
   },
   {
@@ -76,7 +76,7 @@ const SECTIONS = [
     title: "Risk Disclosure",
     content: [
       "Trading in financial instruments, including futures, options, and contracts, carries a high level of risk and may not be suitable for all investors. You may sustain a total loss of your initial investment and, in some cases, may be required to deposit additional funds to cover margin requirements.",
-      "The value of your investments can go down as well as up, and you should only trade with funds you can afford to lose. KoveTrade strongly recommends that you seek independent financial advice before engaging in any trading activity on our platform. For full details, please review our Risk Disclaimer.",
+      "The value of your investments can go down as well as up, and you should only trade with funds you can afford to lose. CoveTrade strongly recommends that you seek independent financial advice before engaging in any trading activity on our platform. For full details, please review our Risk Disclaimer.",
     ],
     highlight: true,
   },
@@ -101,16 +101,16 @@ const SECTIONS = [
     n: 6,
     title: "Intellectual Property",
     content: [
-      "All content, features, and functionality of the KoveTrade platform — including text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software — are the exclusive property of KoveTrade or its licensors and are protected by international copyright, trademark, patent, and other intellectual property laws.",
-      "You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works from, publicly display, or otherwise exploit any content from the platform without prior written permission from KoveTrade.",
+      "All content, features, and functionality of the CoveTrade platform — including text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software — are the exclusive property of CoveTrade or its licensors and are protected by international copyright, trademark, patent, and other intellectual property laws.",
+      "You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works from, publicly display, or otherwise exploit any content from the platform without prior written permission from CoveTrade.",
     ],
   },
   {
     n: 7,
     title: "Limitation of Liability",
     content: [
-      "To the fullest extent permitted by applicable law, KoveTrade and its directors, officers, employees, agents, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of the Services.",
-      "KoveTrade shall not be liable for any losses arising from market volatility, system failures, third-party service interruptions, or any other circumstances beyond our reasonable control. Our total aggregate liability to you for any claims shall not exceed the amount of fees paid by you to KoveTrade in the twelve (12) months preceding the claim.",
+      "To the fullest extent permitted by applicable law, CoveTrade and its directors, officers, employees, agents, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of the Services.",
+      "CoveTrade shall not be liable for any losses arising from market volatility, system failures, third-party service interruptions, or any other circumstances beyond our reasonable control. Our total aggregate liability to you for any claims shall not exceed the amount of fees paid by you to CoveTrade in the twelve (12) months preceding the claim.",
     ],
     highlight: true,
   },
@@ -118,7 +118,7 @@ const SECTIONS = [
     n: 8,
     title: "Termination",
     content: [
-      "KoveTrade reserves the right to suspend or terminate your access to the Services at any time, with or without cause and with or without notice. You may also terminate your account at any time by contacting our support team.",
+      "CoveTrade reserves the right to suspend or terminate your access to the Services at any time, with or without cause and with or without notice. You may also terminate your account at any time by contacting our support team.",
       "Upon termination, your right to use the Services will immediately cease. Any provisions of these Terms that by their nature should survive termination shall continue in full force and effect, including intellectual property provisions, warranty disclaimers, indemnity obligations, and limitations of liability.",
     ],
   },
@@ -126,7 +126,7 @@ const SECTIONS = [
     n: 9,
     title: "Modifications to Terms",
     content: [
-      'KoveTrade reserves the right to modify these Terms at any time. We will notify you of any material changes by posting the updated Terms on our website and updating the "Last Updated" date at the top of this page.',
+      'CoveTrade reserves the right to modify these Terms at any time. We will notify you of any material changes by posting the updated Terms on our website and updating the "Last Updated" date at the top of this page.',
       "Your continued use of the Services after any changes constitutes your acceptance of the revised Terms. We encourage you to review these Terms periodically to stay informed of any updates.",
     ],
   },
@@ -134,16 +134,16 @@ const SECTIONS = [
     n: 10,
     title: "Governing Law",
     content: [
-      "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the applicable KoveTrade entity is incorporated, without regard to its conflict of law provisions.",
+      "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the applicable CoveTrade entity is incorporated, without regard to its conflict of law provisions.",
     ],
   },
 ];
 
 const ENTITIES = [
-  { region: "Europe",        entity: "KoveTrade (Europe) Ltd.",   reg: "CySEC",  license: "License #109/10"          },
-  { region: "United Kingdom",entity: "KoveTrade (UK) Ltd.",       reg: "FCA",    license: "FRN 583263"               },
-  { region: "United States", entity: "KoveTrade (USA) Ltd.",      reg: "SEC",    license: "CRD 329900"               },
-  { region: "Middle East",   entity: "KoveTrade (ME) Limited",    reg: "FSRA",   license: "Permission No. 220073"    },
+  { region: "Europe",        entity: "CoveTrade (Europe) Ltd.",   reg: "CySEC",  license: "License #109/10"          },
+  { region: "United Kingdom",entity: "CoveTrade (UK) Ltd.",       reg: "FCA",    license: "FRN 583263"               },
+  { region: "United States", entity: "CoveTrade (USA) Ltd.",      reg: "SEC",    license: "CRD 329900"               },
+  { region: "Middle East",   entity: "CoveTrade (ME) Limited",    reg: "FSRA",   license: "Permission No. 220073"    },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────
@@ -199,7 +199,7 @@ export default function TermsOfService() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
             </svg>
             <span className="text-[11px] font-semibold text-green-700 dark:text-green-300 tracking-wide">
-              Legal Agreement · KoveTrade
+              Legal Agreement · CoveTrade
             </span>
           </motion.div>
 
@@ -220,7 +220,7 @@ export default function TermsOfService() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.16, ease: E }}
           >
-            Please read these terms carefully before using the KoveTrade platform.
+            Please read these terms carefully before using the CoveTrade platform.
             By accessing our services you agree to be bound by this agreement.
           </motion.p>
 
@@ -389,7 +389,7 @@ export default function TermsOfService() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <Link
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="rounded-full bg-white px-8 py-3.5 text-sm font-bold text-green-700 hover:bg-green-50 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20 transition-all duration-300"
                   >
                     Contact Support

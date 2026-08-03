@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Leader Guide — Grow Your Copier Base",
   description:
-    "Everything you need to know about becoming a successful KoveTrade Leader. Tips on strategy, risk management, communication, and growing your copier base.",
-  alternates: { canonical: "https://kovetrade.com/leader-guide" },
+    "Everything you need to know about becoming a successful CoveTrade Leader. Tips on strategy, risk management, communication, and growing your copier base.",
+  alternates: { canonical: "https://covetrade.com/leader-guide" },
   openGraph: {
-    title: "KoveTrade Leader Guide — Grow Your Copier Base",
+    title: "CoveTrade Leader Guide — Grow Your Copier Base",
     description:
-      "Tips on strategy, risk management, and growing your copier base as a KoveTrade Leader.",
-    url: "https://kovetrade.com/leader-guide",
+      "Tips on strategy, risk management, and growing your copier base as a CoveTrade Leader.",
+    url: "https://covetrade.com/leader-guide",
   },
 };
 

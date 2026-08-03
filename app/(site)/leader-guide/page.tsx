@@ -333,7 +333,7 @@ export default function LeaderGuidePage() {
               <Reveal delay={0.05}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-yellow-500/35 bg-yellow-500/10 mb-6">
                   <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse" />
-                  <span className="text-xs text-yellow-300 font-medium tracking-wide">Leader Guide · KoveTrade</span>
+                  <span className="text-xs text-yellow-300 font-medium tracking-wide">Leader Guide · CoveTrade</span>
                 </div>
               </Reveal>
 
@@ -353,7 +353,7 @@ export default function LeaderGuidePage() {
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
                   Share your trading expertise, build a following, and earn commissions from every
-                  trade your followers copy. KoveTrade gives you the tools to lead.
+                  trade your followers copy. CoveTrade gives you the tools to lead.
                 </p>
               </Reveal>
 
@@ -401,7 +401,7 @@ export default function LeaderGuidePage() {
                   <div className="relative rounded-3xl border border-yellow-500/20 bg-gray-50 dark:bg-white/[0.02] p-8">
                     <CrownHero />
                     <div className="mt-3 text-center space-y-1">
-                      <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">KoveTrade</p>
+                      <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">CoveTrade</p>
                       <p className="text-sm font-semibold text-yellow-300">Signal Leader Program</p>
                     </div>
                   </div>
@@ -425,14 +425,14 @@ export default function LeaderGuidePage() {
                   <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Leader?</span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">
-                  A Leader on KoveTrade is an experienced trader who shares their trading signals
+                  A Leader on CoveTrade is an experienced trader who shares their trading signals
                   with the community. When other users (followers) copy your trades, you earn
                   commissions based on their activity.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
                   As a Leader, your trading performance is publicly visible, and your reputation
                   grows as you demonstrate consistent results. Leaders are the backbone of the
-                  KoveTrade copy trading ecosystem.
+                  CoveTrade copy trading ecosystem.
                 </p>
                 <div className="flex flex-col gap-3">
                   {[
@@ -460,7 +460,7 @@ export default function LeaderGuidePage() {
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-5">Requirements to Become a Leader</h3>
                 <div className="space-y-3">
                   {[
-                    "A verified KoveTrade account with completed KYC",
+                    "A verified CoveTrade account with completed KYC",
                     "Minimum account balance as specified in the current program terms",
                     "Demonstrated trading history with a positive track record",
                     "Agreement to the Leader Terms and Conditions",
@@ -504,7 +504,7 @@ export default function LeaderGuidePage() {
                 <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Profile</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto">
-                Your Leader profile is your public identity on KoveTrade. A well-crafted profile
+                Your Leader profile is your public identity on CoveTrade. A well-crafted profile
                 attracts more followers and builds trust.
               </p>
             </div>
@@ -583,7 +583,7 @@ export default function LeaderGuidePage() {
                   { icon: "🔄", label: "Consistency", body: "Trade regularly and maintain a steady performance. Followers value reliability above all." },
                   { icon: "🪟", label: "Transparency", body: "Be open about your strategy, risk tolerance, and expected drawdowns before they happen." },
                   { icon: "💬", label: "Communication", body: "Post updates about your market outlook and reasoning behind key trades." },
-                  { icon: "📣", label: "External promotion", body: "Share your KoveTrade profile on social media and trading communities." },
+                  { icon: "📣", label: "External promotion", body: "Share your CoveTrade profile on social media and trading communities." },
                 ].map((t, i) => (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="flex items-start gap-3 p-4 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025] hover:border-yellow-500/20 hover:bg-yellow-500/5 transition-all">
@@ -608,7 +608,7 @@ export default function LeaderGuidePage() {
                 <span className="bg-gradient-to-r from-yellow-400 to-amber-400 bg-clip-text text-transparent">Leader</span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
-                Leaders earn money through multiple channels on KoveTrade.
+                Leaders earn money through multiple channels on CoveTrade.
               </p>
               <div className="space-y-4">
                 {[
@@ -694,7 +694,7 @@ export default function LeaderGuidePage() {
               </div>
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
                 As a Leader, responsible risk management is not just good practice — it is your
-                responsibility. Your followers trust you with their capital, and KoveTrade monitors
+                responsibility. Your followers trust you with their capital, and CoveTrade monitors
                 leader behavior to protect the community.
               </p>
               <div className="space-y-3">
@@ -760,7 +760,7 @@ export default function LeaderGuidePage() {
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-lg mx-auto">
                   Ready to share your trading expertise and earn from your skills? Apply to become
-                  a KoveTrade Leader and start building your following today.
+                  a CoveTrade Leader and start building your following today.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">

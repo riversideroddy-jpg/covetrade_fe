@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about KoveTrade — the world's leading social investment network. Our mission, values, team, and the technology behind precision copy trading.",
-  alternates: { canonical: "https://kovetrade.com/about" },
+    "Learn about CoveTrade — the world's leading social investment network. Our mission, values, team, and the technology behind precision copy trading.",
+  alternates: { canonical: "https://covetrade.com/about" },
   openGraph: {
-    title: "About KoveTrade — The World's Leading Social Investment Network",
+    title: "About CoveTrade — The World's Leading Social Investment Network",
     description:
       "Our mission, values, and the technology behind precision copy trading. Meet the team building the future of social investing.",
-    url: "https://kovetrade.com/about",
+    url: "https://covetrade.com/about",
   },
 };
 

@@ -6,7 +6,7 @@ export default function Preloader() {
       {/* Logo */}
       <div className="mb-12">
         <span className="inline-flex items-baseline gap-0.5">
-          <span className="text-4xl font-black tracking-tight text-gray-900 dark:text-white">Kove</span>
+          <span className="text-4xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
           <span className="text-4xl font-black tracking-tight text-[#5edc1f]">Trade</span>
         </span>
       </div>

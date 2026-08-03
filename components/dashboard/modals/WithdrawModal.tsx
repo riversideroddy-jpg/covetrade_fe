@@ -9,8 +9,10 @@ import {
   Loader2,
   CheckCircle,
   Clock,
+  Plus,
 } from "lucide-react";
 import { toast } from "sonner";
+import Link from "next/link";
 import { apiFetch } from "@/lib/api";
 import { PaymentMethod, UserProfile, Transaction } from "./types";
 
@@ -179,13 +181,13 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           transition={{ duration: 0.2 }}
-          className="relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white dark:bg-[#0f1a2e] border border-gray-200 dark:border-white/10 shadow-2xl"
+          className="relative w-full sm:max-w-[360px] max-h-[90vh] overflow-y-auto rounded-2xl bg-white dark:bg-[#0f1a2e] border border-gray-200 dark:border-white/10 shadow-2xl"
         >
           {/* ==================== FORM STEP ==================== */}
           {step === "form" && (
             <div className="p-6">
-              <div className="flex items-center justify-between mb-5">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">Withdrawal</h3>
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">Withdrawal</h3>
                 <button onClick={handleClose} className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                   <X className="w-5 h-5" />
                 </button>
@@ -196,19 +198,19 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                   <Loader2 className="w-8 h-8 text-[#5edc1f] animate-spin" />
                 </div>
               ) : (
-                <div className="space-y-5">
+                <div className="space-y-4">
                   {/* Balance + Profit side by side */}
                   <div className="flex gap-4">
                     <div className="flex-1">
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Main Balance</p>
-                      <p className="text-2xl font-bold text-gray-900 dark:text-white">
+                      <p className="text-[11px] text-gray-500 dark:text-gray-400 mb-1">Main Balance</p>
+                      <p className="text-lg font-bold text-gray-900 dark:text-white">
                         {profile ? profile.formatted_balance : "$0.00"}
                       </p>
                     </div>
                     <div className="w-px bg-gray-200 dark:bg-white/10" />
                     <div className="flex-1">
-                      <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Profit</p>
-                      <p className="text-2xl font-bold text-[#5edc1f]">
+                      <p className="text-[11px] text-gray-500 dark:text-gray-400 mb-1">Profit</p>
+                      <p className="text-lg font-bold text-[#5edc1f]">
                         {profile ? profile.formatted_profit : "$0.00"}
                       </p>
                     </div>
@@ -218,13 +220,13 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
                   {/* Source Dropdown */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                       Withdraw From:
                     </label>
                     <div className="relative">
                       <button
                         onClick={() => setIsSourceDropdownOpen(!isSourceDropdownOpen)}
-                        className={`w-full px-4 py-3 rounded-lg text-left flex items-center justify-between transition-all bg-gray-100 dark:bg-white/4 border ${
+                        className={`w-full px-3.5 py-2.5 rounded-lg text-left flex items-center justify-between transition-all bg-gray-100 dark:bg-white/4 border text-sm ${
                           isSourceDropdownOpen ? "border-[#5edc1f]" : "border-gray-300 dark:border-white/10"
                         } text-gray-900 dark:text-white`}
                       >
@@ -242,7 +244,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                                 setError("");
                                 setAmount("");
                               }}
-                              className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-gray-100 dark:hover:bg-white/5 ${
+                              className={`w-full px-3.5 py-2 text-left text-xs transition-colors hover:bg-gray-100 dark:hover:bg-white/5 ${
                                 withdrawSource === src
                                   ? "text-[#5edc1f] font-semibold"
                                   : "text-gray-900 dark:text-white"
@@ -250,7 +252,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                             >
                               {src === "profit" ? "Profit" : "Main Balance"}
                               {profile && (
-                                <span className="ml-2 text-xs text-gray-500">
+                                <span className="ml-2 text-[11px] text-gray-500">
                                   ({src === "profit" ? profile.formatted_profit : profile.formatted_balance})
                                 </span>
                               )}
@@ -263,13 +265,13 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
                   {/* Method Dropdown */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                       Withdrawal Method:
                     </label>
                     <div className="relative">
                       <button
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                        className={`w-full px-4 py-3 rounded-lg text-left flex items-center justify-between transition-all bg-gray-100 dark:bg-white/4 border ${
+                        className={`w-full px-3.5 py-2.5 rounded-lg text-left flex items-center justify-between transition-all bg-gray-100 dark:bg-white/4 border text-sm ${
                           isDropdownOpen ? "border-[#5edc1f]" : "border-gray-300 dark:border-white/10"
                         } ${selectedMethod ? "text-gray-900 dark:text-white" : "text-gray-500"}`}
                       >
@@ -279,10 +281,10 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
                       {isDropdownOpen && (
                         <div className="absolute z-10 w-full mt-1.5 bg-white dark:bg-[#1a2742] border border-gray-200 dark:border-white/10 rounded-lg shadow-lg overflow-hidden">
-                          <div className="px-4 py-2.5 bg-[#5edc1f] text-white text-xs font-semibold">Select method</div>
+                          <div className="px-3.5 py-2 bg-[#5edc1f] text-white text-[11px] font-semibold">Select method</div>
                           <div className="max-h-48 overflow-y-auto">
                             {methods.length === 0 ? (
-                              <div className="px-4 py-4 text-xs text-gray-500 dark:text-gray-400">
+                              <div className="px-3.5 py-3 text-[11px] text-gray-500 dark:text-gray-400">
                                 No payment methods available. Add one in settings.
                               </div>
                             ) : (
@@ -290,23 +292,34 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                                 <button
                                   key={method.id}
                                   onClick={() => handleMethodSelect(method.method_type)}
-                                  className="w-full px-4 py-3.5 text-left text-sm text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                                  className="w-full px-3.5 py-3 text-left text-xs text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
                                 >
                                   {method.display_name}
                                 </button>
                               ))
                             )}
                           </div>
+                          <Link
+                            href="/settings?tab=payment"
+                            onClick={() => setIsDropdownOpen(false)}
+                            className="flex items-center gap-1.5 px-3.5 py-2.5 text-xs font-semibold text-[#5edc1f] dark:text-lime-400 border-t border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
+                          >
+                            <Plus className="w-3.5 h-3.5" />
+                            Add Withdrawal Method
+                          </Link>
                         </div>
                       )}
                     </div>
 
                     {methods.length === 0 && !loading && (
-                      <div className="mt-2 p-3 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                      <div className="mt-2 p-2.5 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
                         <div className="flex items-start gap-2">
-                          <AlertCircle className="w-4 h-4 text-yellow-400 shrink-0 mt-0.5" />
-                          <p className="text-xs text-yellow-600 dark:text-yellow-300">
-                            No withdrawal methods set up. Please add one in your settings.
+                          <AlertCircle className="w-3.5 h-3.5 text-yellow-400 shrink-0 mt-0.5" />
+                          <p className="text-[11px] text-yellow-600 dark:text-yellow-300">
+                            No withdrawal methods set up. Please{" "}
+                            <Link href="/settings?tab=payment" className="underline font-semibold hover:text-yellow-700 dark:hover:text-yellow-200">
+                              add one in your settings
+                            </Link>.
                           </p>
                         </div>
                       </div>
@@ -315,7 +328,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
                   {/* Amount Input */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                       Amount (USD):
                     </label>
                     <input
@@ -325,10 +338,10 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                       placeholder="0.00"
                       min="0"
                       step="0.01"
-                      className="w-full px-4 py-3 bg-gray-100 dark:bg-white/4 border border-gray-300 dark:border-white/10 rounded-lg text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#5edc1f] transition-all"
+                      className="w-full px-3.5 py-2.5 bg-gray-100 dark:bg-white/4 border border-gray-300 dark:border-white/10 rounded-lg text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600 focus:outline-none focus:border-[#5edc1f] transition-all"
                     />
                     {profile && amount && parseFloat(amount) > parseFloat(withdrawSource === "profit" ? profile.profit : profile.balance) && (
-                      <p className="mt-1.5 text-xs text-red-500 dark:text-red-400">
+                      <p className="mt-1.5 text-[11px] text-red-500 dark:text-red-400">
                         Amount exceeds your {withdrawSource === "profit" ? "profit" : "balance"} of{" "}
                         {withdrawSource === "profit" ? profile.formatted_profit : profile.formatted_balance}
                       </p>
@@ -338,14 +351,14 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                   {/* Withdrawal Address (read only) */}
                   {selectedMethod && (
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                         Withdrawal Address:
                       </label>
                       <input
                         type="text"
                         value={withdrawalAddress}
                         readOnly
-                        className="w-full px-4 py-3 bg-gray-100 dark:bg-white/4 border border-gray-300 dark:border-white/10 rounded-lg text-gray-500 dark:text-gray-400 focus:outline-none cursor-not-allowed opacity-75"
+                        className="w-full px-3.5 py-2.5 bg-gray-100 dark:bg-white/4 border border-gray-300 dark:border-white/10 rounded-lg text-sm text-gray-500 dark:text-gray-400 focus:outline-none cursor-not-allowed opacity-75"
                       />
                       <p className="mt-1 text-[10px] text-gray-500">
                         Saved address for {getDisplayName(selectedMethod)}. Update in settings.
@@ -355,10 +368,10 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
                   {/* Error */}
                   {error && (
-                    <div className="p-3 bg-red-500/10 border border-red-500/20 rounded-lg">
+                    <div className="p-2.5 bg-red-500/10 border border-red-500/20 rounded-lg">
                       <div className="flex items-center gap-2">
-                        <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
-                        <p className="text-xs text-red-500 dark:text-red-300">{error}</p>
+                        <AlertCircle className="w-3.5 h-3.5 text-red-400 shrink-0" />
+                        <p className="text-[11px] text-red-500 dark:text-red-300">{error}</p>
                       </div>
                     </div>
                   )}
@@ -368,14 +381,14 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                     <button
                       onClick={handleClose}
                       disabled={submitting}
-                      className="flex-1 py-3 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg font-semibold transition-colors disabled:opacity-50 text-sm"
+                      className="flex-1 py-2.5 bg-red-500/20 hover:bg-red-500/30 text-red-400 rounded-lg font-semibold transition-colors disabled:opacity-50 text-xs"
                     >
                       Cancel
                     </button>
                     <button
                       onClick={handleConfirmWithdrawal}
                       disabled={submitting || !selectedMethod || !amount || !withdrawalAddress}
-                      className="flex-1 py-3 bg-[#5edc1f] hover:bg-[#4cc015] text-white rounded-lg font-semibold transition-colors disabled:opacity-50 flex items-center justify-center gap-2 text-sm"
+                      className="flex-1 py-2.5 bg-[#5edc1f] hover:bg-[#4cc015] text-white rounded-lg font-semibold transition-colors disabled:opacity-50 flex items-center justify-center gap-2 text-xs"
                     >
                       {submitting ? (
                         <><Loader2 className="w-4 h-4 animate-spin" />Processing...</>
@@ -386,7 +399,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                   </div>
 
                   {/* Note */}
-                  <div className="p-3 bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-lg">
+                  <div className="p-2.5 bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-lg">
                     <p className="text-[10px] text-[#5edc1f] dark:text-lime-300">
                       <strong>Note:</strong> Withdrawals are processed within 24-48 hours. Your balance will not change until the admin approves.
                     </p>
@@ -395,21 +408,21 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                   {/* Recent Withdrawals */}
                   {transactions.length > 0 && (
                     <div>
-                      <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                      <h4 className="text-xs font-semibold text-gray-700 dark:text-gray-300 mb-2.5">
                         Recent Withdrawals
                       </h4>
                       <div className="space-y-2">
                         {transactions.map((tx) => (
-                          <div key={tx.id} className="bg-gray-50 dark:bg-white/4 border border-gray-200 dark:border-white/5 rounded-lg p-3">
+                          <div key={tx.id} className="bg-gray-50 dark:bg-white/4 border border-gray-200 dark:border-white/5 rounded-lg p-2.5">
                             <div className="flex justify-between items-start mb-1">
-                              <p className="text-xs font-medium text-gray-700 dark:text-gray-300">{tx.reference}</p>
+                              <p className="text-[11px] font-medium text-gray-700 dark:text-gray-300">{tx.reference}</p>
                               <span className={`px-2 py-0.5 rounded text-[10px] font-medium ${getStatusColor(tx.status)}`}>
                                 {tx.status_display}
                               </span>
                             </div>
                             <div className="flex justify-between items-center">
                               <p className="text-[10px] text-gray-500">{formatDate(tx.created_at)}</p>
-                              <p className="text-sm font-bold text-red-400">-${parseFloat(tx.amount).toFixed(2)}</p>
+                              <p className="text-xs font-bold text-red-400">-${parseFloat(tx.amount).toFixed(2)}</p>
                             </div>
                           </div>
                         ))}
@@ -424,15 +437,15 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
           {/* ==================== SUCCESS STEP ==================== */}
           {step === "success" && (
             <div className="p-6">
-              <div className="text-center mb-6">
-                <CheckCircle className="w-14 h-14 text-[#5edc1f] dark:text-lime-400 mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+              <div className="text-center mb-5">
+                <CheckCircle className="w-12 h-12 text-[#5edc1f] dark:text-lime-400 mx-auto mb-3" />
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                   Withdrawal Submitted!
                 </h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Your withdrawal is being processed</p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Your withdrawal is being processed</p>
               </div>
 
-              <div className="bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-xl p-4 mb-4 space-y-2 text-sm">
+              <div className="bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-xl p-3.5 mb-4 space-y-2 text-xs">
                 <div className="flex justify-between">
                   <span className="text-gray-500 dark:text-gray-400">Amount:</span>
                   <span className="text-gray-900 dark:text-white font-semibold">${parseFloat(withdrawAmount).toFixed(2)}</span>
@@ -449,15 +462,15 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
                 </div>
                 <div className="flex justify-between pt-2 border-t border-[#5edc1f]/20">
                   <span className="text-gray-500 dark:text-gray-400">Reference:</span>
-                  <span className="text-[#5edc1f] dark:text-lime-400 font-semibold font-mono text-xs">{withdrawRef}</span>
+                  <span className="text-[#5edc1f] dark:text-lime-400 font-semibold font-mono text-[11px]">{withdrawRef}</span>
                 </div>
               </div>
 
-              <div className="bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-xl p-4 mb-4">
+              <div className="bg-[#5edc1f]/10 border border-[#5edc1f]/20 rounded-xl p-3.5 mb-4">
                 <div className="flex items-start gap-2">
-                  <Clock className="w-4 h-4 text-lime-400 shrink-0 mt-0.5" />
+                  <Clock className="w-3.5 h-3.5 text-lime-400 shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-xs text-gray-700 dark:text-gray-300 font-medium">Processing Time</p>
+                    <p className="text-[11px] text-gray-700 dark:text-gray-300 font-medium">Processing Time</p>
                     <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-0.5">
                       Withdrawals are processed within 24-48 hours after admin approval. Your balance remains unchanged until approved.
                     </p>
@@ -467,7 +480,7 @@ export default function WithdrawModal({ isOpen, onClose }: WithdrawModalProps) {
 
               <button
                 onClick={handleClose}
-                className="w-full py-3 bg-[#5edc1f] hover:bg-[#4cc015] text-white rounded-lg font-semibold transition-colors text-sm"
+                className="w-full py-2.5 bg-[#5edc1f] hover:bg-[#4cc015] text-white rounded-lg font-semibold transition-colors text-xs"
               >
                 Got It!
               </button>

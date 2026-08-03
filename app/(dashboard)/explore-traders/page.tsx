@@ -193,9 +193,12 @@ export default function ExploreTraders() {
     }
   };
 
-  // Trending & Rising Stars always use all traders
-  const trendingTraders = traders.slice(0, 4);
-  const risingStars = traders.slice(4, 8);
+  // Default view caps every section at its first 5 traders. Searching
+  // lifts the cap globally so any matching trader becomes reachable,
+  // regardless of where they'd normally rank.
+  const isSearching = debouncedSearch.trim().length > 0;
+  const trendingTraders = isSearching ? traders : traders.slice(0, 5);
+  const risingStars = isSearching ? traders : traders.slice(5, 10);
 
   // Category filter is CLIENT-SIDE, only for "Most copied by categories"
   const categorizedTraders = useMemo(() => {
@@ -733,7 +736,7 @@ export default function ExploreTraders() {
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {categorizedTraders.map((trader, index) => (
+                      {(isSearching ? categorizedTraders : categorizedTraders.slice(0, 5)).map((trader, index) => (
                         <Link
                           key={trader.id}
                           href={`/explore-traders/${trader.id}`}

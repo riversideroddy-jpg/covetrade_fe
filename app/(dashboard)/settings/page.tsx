@@ -107,6 +107,14 @@ export default function SettingsPage() {
     fetch2FAStatus();
   }, []);
 
+  // Deep-link into a specific tab, e.g. /settings?tab=payment
+  useEffect(() => {
+    const tab = new URLSearchParams(window.location.search).get("tab");
+    if (tab === "profile" || tab === "security" || tab === "payment") {
+      setActiveTab(tab);
+    }
+  }, []);
+
   const fetchUserSettings = async () => {
     try {
       setLoading(true);

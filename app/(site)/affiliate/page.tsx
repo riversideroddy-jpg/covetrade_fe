@@ -309,7 +309,7 @@ export default function AffiliatePage() {
               <Reveal delay={0.05}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-500/35 bg-amber-500/10 mb-6">
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-                  <span className="text-xs text-amber-300 font-medium tracking-wide">KoveTrade Affiliate Program</span>
+                  <span className="text-xs text-amber-300 font-medium tracking-wide">CoveTrade Affiliate Program</span>
                 </div>
               </Reveal>
 
@@ -393,7 +393,7 @@ export default function AffiliatePage() {
           <Reveal>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Welcome to the Affiliate Program</h2>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
-              Thank you for joining the KoveTrade Affiliate Program. As an affiliate, you play a
+              Thank you for joining the CoveTrade Affiliate Program. As an affiliate, you play a
               crucial role in growing our community of traders. This guide will walk you through
               everything you need to know — from setting up your account to maximizing your earnings.
             </p>
@@ -414,14 +414,14 @@ export default function AffiliatePage() {
                 </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto">
-                Follow these steps to begin earning as a KoveTrade affiliate.
+                Follow these steps to begin earning as a CoveTrade affiliate.
               </p>
             </div>
           </Reveal>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { num: "1", icon: "👤", title: "Create your account", body: "Sign up at KoveTrade and complete the identity verification process.", accent: "amber" },
+              { num: "1", icon: "👤", title: "Create your account", body: "Sign up at CoveTrade and complete the identity verification process.", accent: "amber" },
               { num: "2", icon: "📋", title: "Apply for the program", body: "Navigate to the Affiliate section in your dashboard and submit your application.", accent: "orange" },
               { num: "3", icon: "🔗", title: "Get your referral link", body: "Once approved, receive a personalized referral link and unique tracking code.", accent: "yellow" },
               { num: "4", icon: "📣", title: "Start promoting", body: "Share your link across your channels and earn commissions on every qualified referral.", accent: "amber" },
@@ -527,7 +527,7 @@ export default function AffiliatePage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-3">
                 Promoting{" "}
                 <span className="bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                  KoveTrade
+                  CoveTrade
                 </span>
               </h2>
               <p className="text-gray-600 dark:text-gray-400 text-sm max-w-lg mx-auto">
@@ -538,8 +538,8 @@ export default function AffiliatePage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { icon: "💬", title: "Be authentic", body: "Share your own experience with KoveTrade. Genuine recommendations convert better than generic pitches." },
-              { icon: "🎓", title: "Educate your audience", body: "Create content that explains how copy trading works and how KoveTrade makes it accessible to everyone." },
+              { icon: "💬", title: "Be authentic", body: "Share your own experience with CoveTrade. Genuine recommendations convert better than generic pitches." },
+              { icon: "🎓", title: "Educate your audience", body: "Create content that explains how copy trading works and how CoveTrade makes it accessible to everyone." },
               { icon: "📡", title: "Use multiple channels", body: "Promote on social media, blogs, YouTube, email newsletters, and trading communities." },
               { icon: "🎨", title: "Leverage our materials", body: "Use the banners, landing pages, and copy we provide in your dashboard for professional promotion." },
               { icon: "⚖️", title: "Stay compliant", body: "Always disclose your affiliate relationship and never make guarantees about trading profits." },
@@ -608,7 +608,7 @@ export default function AffiliatePage() {
                   { icon: "⚡", label: "Fast availability", desc: "Commissions available within 24–48 hours of confirmation" },
                   { icon: "🏦", label: "Bank transfer", desc: "Standard wire transfer to any bank account" },
                   { icon: "₿",  label: "Cryptocurrency", desc: "Withdraw to BTC, ETH, USDT and more" },
-                  { icon: "📊", label: "Trading account", desc: "Transfer directly to your KoveTrade trading balance" },
+                  { icon: "📊", label: "Trading account", desc: "Transfer directly to your CoveTrade trading balance" },
                 ].map((w, i) => (
                   <div key={i} className="flex items-start gap-3 p-3 rounded-xl border border-gray-200 dark:border-white/6 bg-gray-50 dark:bg-white/[0.018]">
                     <span className="text-base flex-shrink-0 mt-0.5">{w.icon}</span>
@@ -661,7 +661,7 @@ export default function AffiliatePage() {
             />
             <FAQ
               q="What counts as a qualified referral?"
-              a="A qualified referral is a new user who registers through your unique link, completes account verification (KYC), and makes their first deposit into their KoveTrade account."
+              a="A qualified referral is a new user who registers through your unique link, completes account verification (KYC), and makes their first deposit into their CoveTrade account."
               delay={0.2}
             />
             <FAQ
@@ -710,7 +710,7 @@ export default function AffiliatePage() {
                   </span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-lg mx-auto">
-                  Join the KoveTrade Affiliate Program today and start earning commissions on every
+                  Join the CoveTrade Affiliate Program today and start earning commissions on every
                   referral. It only takes a few minutes to get set up.
                 </p>
 

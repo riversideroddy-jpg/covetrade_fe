@@ -121,7 +121,7 @@ function BrokerNetwork() {
         <text x="130" y="126" fill="rgba(94, 220, 31,0.9)" fontSize="18" textAnchor="middle">🏦</text>
         <text x="130" y="143" fill="rgba(94, 220, 31,0.7)" fontSize="7.5" fontWeight="700" textAnchor="middle" fontFamily="monospace">BROKER</text>
 
-        {/* KoveTrade badge top */}
+        {/* CoveTrade badge top */}
         <motion.g
           animate={{ y: [-3, 3, -3] }}
           transition={{ repeat: Infinity, duration: 3.5, ease: "easeInOut" }}
@@ -129,7 +129,7 @@ function BrokerNetwork() {
           <rect x="87" y="30" width="86" height="20" rx="10"
             fill="rgba(4,6,18,0.95)" stroke="rgba(94, 220, 31,0.5)" strokeWidth="1.5"
           />
-          <text x="130" y="44" fill="rgba(94, 220, 31,0.9)" fontSize="8" fontWeight="700" textAnchor="middle" fontFamily="monospace">KOVETRADE B2B</text>
+          <text x="130" y="44" fill="rgba(94, 220, 31,0.9)" fontSize="8" fontWeight="700" textAnchor="middle" fontFamily="monospace">COVETRADE B2B</text>
         </motion.g>
 
         {/* Stats floating */}
@@ -283,7 +283,7 @@ export default function BrokersPage() {
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
                   Be the first in your market to offer full copy trading capabilities. Partner with
-                  KoveTrade, bring your traders on board, and restart your profits manifold.
+                  CoveTrade, bring your traders on board, and restart your profits manifold.
                 </p>
               </Reveal>
 
@@ -333,7 +333,7 @@ export default function BrokersPage() {
                     <BrokerNetwork />
                     <div className="mt-4 text-center">
                       <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">B2B Infrastructure</p>
-                      <p className="text-sm font-semibold text-green-300">Your Broker × KoveTrade Network</p>
+                      <p className="text-sm font-semibold text-green-300">Your Broker × CoveTrade Network</p>
                     </div>
                   </div>
                 </div>
@@ -351,7 +351,7 @@ export default function BrokersPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-3">
               Why Partner With{" "}
               <span className="bg-gradient-to-r from-lime-400 to-lime-300 bg-clip-text text-transparent">
-                KoveTrade?
+                CoveTrade?
               </span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-sm max-w-xl mx-auto">
@@ -622,7 +622,7 @@ export default function BrokersPage() {
                     </span>
                   </h2>
                   <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-8 text-center">
-                    Join the leading brokers who have already partnered with KoveTrade.
+                    Join the leading brokers who have already partnered with CoveTrade.
                     Let's grow together.
                   </p>
                   <div className="flex justify-center">
@@ -653,7 +653,7 @@ export default function BrokersPage() {
 
                 <div className="space-y-3">
                   <a
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="flex items-center gap-3 px-5 py-4 rounded-2xl border border-[#5edc1f]/20 bg-[#5edc1f]/6 hover:bg-[#5edc1f]/12 hover:border-[#5edc1f]/35 transition-all group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-[#5edc1f]/15 flex items-center justify-center flex-shrink-0">
@@ -663,7 +663,7 @@ export default function BrokersPage() {
                     </div>
                     <div>
                       <p className="text-xs text-gray-500">Email our team</p>
-                      <p className="text-sm font-semibold text-green-300 group-hover:text-green-200 transition-colors">support@kovetrade.com</p>
+                      <p className="text-sm font-semibold text-green-300 group-hover:text-green-200 transition-colors">support@covetrade.com</p>
                     </div>
                     <svg className="w-4 h-4 text-gray-600 group-hover:text-lime-400 transition-colors ml-auto" fill="none" viewBox="0 0 16 16">
                       <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

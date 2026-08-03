@@ -19,13 +19,13 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const BASE_URL = "https://kovetrade.com";
+const BASE_URL = "https://covetrade.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "KoveTrade — Copy Top Traders. Grow Your Portfolio.",
-    template: "%s | KoveTrade",
+    default: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    template: "%s | CoveTrade",
   },
   description:
     "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     "trade copying platform",
     "automated trading",
     "copy trader",
-    "KoveTrade",
+    "CoveTrade",
     "investment platform",
     "portfolio growth",
     "mirror trading",
   ],
-  authors: [{ name: "KoveTrade", url: BASE_URL }],
-  creator: "KoveTrade",
-  publisher: "KoveTrade",
+  authors: [{ name: "CoveTrade", url: BASE_URL }],
+  creator: "CoveTrade",
+  publisher: "CoveTrade",
   category: "Finance",
-  applicationName: "KoveTrade",
+  applicationName: "CoveTrade",
   referrer: "origin-when-cross-origin",
   robots: {
     index: true,
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "KoveTrade",
-    title: "KoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    siteName: "CoveTrade",
+    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
     description:
       "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
     images: [
@@ -73,16 +73,16 @@ export const metadata: Metadata = {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "KoveTrade — Copy Top Traders. Grow Your Portfolio.",
+        alt: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@KoveTrade",
-    creator: "@KoveTrade",
-    title: "KoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    site: "@CoveTrade",
+    creator: "@CoveTrade",
+    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
     description:
       "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required.",
     images: ["/images/og-image.png"],
@@ -118,8 +118,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}

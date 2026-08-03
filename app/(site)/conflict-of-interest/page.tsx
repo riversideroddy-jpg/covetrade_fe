@@ -79,9 +79,9 @@ const CYCLE_STEPS = [
 
 // ─── CoI Types ─────────────────────────────────────────────────
 const COI_TYPES = [
-  { icon: "💰", label: "Financial Interests",      desc: "Where KoveTrade or its employees may benefit financially at the expense of a client" },
+  { icon: "💰", label: "Financial Interests",      desc: "Where CoveTrade or its employees may benefit financially at the expense of a client" },
   { icon: "🤝", label: "Personal Relationships",   desc: "Where personal connections between employees and clients may influence decision-making" },
-  { icon: "⚖️", label: "Competing Interests",      desc: "Where KoveTrade provides services to multiple clients whose interests may conflict" },
+  { icon: "⚖️", label: "Competing Interests",      desc: "Where CoveTrade provides services to multiple clients whose interests may conflict" },
   { icon: "🔗", label: "Third-Party Arrangements", desc: "Where relationships with third parties create incentives conflicting with client interests" },
 ];
 
@@ -194,7 +194,7 @@ export default function ConflictOfInterestPolicy() {
                 <svg className="w-3.5 h-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
                 </svg>
-                <span className="text-[11px] font-semibold text-amber-700 dark:text-amber-300 tracking-wide">Compliance Framework · KoveTrade</span>
+                <span className="text-[11px] font-semibold text-amber-700 dark:text-amber-300 tracking-wide">Compliance Framework · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -214,7 +214,7 @@ export default function ConflictOfInterestPolicy() {
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 0.15, ease: E }}
               >
                 We recognise that conflicts of interest may arise in the ordinary course of business.
-                This policy explains how KoveTrade identifies, prevents, and manages them — always
+                This policy explains how CoveTrade identifies, prevents, and manages them — always
                 putting client interests first.
               </motion.p>
 
@@ -290,7 +290,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" /></svg>}
           >
             <Body>
-              KoveTrade is committed to maintaining the highest standards of integrity and fairness in all our business
+              CoveTrade is committed to maintaining the highest standards of integrity and fairness in all our business
               dealings. We recognise that conflicts of interest may arise in the normal course of our business and have
               established this policy to identify, prevent, and manage such conflicts effectively. Our goal is to ensure
               that the interests of our clients are always protected and that we operate in a transparent and ethical manner.
@@ -304,7 +304,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>}
           >
             <Body>
-              A conflict of interest arises when the interests of KoveTrade, its employees, or its affiliates may
+              A conflict of interest arises when the interests of CoveTrade, its employees, or its affiliates may
               conflict with the interests of our clients. Conflicts can take many forms, including but not limited to:
             </Body>
             <div className="grid sm:grid-cols-2 gap-3 mt-5">
@@ -327,7 +327,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0016.803 15.803z" /></svg>}
           >
             <Body>
-              KoveTrade maintains robust processes for identifying potential and actual conflicts of interest. All
+              CoveTrade maintains robust processes for identifying potential and actual conflicts of interest. All
               employees are required to be vigilant in recognising situations where conflicts may arise and to report
               them promptly to the compliance department. We conduct regular assessments of our business activities,
               organisational structure, and service offerings to proactively identify areas where conflicts may occur.
@@ -392,7 +392,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg>}
           >
             <Body>
-              KoveTrade is committed to achieving the best possible result for our clients when executing orders.
+              CoveTrade is committed to achieving the best possible result for our clients when executing orders.
               Our execution policy takes into account price, costs, speed, likelihood of execution and settlement,
               order size, and nature. We regularly monitor the effectiveness of our execution arrangements and make
               improvements as needed.
@@ -413,7 +413,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg>}
           >
             <Body>
-              All KoveTrade employees are subject to strict personal account dealing policies designed to prevent
+              All CoveTrade employees are subject to strict personal account dealing policies designed to prevent
               front-running or exploitation of their position to the detriment of clients.
             </Body>
             <div className="mt-5 space-y-2.5">
@@ -440,7 +440,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
           >
             <Body>
-              KoveTrade has policies in place to ensure that remuneration and incentive structures do not create
+              CoveTrade has policies in place to ensure that remuneration and incentive structures do not create
               conflicts that could adversely affect the quality of service provided to clients. We do not accept or
               pay inducements that would conflict with our duty to act in the best interests of our clients. Any fees,
               commissions, or non-monetary benefits received or paid to third parties are disclosed to clients and are
@@ -455,7 +455,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" /></svg>}
           >
             <Body>
-              KoveTrade maintains various relationships with third-party service providers, liquidity providers, and
+              CoveTrade maintains various relationships with third-party service providers, liquidity providers, and
               business partners. We carefully manage these relationships to ensure they do not create conflicts of
               interest that could disadvantage our clients. All third-party arrangements are subject to due diligence
               and ongoing monitoring by our compliance team.
@@ -480,7 +480,7 @@ export default function ConflictOfInterestPolicy() {
                 {
                   id: "coi10", n: 10, label: "Documentation", title: "Record Keeping",
                   grad: "from-[#5edc1f] to-green-700",
-                  body: "KoveTrade maintains comprehensive records of all identified conflicts, measures taken to manage them, and any disclosures made to clients. Records are retained per regulatory requirements and are available for inspection by relevant authorities.",
+                  body: "CoveTrade maintains comprehensive records of all identified conflicts, measures taken to manage them, and any disclosures made to clients. Records are retained per regulatory requirements and are available for inspection by relevant authorities.",
                   extra: (
                     <div className="mt-4 flex items-center gap-2 rounded-xl bg-lime-50 dark:bg-[#5edc1f]/[0.07] border border-green-100 dark:border-[#5edc1f]/20 px-4 py-3">
                       <svg className="w-4 h-4 text-green-700 dark:text-lime-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375" /></svg>
@@ -511,7 +511,7 @@ export default function ConflictOfInterestPolicy() {
             iconEl={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>}
           >
             <Body>
-              Where KoveTrade identifies a conflict of interest that cannot be adequately managed through our internal
+              Where CoveTrade identifies a conflict of interest that cannot be adequately managed through our internal
               procedures, we will disclose the nature and source of the conflict to affected clients before undertaking
               any business with them. This disclosure will be made in sufficient detail to enable clients to make an
               informed decision about whether to proceed with the relevant service or transaction.
@@ -526,7 +526,7 @@ export default function ConflictOfInterestPolicy() {
           >
             <Body>
               If you believe that a conflict of interest has adversely affected you, or if you have any concerns about
-              how KoveTrade manages conflicts of interest, we encourage you to report your concerns to our compliance
+              how CoveTrade manages conflicts of interest, we encourage you to report your concerns to our compliance
               department. All reports will be investigated promptly and thoroughly, and appropriate corrective action
               will be taken where necessary. You may also file a complaint through our formal complaints process.
             </Body>
@@ -535,11 +535,11 @@ export default function ConflictOfInterestPolicy() {
                 <p className="text-[13px] font-bold text-gray-900 dark:text-white mb-0.5">Contact our Compliance Department</p>
                 <p className="text-[12px] text-gray-500 dark:text-gray-400">All reports investigated within 5 business days</p>
               </div>
-              <a href="mailto:compliance@kovetrade.com"
+              <a href="mailto:compliance@covetrade.com"
                 className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-[12px] px-5 py-2.5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-500/25"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-                compliance@kovetrade.com
+                compliance@covetrade.com
               </a>
             </div>
           </Section>
@@ -559,7 +559,7 @@ export default function ConflictOfInterestPolicy() {
               <div className="px-7 py-6">
                 <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
                   This policy has been developed in accordance with applicable regulatory requirements across all
-                  jurisdictions in which KoveTrade operates. We are committed to full compliance with all regulatory
+                  jurisdictions in which CoveTrade operates. We are committed to full compliance with all regulatory
                   obligations relating to the management of conflicts of interest.
                 </p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -602,7 +602,7 @@ export default function ConflictOfInterestPolicy() {
                   and fairness in all dealings with clients.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-                  <Link href="mailto:compliance@kovetrade.com"
+                  <Link href="mailto:compliance@covetrade.com"
                     className="rounded-full bg-amber-400 hover:bg-amber-300 px-8 py-3.5 text-sm font-bold text-amber-900 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-amber-500/20 transition-all duration-300"
                   >
                     Contact Compliance Team

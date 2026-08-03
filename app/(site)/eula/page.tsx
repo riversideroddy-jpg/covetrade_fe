@@ -366,7 +366,7 @@ export default function EulaPage() {
 
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6 max-w-lg">
-                  This EULA governs your use of KoveTrade software applications, including our web
+                  This EULA governs your use of CoveTrade software applications, including our web
                   platform, mobile apps, desktop applications, APIs, and related services.
                 </p>
               </Reveal>
@@ -407,7 +407,7 @@ export default function EulaPage() {
                 <div className="relative rounded-3xl border border-emerald-500/20 bg-gray-50 dark:bg-white/[0.025] p-8">
                   <SoftwareIcon />
                   <div className="mt-4 text-center space-y-1">
-                    <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">KoveTrade</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">CoveTrade</p>
                     <p className="text-sm font-semibold text-emerald-300">Software License Agreement</p>
                     <div className="flex justify-center gap-1.5 mt-2">
                       {["Personal", "Non-Commercial", "Revocable"].map((tag) => (
@@ -448,7 +448,7 @@ export default function EulaPage() {
             {[
               { icon: "💻", label: "Software License", sub: "Web, mobile & desktop apps" },
               { icon: "🚫", label: "No Reverse Engineering", sub: "Source code is protected" },
-              { icon: "©️",  label: "IP Protected", sub: "All rights reserved by KoveTrade" },
+              { icon: "©️",  label: "IP Protected", sub: "All rights reserved by CoveTrade" },
               { icon: "📤", label: "Export Compliant", sub: "Follows OFAC & EAR rules" },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 0.08}>
@@ -471,8 +471,8 @@ export default function EulaPage() {
           <Section num={1} title="Agreement Overview" accent={ACCENTS[0]}>
             <P>
               This End User License Agreement ("EULA") is a legal agreement between you ("User,"
-              "you," or "your") and KoveTrade ("Company," "we," "us," or "our") governing your use
-              of the KoveTrade software applications, including our web platform, mobile applications,
+              "you," or "your") and CoveTrade ("Company," "we," "us," or "our") governing your use
+              of the CoveTrade software applications, including our web platform, mobile applications,
               desktop applications, APIs, and any related software and services (collectively, the
               "Software").
             </P>
@@ -486,10 +486,10 @@ export default function EulaPage() {
           {/* §2 */}
           <Section num={2} title="License Grant" accent={ACCENTS[1]}>
             <P>
-              Subject to the terms and conditions of this EULA, KoveTrade grants you a limited,
+              Subject to the terms and conditions of this EULA, CoveTrade grants you a limited,
               non-exclusive, non-transferable, revocable license to download, install, and use the
               Software on devices that you own or control, solely for your personal, non-commercial
-              use in connection with the trading services provided by KoveTrade.
+              use in connection with the trading services provided by CoveTrade.
             </P>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-2">
               {[
@@ -532,9 +532,9 @@ export default function EulaPage() {
           {/* §4 */}
           <Section num={4} title="Intellectual Property Rights" accent={ACCENTS[3]}>
             <P>
-              The Software and all copies thereof are the intellectual property of KoveTrade and are
+              The Software and all copies thereof are the intellectual property of CoveTrade and are
               protected by copyright, trademark, patent, and other intellectual property laws.
-              KoveTrade retains all right, title, and interest in and to the Software, including all
+              CoveTrade retains all right, title, and interest in and to the Software, including all
               intellectual property rights therein.
             </P>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-2">
@@ -553,14 +553,14 @@ export default function EulaPage() {
             <P>
               This EULA does not convey to you any rights of ownership in or related to the Software,
               and nothing in this EULA should be construed as granting any license or right to use
-              any trademarks, service marks, or logos of KoveTrade without prior written consent.
+              any trademarks, service marks, or logos of CoveTrade without prior written consent.
             </P>
           </Section>
 
           {/* §5 */}
           <Section num={5} title="Software Updates and Modifications" accent={ACCENTS[4]}>
             <P>
-              KoveTrade may from time to time release updates, patches, bug fixes, enhancements, or
+              CoveTrade may from time to time release updates, patches, bug fixes, enhancements, or
               new versions of the Software. Such updates may be installed automatically or may require
               your action.
             </P>
@@ -568,7 +568,7 @@ export default function EulaPage() {
               {[
                 { icon: "🔄", label: "Automatic updates", desc: "May be applied without prior notice to ensure security and performance" },
                 { icon: "🛠️", label: "Patches & bug fixes", desc: "Deployed at our discretion to maintain Software integrity" },
-                { icon: "⏸️", label: "Suspension rights", desc: "KoveTrade may suspend or discontinue the Software at any time" },
+                { icon: "⏸️", label: "Suspension rights", desc: "CoveTrade may suspend or discontinue the Software at any time" },
               ].map((u, i) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.02]">
                   <span className="text-xl flex-shrink-0">{u.icon}</span>
@@ -580,7 +580,7 @@ export default function EulaPage() {
               ))}
             </div>
             <P>
-              You acknowledge that this EULA applies to all such updates and modifications. KoveTrade
+              You acknowledge that this EULA applies to all such updates and modifications. CoveTrade
               reserves the right to modify, suspend, or discontinue the Software or any part thereof
               at any time without prior notice.
             </P>
@@ -625,9 +625,9 @@ export default function EulaPage() {
             <div className="mt-3 p-4 rounded-xl border border-[#5edc1f]/20 bg-[#5edc1f]/10">
               <p className="text-xs font-semibold text-lime-300 mb-2">Important Disclaimer</p>
               <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                KoveTrade does not assume any responsibility or liability for any third-party software
+                CoveTrade does not assume any responsibility or liability for any third-party software
                 or services, and your use of such components is at your own risk. The inclusion of
-                third-party components does not imply endorsement by KoveTrade.
+                third-party components does not imply endorsement by CoveTrade.
               </p>
             </div>
           </Section>
@@ -643,29 +643,29 @@ export default function EulaPage() {
             </div>
             <Legal>
               THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTY OF ANY KIND,
-              EXPRESS OR IMPLIED. KOVETRADE DOES NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED,
-              ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. KOVETRADE DOES
+              EXPRESS OR IMPLIED. COVETRADE DOES NOT WARRANT THAT THE SOFTWARE WILL BE UNINTERRUPTED,
+              ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. COVETRADE DOES
               NOT WARRANT THE ACCURACY, COMPLETENESS, OR RELIABILITY OF ANY CONTENT, DATA, OR
               INFORMATION PROVIDED THROUGH THE SOFTWARE. YOUR USE OF THE SOFTWARE IS AT YOUR SOLE
               RISK. NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM
-              KOVETRADE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THIS EULA.
+              COVETRADE SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THIS EULA.
             </Legal>
           </Section>
 
           {/* §9 */}
           <Section num={9} title="Limitation of Liability" accent={ACCENTS[8]}>
             <Legal>
-              TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL KOVETRADE, ITS
+              TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL COVETRADE, ITS
               DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT,
               INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO
               DAMAGES FOR LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING
               OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF
-              KOVETRADE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+              COVETRADE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
             </Legal>
             <div className="mt-3 p-4 rounded-xl border border-orange-500/20 bg-orange-500/5">
               <p className="text-xs font-semibold text-orange-300 mb-1">Liability Cap</p>
               <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                KoveTrade's total aggregate liability to you for all claims arising out of or
+                CoveTrade's total aggregate liability to you for all claims arising out of or
                 relating to this EULA or the Software shall not exceed the amount paid by you, if
                 any, for the Software during the twelve (12) months preceding the claim.
               </p>
@@ -675,7 +675,7 @@ export default function EulaPage() {
           {/* §10 */}
           <Section num={10} title="Indemnification" accent={ACCENTS[9]}>
             <P>
-              You agree to indemnify, defend, and hold harmless KoveTrade, its directors, officers,
+              You agree to indemnify, defend, and hold harmless CoveTrade, its directors, officers,
               employees, agents, and affiliates from and against any and all claims, damages, losses,
               liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of
               or in connection with:
@@ -701,7 +701,7 @@ export default function EulaPage() {
           <Section num={11} title="Termination" accent={ACCENTS[10]}>
             <div className="grid sm:grid-cols-2 gap-4 mt-1">
               <div className="p-4 rounded-xl border border-rose-500/20 bg-rose-500/5">
-                <p className="text-xs font-semibold text-lime-300 mb-2">KoveTrade May Terminate</p>
+                <p className="text-xs font-semibold text-lime-300 mb-2">CoveTrade May Terminate</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
                   At any time, with or without cause and with or without notice, if you violate this
                   EULA or applicable law.
@@ -759,7 +759,7 @@ export default function EulaPage() {
           <Section num={13} title="Governing Law and Jurisdiction" accent={ACCENTS[12]}>
             <P>
               This EULA shall be governed by and construed in accordance with the laws of the
-              jurisdiction in which the applicable KoveTrade entity is incorporated, without regard
+              jurisdiction in which the applicable CoveTrade entity is incorporated, without regard
               to its conflict of law provisions.
             </P>
             <div className="mt-3 p-4 rounded-xl border border-green-500/20 bg-green-500/5">
@@ -786,14 +786,14 @@ export default function EulaPage() {
               <div className="p-4 rounded-xl border border-lime-400/20 bg-lime-400/5">
                 <p className="text-xs font-semibold text-lime-300 mb-2">📄 Entire Agreement</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                  This EULA constitutes the entire agreement between you and KoveTrade regarding
+                  This EULA constitutes the entire agreement between you and CoveTrade regarding
                   the Software, superseding all prior communications and agreements.
                 </p>
               </div>
             </div>
             <P>
               No amendment or modification of this EULA shall be binding unless made in writing and
-              signed by an authorized representative of KoveTrade.
+              signed by an authorized representative of CoveTrade.
             </P>
           </Section>
 
@@ -830,7 +830,7 @@ export default function EulaPage() {
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold text-sm hover:from-emerald-500 hover:to-teal-500 transition-all shadow-lg shadow-emerald-900/30"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">

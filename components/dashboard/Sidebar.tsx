@@ -127,7 +127,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           {/* Header */}
           <div className="flex items-center justify-between p-5 border-b border-gray-200 dark:border-white/10">
             <Link href="/portfolio" className="inline-flex items-baseline gap-0.5">
-              <span className="text-xl font-black tracking-tight text-gray-900 dark:text-white">Kove</span>
+              <span className="text-xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
               <span className="text-xl font-black tracking-tight text-[#5edc1f]">Trade</span>
             </Link>
 

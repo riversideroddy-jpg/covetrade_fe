@@ -114,10 +114,10 @@ function WarnDot() {
 
 // ─── Regulated entities ────────────────────────────────────────
 const ENTITIES = [
-  { region: "Europe",         entity: "KoveTrade (Europe) Ltd.",  reg: "CySEC", license: "License #109/10"       },
-  { region: "United Kingdom", entity: "KoveTrade (UK) Ltd.",      reg: "FCA",   license: "FRN 583263"            },
-  { region: "United States",  entity: "KoveTrade (USA) Ltd.",     reg: "SEC",   license: "CRD 329900"            },
-  { region: "Middle East",    entity: "KoveTrade (ME) Limited",   reg: "FSRA",  license: "Permission No. 220073" },
+  { region: "Europe",         entity: "CoveTrade (Europe) Ltd.",  reg: "CySEC", license: "License #109/10"       },
+  { region: "United Kingdom", entity: "CoveTrade (UK) Ltd.",      reg: "FCA",   license: "FRN 583263"            },
+  { region: "United States",  entity: "CoveTrade (USA) Ltd.",     reg: "SEC",   license: "CRD 329900"            },
+  { region: "Middle East",    entity: "CoveTrade (ME) Limited",   reg: "FSRA",  license: "Permission No. 220073" },
 ];
 
 // ─── Risk bullets ──────────────────────────────────────────────
@@ -161,7 +161,7 @@ export default function RiskDisclaimer() {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, ease: E }}
               >
                 <WarnDot />
-                <span className="text-[11px] font-semibold text-red-600 dark:text-red-300 tracking-wide">Important Legal Notice · KoveTrade</span>
+                <span className="text-[11px] font-semibold text-red-600 dark:text-red-300 tracking-wide">Important Legal Notice · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -227,7 +227,7 @@ export default function RiskDisclaimer() {
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
             <span className="text-[11px] text-gray-400 dark:text-gray-600 font-medium shrink-0 mr-1">Sections:</span>
             {[
-              { n: 1, l: "About KoveTrade"    },
+              { n: 1, l: "About CoveTrade"    },
               { n: 2, l: "Full Disclaimer"    },
               { n: 3, l: "Performance"        },
               { n: 4, l: "Risk Warnings"      },
@@ -247,7 +247,7 @@ export default function RiskDisclaimer() {
       <main className="py-16 sm:py-24 bg-gray-50 dark:bg-[#080909]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-5">
 
-          {/* §1 About KoveTrade */}
+          {/* §1 About CoveTrade */}
           <Reveal delay={0}>
             <div id="rd1" className="scroll-mt-20 rounded-3xl border border-gray-100 dark:border-white/[0.06] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-gray-50/80 dark:bg-white/[0.02] border-b border-gray-100 dark:border-white/[0.05]">
@@ -258,12 +258,12 @@ export default function RiskDisclaimer() {
                 </div>
                 <div>
                   <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 mb-0.5">Section 1 · Global Regulator</p>
-                  <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">About KoveTrade</h2>
+                  <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">About CoveTrade</h2>
                 </div>
               </div>
               <div className="px-7 py-6">
                 <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  KoveTrade is a globally recognised financial services provider offering access to a wide range of
+                  CoveTrade is a globally recognised financial services provider offering access to a wide range of
                   trading instruments and investment services, operating through several regulated entities:
                 </p>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -300,7 +300,7 @@ export default function RiskDisclaimer() {
               </div>
               <div className="px-7 py-6 space-y-4">
                 {[
-                  'The information and services provided by KoveTrade are intended for educational and informational purposes only and should not be construed as investment advice, financial advice, trading advice, or any other type of advice. KoveTrade does not recommend that any financial instrument should be bought, sold, or held by you.',
+                  'The information and services provided by CoveTrade are intended for educational and informational purposes only and should not be construed as investment advice, financial advice, trading advice, or any other type of advice. CoveTrade does not recommend that any financial instrument should be bought, sold, or held by you.',
                   'Trading in financial instruments involves substantial risk and is not appropriate for every investor. The high degree of leverage that is often obtainable in financial trading can work against you as well as for you. The use of leverage can lead to large losses as well as gains.',
                   'Before deciding to trade any financial instrument, you should carefully consider your investment objectives, level of experience, and risk appetite. You should seek advice from an independent financial advisor if you have any doubts.',
                 ].map((p, i) => (
@@ -339,11 +339,11 @@ export default function RiskDisclaimer() {
                   <p className="text-white text-lg sm:text-xl font-black leading-snug mb-1">
                     &ldquo;Past performance is not necessarily indicative of future results.&rdquo;
                   </p>
-                  <p className="text-amber-100 text-[12px]">— KoveTrade Risk Disclaimer, applicable to all displayed statistics</p>
+                  <p className="text-amber-100 text-[12px]">— CoveTrade Risk Disclaimer, applicable to all displayed statistics</p>
                 </div>
                 <div className="space-y-4">
                   {[
-                    { title: "Informational only", body: "Any performance data, statistics, or results presented on the KoveTrade platform are provided for informational purposes only and should not be relied upon as a guarantee of future performance." },
+                    { title: "Informational only", body: "Any performance data, statistics, or results presented on the CoveTrade platform are provided for informational purposes only and should not be relied upon as a guarantee of future performance." },
                     { title: "Simulated results", body: "Hypothetical or simulated performance results have inherent limitations. Unlike actual trading records, simulated results do not represent actual trading and may under- or over-compensate for the impact of certain market factors such as lack of liquidity." },
                     { title: "No profit guarantee", body: "No representation is being made that any account will or is likely to achieve profits or losses similar to those shown. Numerous factors related to the markets cannot be fully accounted for in the preparation of hypothetical performance results." },
                   ].map(({ title, body }) => (
@@ -428,8 +428,8 @@ export default function RiskDisclaimer() {
                 </div>
 
                 {[
-                  'The content on the KoveTrade platform is not directed at residents of any country or jurisdiction where such distribution or use would be contrary to local law or regulation. It is your responsibility to ensure that your use of the KoveTrade platform complies with all applicable laws and regulations in your jurisdiction.',
-                  'KoveTrade does not accept liability for any loss or damage, including without limitation any loss of profit, which may arise directly or indirectly from use of or reliance on the information provided on our platform. You are solely responsible for evaluating the merits and risks associated with any information, products, or services provided through KoveTrade.',
+                  'The content on the CoveTrade platform is not directed at residents of any country or jurisdiction where such distribution or use would be contrary to local law or regulation. It is your responsibility to ensure that your use of the CoveTrade platform complies with all applicable laws and regulations in your jurisdiction.',
+                  'CoveTrade does not accept liability for any loss or damage, including without limitation any loss of profit, which may arise directly or indirectly from use of or reliance on the information provided on our platform. You are solely responsible for evaluating the merits and risks associated with any information, products, or services provided through CoveTrade.',
                 ].map((p, i) => (
                   <p key={i} className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed">{p}</p>
                 ))}
@@ -447,7 +447,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-snug">
-                  By using KoveTrade services you confirm you have read, understood, and accepted this Risk Disclaimer in its entirety.
+                  By using CoveTrade services you confirm you have read, understood, and accepted this Risk Disclaimer in its entirety.
                 </p>
               </div>
               <Link
@@ -480,7 +480,7 @@ export default function RiskDisclaimer() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <Link
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="rounded-full bg-white px-8 py-3.5 text-sm font-bold text-red-800 hover:bg-red-50 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20 transition-all duration-300"
                   >
                     Contact Support

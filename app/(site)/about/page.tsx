@@ -133,7 +133,7 @@ export default function AboutPage() {
         >
           <Image
             src="/images/about_1.jpg"
-            alt="KoveTrade team"
+            alt="CoveTrade team"
             fill
             className="object-cover object-center"
             priority
@@ -146,7 +146,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#5edc1f]/35 bg-[#5edc1f]/10 mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-rose-400 animate-pulse" />
-              <span className="text-xs text-lime-300 font-medium tracking-wide">About KoveTrade</span>
+              <span className="text-xs text-lime-300 font-medium tracking-wide">About CoveTrade</span>
             </div>
           </Reveal>
 
@@ -199,7 +199,7 @@ export default function AboutPage() {
                   </span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-                  KoveTrade was founded with a clear mission: to make professional-grade copy trading
+                  CoveTrade was founded with a clear mission: to make professional-grade copy trading
                   accessible to everyone. We believe that every investor, regardless of experience
                   level, should have the ability to mirror the strategies of top-performing traders
                   with precision, flexibility, and transparency.
@@ -207,7 +207,7 @@ export default function AboutPage() {
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
                   From our early days, we set out to build a platform that bridges the gap between
                   experienced traders and those looking to learn and grow their portfolios. Today,
-                  KoveTrade serves a global community of traders across futures, options, and
+                  CoveTrade serves a global community of traders across futures, options, and
                   contracts.
                 </p>
               </div>
@@ -220,7 +220,7 @@ export default function AboutPage() {
                 <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl shadow-black/40">
                   <Image
                     src="/images/about_2.jpg"
-                    alt="KoveTrade annual report presentation"
+                    alt="CoveTrade annual report presentation"
                     fill
                     className="object-cover object-center"
                   />
@@ -237,7 +237,7 @@ export default function AboutPage() {
                 >
                   <Image
                     src="/images/about_1.jpg"
-                    alt="KoveTrade team discussion"
+                    alt="CoveTrade team discussion"
                     fill
                     className="object-cover object-center"
                   />
@@ -345,7 +345,7 @@ export default function AboutPage() {
                 <div className="relative rounded-3xl overflow-hidden row-span-2" style={{ aspectRatio: "3/4" }}>
                   <Image
                     src="/images/about_3.jpg"
-                    alt="KoveTrade team collaborating"
+                    alt="CoveTrade team collaborating"
                     fill
                     className="object-cover object-center"
                   />
@@ -356,7 +356,7 @@ export default function AboutPage() {
                 <div className="relative rounded-3xl overflow-hidden" style={{ aspectRatio: "1/1" }}>
                   <Image
                     src="/images/about_4.jpg"
-                    alt="KoveTrade team meeting"
+                    alt="CoveTrade team meeting"
                     fill
                     className="object-cover object-center"
                   />
@@ -390,7 +390,7 @@ export default function AboutPage() {
                   of experts.
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-                  Behind KoveTrade is a diverse team of financial professionals, technologists, and
+                  Behind CoveTrade is a diverse team of financial professionals, technologists, and
                   compliance experts united by a shared passion for making copy trading better. Our
                   team brings decades of combined experience in financial services, fintech
                   development, and regulatory compliance.
@@ -428,7 +428,7 @@ export default function AboutPage() {
               </span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 text-sm max-w-xl mx-auto">
-              KoveTrade operates under strict regulatory oversight across multiple jurisdictions,
+              CoveTrade operates under strict regulatory oversight across multiple jurisdictions,
               ensuring the highest standards of compliance and client protection.
             </p>
           </Reveal>
@@ -436,28 +436,28 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             <RegCard
               flag="🇪🇺" region="Europe"
-              entity="KoveTrade (Europe) Ltd."
+              entity="CoveTrade (Europe) Ltd."
               regulator="Cyprus Securities Exchange Commission (CySEC)"
               license="License #109/10"
               delay={0.05}
             />
             <RegCard
               flag="🇬🇧" region="United Kingdom"
-              entity="KoveTrade (UK) Ltd."
+              entity="CoveTrade (UK) Ltd."
               regulator="Financial Conduct Authority (FCA)"
               license="FRN 583263"
               delay={0.12}
             />
             <RegCard
               flag="🇺🇸" region="United States"
-              entity="KoveTrade (USA) Ltd."
+              entity="CoveTrade (USA) Ltd."
               regulator="Securities and Exchange Commission (SEC)"
               license="CRD 329900"
               delay={0.19}
             />
             <RegCard
               flag="🇦🇪" region="Middle East"
-              entity="KoveTrade (ME) Limited"
+              entity="CoveTrade (ME) Limited"
               regulator="ADGM Financial Services Regulatory Authority (FSRA)"
               license="Permission Number 220073"
               delay={0.26}
@@ -476,7 +476,7 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden border border-gray-200 dark:border-white/8 h-full min-h-[220px]">
                 <Image
                   src="/images/about_1.jpg"
-                  alt="KoveTrade support"
+                  alt="CoveTrade support"
                   fill
                   className="object-cover object-center"
                 />
@@ -485,17 +485,17 @@ export default function AboutPage() {
                   <p className="text-xs text-lime-400 font-mono uppercase tracking-widest mb-2">Get in Touch</p>
                   <h3 className="text-2xl font-bold text-white mb-2">We'd love to hear from you.</h3>
                   <p className="text-sm text-white/70 mb-5">
-                    Have questions about KoveTrade? Reach out to our team — we are always happy to help.
+                    Have questions about CoveTrade? Reach out to our team — we are always happy to help.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <a
-                      href="mailto:support@kovetrade.com"
+                      href="mailto:support@covetrade.com"
                       className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#5edc1f]/20 border border-[#5edc1f]/30 text-lime-300 text-sm font-medium hover:bg-[#5edc1f]/30 transition-all"
                     >
                       <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">
                         <path d="M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm0 0l6 5 6-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
-                      support@kovetrade.com
+                      support@covetrade.com
                     </a>
                     <button className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white text-sm font-medium hover:bg-white/8 transition-all">
                       💬 Live Chat
@@ -523,7 +523,7 @@ export default function AboutPage() {
                       journey today.
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-400">
-                      Join over 150,000 traders already growing their portfolios with KoveTrade.
+                      Join over 150,000 traders already growing their portfolios with CoveTrade.
                     </p>
                   </div>
 

@@ -242,7 +242,7 @@ function ResetPasswordContent() {
       >
         {/* Logo */}
         <Link href="/" className="inline-flex items-baseline gap-0.5 mb-2">
-          <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Kove</span>
+          <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
           <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trade</span>
         </Link>
 

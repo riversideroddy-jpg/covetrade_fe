@@ -1,6 +1,6 @@
 {
-  "name": "KoveTrade",
-  "short_name": "KoveTrade",
+  "name": "CoveTrade",
+  "short_name": "CoveTrade",
   "description": "Copy top traders and grow your portfolio. Mirror real-time stock and options trades from the world's best investors.",
   "start_url": "/",
   "display": "standalone",

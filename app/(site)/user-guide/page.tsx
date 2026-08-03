@@ -321,7 +321,7 @@ export default function UserGuidePage() {
               <Reveal delay={0.05}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[#5edc1f]/35 bg-[#5edc1f]/10 mb-6">
                   <span className="w-1.5 h-1.5 rounded-full bg-lime-400 animate-pulse" />
-                  <span className="text-xs text-lime-300 font-medium tracking-wide">KoveTrade User Guide</span>
+                  <span className="text-xs text-lime-300 font-medium tracking-wide">CoveTrade User Guide</span>
                 </div>
               </Reveal>
 
@@ -341,7 +341,7 @@ export default function UserGuidePage() {
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
                   Whether you are a complete beginner or an experienced trader looking to diversify,
-                  KoveTrade makes it easy to follow top performers and replicate their success.
+                  CoveTrade makes it easy to follow top performers and replicate their success.
                 </p>
               </Reveal>
 
@@ -423,7 +423,7 @@ export default function UserGuidePage() {
           <Reveal>
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Getting Started</h2>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">
-              Welcome to KoveTrade! By the end of this guide, you will know how to create your
+              Welcome to CoveTrade! By the end of this guide, you will know how to create your
               account, find traders to copy, set up copy trading, and manage your portfolio
               effectively.
             </p>
@@ -448,7 +448,7 @@ export default function UserGuidePage() {
       <GuideSection id="account" icon="🧑‍💻" title="Creating Your Account" accent="sky">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-0">
-            <StepCard num={1} title="Register" body="Visit the KoveTrade registration page and enter your email address and a strong password." delay={0.05} />
+            <StepCard num={1} title="Register" body="Visit the CoveTrade registration page and enter your email address and a strong password." delay={0.05} />
             <StepCard num={2} title="Verify Email" body="Check your inbox and click the verification link we send you to activate your account." delay={0.12} />
             <StepCard num={3} title="Complete KYC" body="Upload your government-issued identification documents to complete identity verification." delay={0.19} />
             <StepCard num={4} title="Fund Account" body="Deposit funds using your preferred method — bank transfer, card, crypto, or e-wallet." delay={0.26} />
@@ -514,7 +514,7 @@ export default function UserGuidePage() {
       <GuideSection id="find" icon="🔍" title="Finding Traders to Copy" accent="violet">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
-            KoveTrade provides powerful tools to help you find the right traders to copy.
+            CoveTrade provides powerful tools to help you find the right traders to copy.
           </p>
         </Reveal>
         <div className="grid md:grid-cols-2 gap-6">
@@ -650,7 +650,7 @@ export default function UserGuidePage() {
       <GuideSection id="funds" icon="💳" title="Deposits and Withdrawals" accent="blue">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
-            KoveTrade supports multiple funding methods for your convenience.
+            CoveTrade supports multiple funding methods for your convenience.
           </p>
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -699,7 +699,7 @@ export default function UserGuidePage() {
           <CheckItem text="Enable two-factor authentication (2FA) for an extra layer of security" delay={0.05} color="violet" />
           <CheckItem text="Use a strong, unique password that you do not reuse on any other site" delay={0.1} color="violet" />
           <CheckItem text="Review your login history regularly for any unfamiliar or suspicious activity" delay={0.15} color="violet" />
-          <CheckItem text="Never share your login credentials or 2FA codes with anyone — KoveTrade staff will never ask" delay={0.2} color="violet" />
+          <CheckItem text="Never share your login credentials or 2FA codes with anyone — CoveTrade staff will never ask" delay={0.2} color="violet" />
         </div>
       </GuideSection>
 
@@ -707,13 +707,13 @@ export default function UserGuidePage() {
       <GuideSection id="help" icon="🙋" title="Getting Help" accent="sky">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
-            If you need assistance at any point, KoveTrade offers multiple support channels.
+            If you need assistance at any point, CoveTrade offers multiple support channels.
           </p>
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { icon: "💬", label: "Live Chat",      desc: "Available 24/7 from your dashboard — fastest response", cta: "Open chat",    href: "#" },
-            { icon: "📧", label: "Email Support",  desc: "Reach us at support@kovetrade.com for detailed queries", cta: "Send email",   href: "mailto:support@kovetrade.com" },
+            { icon: "📧", label: "Email Support",  desc: "Reach us at support@covetrade.com for detailed queries", cta: "Send email",   href: "mailto:support@covetrade.com" },
             { icon: "📚", label: "Help Center",    desc: "Browse our comprehensive FAQ and knowledge base articles", cta: "Browse FAQ",  href: "#" },
             { icon: "🌐", label: "Community",      desc: "Join our trading community for peer support and strategy discussions", cta: "Join now", href: "#" },
           ].map((ch, i) => (
@@ -789,7 +789,7 @@ export default function UserGuidePage() {
                   </span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-lg mx-auto">
-                  Create your KoveTrade account today and start copying top-performing traders. It
+                  Create your CoveTrade account today and start copying top-performing traders. It
                   only takes a few minutes to get started.
                 </p>
 

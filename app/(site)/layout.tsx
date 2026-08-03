@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://kovetrade.com" },
+  alternates: { canonical: "https://covetrade.com" },
   openGraph: {
-    url: "https://kovetrade.com",
+    url: "https://covetrade.com",
   },
 };
 

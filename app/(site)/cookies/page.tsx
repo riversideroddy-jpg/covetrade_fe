@@ -46,7 +46,7 @@ function BrowserMockup() {
             <svg className="w-3 h-3 text-gray-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
-            <span className="text-[10px] text-gray-500 font-mono">kovetrade.com</span>
+            <span className="text-[10px] text-gray-500 font-mono">covetrade.com</span>
           </div>
         </div>
 
@@ -229,7 +229,7 @@ export default function CookiesPolicy() {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, ease: E }}
               >
                 <span className="text-base">🍪</span>
-                <span className="text-[11px] font-semibold text-teal-700 dark:text-teal-300 tracking-wide">Cookie Management · KoveTrade</span>
+                <span className="text-[11px] font-semibold text-teal-700 dark:text-teal-300 tracking-wide">Cookie Management · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -247,7 +247,7 @@ export default function CookiesPolicy() {
                 className="text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-8 max-w-md"
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 0.15, ease: E }}
               >
-                We use cookies to make KoveTrade work better for you. Here&apos;s a plain-English guide to
+                We use cookies to make CoveTrade work better for you. Here&apos;s a plain-English guide to
                 exactly what we place on your device and how you stay in control.
               </motion.p>
 
@@ -316,7 +316,7 @@ export default function CookiesPolicy() {
             icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" /></svg>}
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed">
-              This Cookies Policy explains how KoveTrade uses cookies and similar tracking technologies when you visit
+              This Cookies Policy explains how CoveTrade uses cookies and similar tracking technologies when you visit
               our website and use our platform. By continuing to browse or use our services, you agree to the use of
               cookies as described in this policy. We encourage you to read it carefully to understand what cookies are,
               how we use them, and how you can manage your preferences.
@@ -418,7 +418,7 @@ export default function CookiesPolicy() {
             icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>}
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-              By using the KoveTrade website and platform, you consent to the placement of cookies on your device as
+              By using the CoveTrade website and platform, you consent to the placement of cookies on your device as
               described in this policy. When you first visit our website, you will be presented with a cookie consent
               banner that allows you to accept or customise your preferences.
             </p>
@@ -522,7 +522,7 @@ export default function CookiesPolicy() {
             icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" /></svg>}
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-              In addition to our own cookies, KoveTrade may allow third-party service providers to place cookies on
+              In addition to our own cookies, CoveTrade may allow third-party service providers to place cookies on
               your device. We do not control these cookies — their use is governed by the respective provider&apos;s privacy policy.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -549,7 +549,7 @@ export default function CookiesPolicy() {
             icon={<svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>}
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-              In addition to cookies, KoveTrade may use web beacons (also known as pixel tags, clear GIFs, or tracking pixels)
+              In addition to cookies, CoveTrade may use web beacons (also known as pixel tags, clear GIFs, or tracking pixels)
               — tiny, invisible graphic images — on our website and in our emails to understand user engagement.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -584,13 +584,13 @@ export default function CookiesPolicy() {
                 <p className="text-[13px] text-gray-500 dark:text-gray-400">Email our team and we&apos;ll update your settings within 24 hours.</p>
               </div>
               <a
-                href="mailto:support@kovetrade.com"
+                href="mailto:support@covetrade.com"
                 className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-teal-500 hover:bg-teal-400 text-white font-bold text-[13px] px-5 py-3 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-teal-500/30"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
-                support@kovetrade.com
+                support@covetrade.com
               </a>
             </div>
           </AccordionSection>
@@ -612,7 +612,7 @@ export default function CookiesPolicy() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <Link
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="rounded-full bg-white px-8 py-3.5 text-sm font-bold text-teal-700 hover:bg-teal-50 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20 transition-all duration-300"
                   >
                     Contact Support

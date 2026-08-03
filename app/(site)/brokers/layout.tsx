@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Supported Brokers — Connect Your Brokerage",
   description:
-    "KoveTrade integrates with leading brokers worldwide. Connect your existing brokerage account and start copy trading in minutes.",
-  alternates: { canonical: "https://kovetrade.com/brokers" },
+    "CoveTrade integrates with leading brokers worldwide. Connect your existing brokerage account and start copy trading in minutes.",
+  alternates: { canonical: "https://covetrade.com/brokers" },
   openGraph: {
-    title: "Supported Brokers | KoveTrade",
+    title: "Supported Brokers | CoveTrade",
     description:
-      "Connect your existing brokerage account and start copy trading in minutes with KoveTrade's broker integrations.",
-    url: "https://kovetrade.com/brokers",
+      "Connect your existing brokerage account and start copy trading in minutes with CoveTrade's broker integrations.",
+    url: "https://covetrade.com/brokers",
   },
 };
 

@@ -376,7 +376,7 @@ export default function BecomeALeaderPage() {
               <Reveal delay={0.05}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-orange-500/35 bg-orange-500/10 mb-6">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
-                  <span className="text-xs text-orange-300 font-medium tracking-wide">Leader Program · KoveTrade</span>
+                  <span className="text-xs text-orange-300 font-medium tracking-wide">Leader Program · CoveTrade</span>
                 </div>
               </Reveal>
 
@@ -387,13 +387,13 @@ export default function BecomeALeaderPage() {
                     Leader
                   </span>
                   <br />
-                  with KoveTrade.
+                  with CoveTrade.
                 </h1>
               </Reveal>
 
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
-                  KoveTrade is one of the most transparent social trading platforms in the world.
+                  CoveTrade is one of the most transparent social trading platforms in the world.
                   Our Leader Program is open for individual traders who possess real trading skills.
                   Share profitable signals and earn additional income.
                 </p>
@@ -436,7 +436,7 @@ export default function BecomeALeaderPage() {
                   <div className="relative rounded-3xl border border-orange-500/20 bg-gray-50 dark:bg-white/[0.02] p-8">
                     <LeaderBadge />
                     <div className="mt-4 text-center space-y-1">
-                      <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">KoveTrade</p>
+                      <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">CoveTrade</p>
                       <p className="text-sm font-semibold text-orange-300">Signal Leader Program</p>
                     </div>
                   </div>
@@ -512,7 +512,7 @@ export default function BecomeALeaderPage() {
                   <p className="text-sm text-gray-700 dark:text-gray-300 italic leading-relaxed">
                     "Share profitable signals and strategies with investors, let them follow, and earn additional income — all from your existing trading."
                   </p>
-                  <p className="text-xs text-orange-400 font-semibold mt-3">— KoveTrade Leader Program</p>
+                  <p className="text-xs text-orange-400 font-semibold mt-3">— CoveTrade Leader Program</p>
                 </div>
               </div>
             </Reveal>
@@ -541,7 +541,7 @@ export default function BecomeALeaderPage() {
               {
                 num: "01",
                 icon: "🚀",
-                title: "Join KoveTrade as a Leader",
+                title: "Join CoveTrade as a Leader",
                 body: "Access the Leaders Program page and sign up using our free form to fast-track your approval process.",
               },
               {
@@ -635,7 +635,7 @@ export default function BecomeALeaderPage() {
       <section className="py-20 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-14">
-            <p className="text-xs text-orange-400 font-mono uppercase tracking-widest mb-3">Why KoveTrade</p>
+            <p className="text-xs text-orange-400 font-mono uppercase tracking-widest mb-3">Why CoveTrade</p>
             <h2 className="text-3xl md:text-4xl font-bold">
               Reasons to Become a{" "}
               <span className="bg-gradient-to-r from-orange-400 to-amber-400 bg-clip-text text-transparent">
@@ -715,13 +715,13 @@ export default function BecomeALeaderPage() {
 
           <div className="space-y-3">
             <FAQ
-              q="Can anyone become a KoveTrade Leader?"
-              a="To become a Leader, you must have a verified KoveTrade account with completed KYC, a demonstrated positive trading history, and agree to the Leader Terms and Conditions. Our team reviews each application individually."
+              q="Can anyone become a CoveTrade Leader?"
+              a="To become a Leader, you must have a verified CoveTrade account with completed KYC, a demonstrated positive trading history, and agree to the Leader Terms and Conditions. Our team reviews each application individually."
               delay={0.05}
             />
             <FAQ
-              q="Can I become a Leader without already being a KoveTrade client?"
-              a="You will need to create a KoveTrade account first and complete the verification process before applying to the Leaders Program. The registration is free and typically takes just a few minutes."
+              q="Can I become a Leader without already being a CoveTrade client?"
+              a="You will need to create a CoveTrade account first and complete the verification process before applying to the Leaders Program. The registration is free and typically takes just a few minutes."
               delay={0.1}
             />
             <FAQ
@@ -740,7 +740,7 @@ export default function BecomeALeaderPage() {
               delay={0.25}
             />
             <FAQ
-              q="Is there a minimum amount for me to start trading with KoveTrade?"
+              q="Is there a minimum amount for me to start trading with CoveTrade?"
               a="Minimum funding requirements are specified in the current program terms available in your dashboard. These may vary based on your account type and the broker you select."
               delay={0.3}
             />
@@ -783,7 +783,7 @@ export default function BecomeALeaderPage() {
                   </span>
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-8 max-w-lg mx-auto">
-                  Join the KoveTrade Leader Program today. Share your trading expertise, build a
+                  Join the CoveTrade Leader Program today. Share your trading expertise, build a
                   following, and earn from every signal you broadcast.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">

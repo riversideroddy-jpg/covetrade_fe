@@ -593,7 +593,7 @@ function TrustedBrandsSection() {
             Liquidity Providers
           </h2>
           <p className="mt-4 text-[15px] text-gray-400 max-w-xl mx-auto leading-relaxed">
-            KoveTrade connects to a deep pool of tier-1 banks and prime brokers,
+            CoveTrade connects to a deep pool of tier-1 banks and prime brokers,
             keeping spreads ultra-tight around the clock.
           </p>
         </Reveal>
@@ -843,7 +843,7 @@ function PhoneMockups() {
       >
         <Image
           src="/images/trade-duplicate.png"
-          alt="KoveTrade platform — trading chart and Buy/Sell interface"
+          alt="CoveTrade platform — trading chart and Buy/Sell interface"
           width={640}
           height={720}
           className="w-full max-w-sm lg:max-w-md object-contain drop-shadow-2xl"
@@ -881,8 +881,8 @@ function AboutSection() {
                 </span>
               </h2>
               <p className="text-[15px] text-gray-500 dark:text-gray-400 leading-relaxed mb-10">
-                While conventional copy trading platforms remain static, the KoveTrade team pioneers
-                innovation. KoveTrade was crafted with you in mind — whether you&apos;re a trader seeking
+                While conventional copy trading platforms remain static, the CoveTrade team pioneers
+                innovation. CoveTrade was crafted with you in mind — whether you&apos;re a trader seeking
                 to leverage technology or a broker striving to offer top-notch tools for traders at every stage.
               </p>
             </Reveal>
@@ -924,7 +924,7 @@ function AboutSection() {
 
 /** Circular rotating "MORE ABOUT" badge (inspired by image5) */
 function RotatingBadge() {
-  const text = "KOVETRADE · MORE ABOUT · KOVETRADE · MORE ABOUT · ";
+  const text = "COVETRADE · MORE ABOUT · COVETRADE · MORE ABOUT · ";
   return (
     <div className="relative w-28 h-28 flex items-center justify-center group cursor-pointer shrink-0">
       <svg
@@ -1394,7 +1394,7 @@ const REVIEWS = [
     name: "Mark Villomas",
     handle: "@marktrades",
     stars: 5,
-    text: "Following three months of engaging in copy trading with KoveTrade, my returns have surpassed my total earnings from the entirety of my previous year's independent trading activities. The platform demonstrates exceptional transparency and speed, and the support team consistently provides invaluable assistance.",
+    text: "Following three months of engaging in copy trading with CoveTrade, my returns have surpassed my total earnings from the entirety of my previous year's independent trading activities. The platform demonstrates exceptional transparency and speed, and the support team consistently provides invaluable assistance.",
   },
   {
     img: "https://i.pravatar.cc/150?img=8",
@@ -1532,7 +1532,7 @@ function CTASection() {
               Build your future.
             </h2>
             <p className="text-green-200 text-base lg:text-lg max-w-lg mx-auto leading-relaxed mb-10">
-              Join 50 million traders and investors who chose KoveTrade. No
+              Join 50 million traders and investors who chose CoveTrade. No
               credit card required. Start copying in under 3 minutes.
             </p>
 

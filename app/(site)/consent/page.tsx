@@ -347,7 +347,7 @@ export default function ConsentPage() {
 
               <Reveal delay={0.18}>
                 <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-lg">
-                  At KoveTrade, we believe in transparency and informed consent. This declaration
+                  At CoveTrade, we believe in transparency and informed consent. This declaration
                   outlines the specific consents you provide when you register and use our platform.
                 </p>
               </Reveal>
@@ -377,7 +377,7 @@ export default function ConsentPage() {
                     <span className="text-sm font-semibold text-lime-300">Consent Framework Active</span>
                   </div>
                   <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                    By creating an account with KoveTrade, you acknowledge reading and agreeing to
+                    By creating an account with CoveTrade, you acknowledge reading and agreeing to
                     all consents described in this declaration.
                   </p>
                 </div>
@@ -391,7 +391,7 @@ export default function ConsentPage() {
                 <div className="relative rounded-3xl border border-[#5edc1f]/20 bg-gray-50 dark:bg-white/3 p-10">
                   <ConsentSeal />
                   <div className="mt-4 text-center">
-                    <p className="text-xs text-gray-500 uppercase tracking-widest">KoveTrade</p>
+                    <p className="text-xs text-gray-500 uppercase tracking-widest">CoveTrade</p>
                     <p className="text-sm font-semibold text-lime-300">Official Consent Declaration</p>
                   </div>
                 </div>
@@ -449,12 +449,12 @@ export default function ConsentPage() {
           {/* §1 */}
           <ConsentSection num={1} title="Your Consent Matters" accent={SECTION_ACCENTS[0]}>
             <Body>
-              At KoveTrade, we believe in transparency and informed consent. This Declaration of
+              At CoveTrade, we believe in transparency and informed consent. This Declaration of
               Consent outlines the specific consents you provide when you register for an account,
               use our services, and interact with our platform.
             </Body>
             <Body>
-              By using KoveTrade, you acknowledge and agree to the consents described below. We
+              By using CoveTrade, you acknowledge and agree to the consents described below. We
               encourage you to read this document carefully and contact us if you have any questions.
             </Body>
           </ConsentSection>
@@ -462,7 +462,7 @@ export default function ConsentPage() {
           {/* §2 */}
           <ConsentSection num={2} title="Consent to Terms and Policies" accent={SECTION_ACCENTS[1]}>
             <Body>
-              By creating an account with KoveTrade, you confirm that you have read, understood, and
+              By creating an account with CoveTrade, you confirm that you have read, understood, and
               agree to be bound by our Terms of Service, Privacy Policy, Cookies Policy, Risk
               Disclaimer, and all other applicable policies and agreements.
             </Body>
@@ -485,7 +485,7 @@ export default function ConsentPage() {
             </div>
             <Body>
               You acknowledge that these documents form a legally binding agreement between you and
-              KoveTrade.
+              CoveTrade.
             </Body>
           </ConsentSection>
 
@@ -493,7 +493,7 @@ export default function ConsentPage() {
           <ConsentSection num={3} title="Consent to Data Processing" accent={SECTION_ACCENTS[2]}>
             <Body>
               You consent to the collection, processing, storage, and use of your personal data by
-              KoveTrade as described in our Privacy Policy. This includes but is not limited to:
+              CoveTrade as described in our Privacy Policy. This includes but is not limited to:
             </Body>
             <div className="space-y-2.5 mt-2">
               {[
@@ -511,7 +511,7 @@ export default function ConsentPage() {
           {/* §4 */}
           <ConsentSection num={4} title="Consent to Communications" accent={SECTION_ACCENTS[3]}>
             <Body>
-              You consent to receiving communications from KoveTrade, including but not limited to:
+              You consent to receiving communications from CoveTrade, including but not limited to:
               account notifications, transaction confirmations, security alerts, service updates,
               regulatory notices, and marketing communications.
             </Body>
@@ -531,7 +531,7 @@ export default function ConsentPage() {
           <ConsentSection num={5} title="Electronic Signatures and Records" accent={SECTION_ACCENTS[4]}>
             <Body>
               You consent to the use of electronic signatures, records, and communications in
-              connection with your account and transactions with KoveTrade. You agree that electronic
+              connection with your account and transactions with CoveTrade. You agree that electronic
               signatures and records shall have the same legal effect, validity, and enforceability
               as manually executed signatures and paper-based records.
             </Body>
@@ -573,7 +573,7 @@ export default function ConsentPage() {
           {/* §7 */}
           <ConsentSection num={7} title="Consent to Identity Verification" accent={SECTION_ACCENTS[6]}>
             <Body>
-              You consent to KoveTrade conducting identity verification checks as required by
+              You consent to CoveTrade conducting identity verification checks as required by
               anti-money laundering (AML) and know-your-customer (KYC) regulations. This may include:
             </Body>
             <div className="space-y-2.5 mt-2">
@@ -597,8 +597,8 @@ export default function ConsentPage() {
           {/* §8 */}
           <ConsentSection num={8} title="Consent to Recording" accent={SECTION_ACCENTS[7]}>
             <Body>
-              You consent to KoveTrade recording and monitoring telephone conversations, electronic
-              communications, and other interactions between you and KoveTrade. These recordings may
+              You consent to CoveTrade recording and monitoring telephone conversations, electronic
+              communications, and other interactions between you and CoveTrade. These recordings may
               be used to:
             </Body>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
@@ -640,13 +640,13 @@ export default function ConsentPage() {
               consequences of the withdrawal.
             </Body>
             <a
-              href="mailto:support@kovetrade.com"
+              href="mailto:support@covetrade.com"
               className="inline-flex items-center gap-2 mt-3 px-4 py-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-medium hover:bg-amber-500/20 transition-all"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">
                 <path d="M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm0 0l6 5 6-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              support@kovetrade.com
+              support@covetrade.com
             </a>
           </ConsentSection>
 
@@ -658,7 +658,7 @@ export default function ConsentPage() {
               </div>
               <div className="space-y-2">
                 <Body>
-                  KoveTrade services are only available to individuals who are at least 18 years of
+                  CoveTrade services are only available to individuals who are at least 18 years of
                   age (or the age of legal majority in your jurisdiction).
                 </Body>
                 <Body>
@@ -674,7 +674,7 @@ export default function ConsentPage() {
           {/* §11 */}
           <ConsentSection num={11} title="Updates to This Declaration" accent={SECTION_ACCENTS[10]}>
             <Body>
-              KoveTrade may update this Declaration of Consent from time to time to reflect changes
+              CoveTrade may update this Declaration of Consent from time to time to reflect changes
               in our practices, services, or legal requirements.
             </Body>
             <div className="mt-3 space-y-2">
@@ -726,7 +726,7 @@ export default function ConsentPage() {
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="mailto:support@kovetrade.com"
+                    href="mailto:support@covetrade.com"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#4cc015] to-green-700 text-white font-semibold text-sm hover:from-[#5edc1f] hover:to-green-600 transition-all shadow-lg shadow-green-900/30"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">

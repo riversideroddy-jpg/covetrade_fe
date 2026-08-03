@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "KoveTrade — Copy Top Traders. Grow Your Portfolio.";
+export const alt = "CoveTrade — Copy Top Traders. Grow Your Portfolio.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -72,7 +72,7 @@ export default function OgImage() {
           {/* Logo wordmark */}
           <div style={{ display: "flex", alignItems: "baseline", gap: "2px", marginBottom: "32px" }}>
             <span style={{ fontSize: "72px", fontWeight: 900, color: "#ffffff", letterSpacing: "-2px", lineHeight: 1 }}>
-              Kove
+              Cove
             </span>
             <span style={{ fontSize: "72px", fontWeight: 900, color: "#5edc1f", letterSpacing: "-2px", lineHeight: 1 }}>
               Trade

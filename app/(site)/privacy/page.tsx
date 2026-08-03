@@ -314,7 +314,7 @@ export default function PrivacyPolicy() {
                 <svg className="w-3.5 h-3.5 text-[#4cc015] dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                 </svg>
-                <span className="text-[11px] font-semibold text-[#4cc015] dark:text-lime-300 tracking-wide">Data Protection · KoveTrade</span>
+                <span className="text-[11px] font-semibold text-[#4cc015] dark:text-lime-300 tracking-wide">Data Protection · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -422,7 +422,7 @@ export default function PrivacyPolicy() {
             }
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-              KoveTrade is committed to protecting your privacy. This Privacy Policy explains how we collect, use,
+              CoveTrade is committed to protecting your privacy. This Privacy Policy explains how we collect, use,
               disclose, and safeguard your information when you use our platform and services.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
@@ -444,7 +444,7 @@ export default function PrivacyPolicy() {
             }
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-              KoveTrade employs industry-standard security measures to protect your personal information from
+              CoveTrade employs industry-standard security measures to protect your personal information from
               unauthorized access, alteration, disclosure, or destruction.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -477,7 +477,7 @@ export default function PrivacyPolicy() {
             }
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-              KoveTrade may share your personal information with our affiliated companies and subsidiaries for the
+              CoveTrade may share your personal information with our affiliated companies and subsidiaries for the
               following purposes. All affiliates are bound by the same privacy and data protection standards.
             </p>
             <div className="grid sm:grid-cols-2 gap-3">
@@ -542,7 +542,7 @@ export default function PrivacyPolicy() {
             }
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-              KoveTrade may be required to disclose your personal information to regulatory authorities, law enforcement
+              CoveTrade may be required to disclose your personal information to regulatory authorities, law enforcement
               agencies, or other governmental bodies in response to lawful requests, subpoenas, or court orders.
             </p>
             <div className="rounded-2xl border border-amber-200 dark:border-amber-500/20 bg-amber-50 dark:bg-amber-500/[0.05] p-5">
@@ -597,11 +597,11 @@ export default function PrivacyPolicy() {
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <span className="text-[13px] text-gray-500 dark:text-gray-500">To exercise any right:</span>
               <a
-                href="mailto:support@kovetrade.com"
+                href="mailto:support@covetrade.com"
                 className="inline-flex items-center gap-1.5 rounded-full bg-lime-400/10 border border-lime-400/20 px-4 py-2 text-[12px] font-bold text-[#4cc015] dark:text-lime-300 hover:bg-lime-400/20 transition-colors duration-200"
               >
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
-                support@kovetrade.com
+                support@covetrade.com
               </a>
             </div>
           </PolicySection>
@@ -626,7 +626,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <Link
-                    href="mailto:privacy@kovetrade.com"
+                    href="mailto:privacy@covetrade.com"
                     className="rounded-full bg-white px-8 py-3.5 text-sm font-bold text-[#4cc015] hover:bg-green-50 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20 transition-all duration-300"
                   >
                     Contact Privacy Team
