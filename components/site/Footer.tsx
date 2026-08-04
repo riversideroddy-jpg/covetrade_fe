@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -15,7 +15,7 @@ const columns = [
   {
     title: "Features",
     links: [
-      { label: "AutoGuard™", href: "/autoguard" },
+      { label: "AutoGuardâ„¢", href: "/autoguard" },
       { label: "Affiliate Program", href: "/affiliate" },
       { label: "Leader Guide", href: "/leader-guide" },
       { label: "User Guide", href: "/user-guide" },
@@ -38,7 +38,7 @@ const columns = [
     title: "Contact",
     links: [
       { label: "+1 (929) 512-0241", href: "tel:+19295120241" },
-      { label: "support@covetrade.com", href: "mailto:support@covetrade.com" },
+      { label: "support@covetrades.com", href: "mailto:support@covetrades.com" },
     ],
   },
 ];
@@ -95,7 +95,7 @@ const Footer = () => {
       {/* Top gradient bar */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#5edc1f]/60 to-transparent" />
 
-      {/* Subtle grid texture — dark mode only */}
+      {/* Subtle grid texture â€” dark mode only */}
       <div
         className="pointer-events-none absolute inset-0 hidden dark:block opacity-[0.025]"
         style={{
@@ -109,7 +109,7 @@ const Footer = () => {
       <div className="pointer-events-none absolute top-0 left-0 w-[500px] h-[300px] rounded-full bg-[#5edc1f]/[0.04] blur-[100px] hidden dark:block" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ── Main grid ── */}
+        {/* â”€â”€ Main grid â”€â”€ */}
         <div className="pt-14 pb-10 grid grid-cols-1 gap-12 lg:grid-cols-12">
           {/* Brand column */}
           <div className="lg:col-span-4 flex flex-col gap-6">
@@ -179,7 +179,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* ── Disclaimer ── */}
+        {/* â”€â”€ Disclaimer â”€â”€ */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-8 space-y-4 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
           <p>
             <span className="font-semibold text-gray-500 dark:text-gray-400">Disclaimer:</span>{" "}
@@ -205,21 +205,21 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* ── Bottom bar ── */}
+        {/* â”€â”€ Bottom bar â”€â”€ */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            &copy; 2006–2026 CoveTrade — Your Social Investment Network. All
+            &copy; 2006â€“2026 CoveTrade â€” Your Social Investment Network. All
             rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-400 dark:text-gray-500">
             <Link href="/terms" className="hover:text-[#5edc1f] transition-colors">
               Terms
             </Link>
-            <span className="text-gray-300 dark:text-gray-700">·</span>
+            <span className="text-gray-300 dark:text-gray-700">Â·</span>
             <Link href="/privacy" className="hover:text-[#5edc1f] transition-colors">
               Privacy
             </Link>
-            <span className="text-gray-300 dark:text-gray-700">·</span>
+            <span className="text-gray-300 dark:text-gray-700">Â·</span>
             <Link href="/cookies" className="hover:text-[#5edc1f] transition-colors">
               Cookies
             </Link>

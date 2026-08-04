@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Poppins, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -19,16 +19,16 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const BASE_URL = "https://covetrade.com";
+const BASE_URL = "https://covetrades.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    default: "CoveTrade â€” Copy Top Traders. Grow Your Portfolio.",
     template: "%s | CoveTrade",
   },
   description:
-    "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
+    "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes â€” no experience required. Trusted by 50M+ investors.",
   keywords: [
     "copy trading",
     "social investing",
@@ -65,15 +65,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: BASE_URL,
     siteName: "CoveTrade",
-    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    title: "CoveTrade â€” Copy Top Traders. Grow Your Portfolio.",
     description:
-      "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
+      "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes â€” no experience required. Trusted by 50M+ investors.",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+        alt: "CoveTrade â€” Copy Top Traders. Grow Your Portfolio.",
         type: "image/png",
       },
     ],
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@CoveTrade",
     creator: "@CoveTrade",
-    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    title: "CoveTrade â€” Copy Top Traders. Grow Your Portfolio.",
     description:
-      "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required.",
+      "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes â€” no experience required.",
     images: ["/images/og-image.png"],
   },
   icons: {

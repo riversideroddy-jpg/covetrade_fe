@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
@@ -41,7 +41,7 @@ function Reveal({
   );
 }
 
-// ─── Animated Signature / Pen SVG ────────────────────────────────
+// â”€â”€â”€ Animated Signature / Pen SVG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ConsentSeal() {
   return (
     <motion.div
@@ -135,7 +135,7 @@ function ConsentSeal() {
   );
 }
 
-// ─── Consent Check item ──────────────────────────────────────────
+// â”€â”€â”€ Consent Check item â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ConsentCheck({ label, delay = 0 }: { label: string; delay?: number }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-10% 0px" });
@@ -157,7 +157,7 @@ function ConsentCheck({ label, delay = 0 }: { label: string; delay?: number }) {
   );
 }
 
-// ─── Accordion section ───────────────────────────────────────────
+// â”€â”€â”€ Accordion section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function ConsentSection({
   num,
   title,
@@ -241,7 +241,7 @@ function ConsentSection({
       >
         <div className="flex items-center gap-3">
           <span className={`text-xs font-bold px-2.5 py-1 rounded-full font-mono ${a.badge}`}>
-            §{num}
+            Â§{num}
           </span>
           <span className="text-base font-semibold text-gray-900 dark:text-white">{title}</span>
         </div>
@@ -279,7 +279,7 @@ function Body({ children }: { children: React.ReactNode }) {
   );
 }
 
-// ─── Nav items ───────────────────────────────────────────────────
+// â”€â”€â”€ Nav items â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const NAV_ITEMS = [
   { id: 1, label: "Your Consent" },
   { id: 2, label: "Terms & Policies" },
@@ -299,7 +299,7 @@ const SECTION_ACCENTS = [
   "cyan", "indigo", "rose", "amber", "violet", "purple",
 ];
 
-// ─── Page ────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function ConsentPage() {
   return (
     <div
@@ -323,7 +323,7 @@ export default function ConsentPage() {
 
       <Navbar />
 
-      {/* ── Hero ─────────────────────────────────────────────────── */}
+      {/* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="relative pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -355,11 +355,11 @@ export default function ConsentPage() {
               <Reveal delay={0.25}>
                 <div className="flex flex-wrap gap-3">
                   <div className="flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5">
-                    <span className="text-lime-400">📅</span>
+                    <span className="text-lime-400">ðŸ“…</span>
                     <span className="text-sm text-gray-700 dark:text-gray-300">Last Updated: February 2026</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5">
-                    <span className="text-teal-400">📋</span>
+                    <span className="text-teal-400">ðŸ“‹</span>
                     <span className="text-sm text-gray-700 dark:text-gray-300">11 Consent Areas</span>
                   </div>
                 </div>
@@ -384,7 +384,7 @@ export default function ConsentPage() {
               </Reveal>
             </div>
 
-            {/* Right — seal */}
+            {/* Right â€” seal */}
             <div className="flex justify-center items-center">
               <div className="relative">
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#5edc1f]/15 to-green-900/10 blur-2xl scale-110" />
@@ -401,7 +401,7 @@ export default function ConsentPage() {
         </div>
       </section>
 
-      {/* ── Sticky quick-nav ─────────────────────────────────────── */}
+      {/* â”€â”€ Sticky quick-nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="sticky top-0 z-40 border-b border-gray-200 dark:border-gray-100 dark:border-white/5 bg-white/95 dark:bg-[#070f08]/80 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 py-3 overflow-x-auto">
           <div className="flex gap-2 min-w-max">
@@ -411,23 +411,23 @@ export default function ConsentPage() {
                 href={`#section-${n.id}`}
                 className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:text-lime-300 hover:border-[#5edc1f]/40 hover:bg-[#5edc1f]/10 transition-all whitespace-nowrap"
               >
-                §{n.id} {n.label}
+                Â§{n.id} {n.label}
               </a>
             ))}
           </div>
         </div>
       </div>
 
-      {/* ── Consent highlights strip ──────────────────────────────── */}
+      {/* â”€â”€ Consent highlights strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-10 px-4 border-b border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { icon: "🔐", label: "Data Protected", sub: "GDPR compliant processing" },
-                { icon: "✍️", label: "E-Signatures Valid", sub: "Legal equivalence assured" },
-                { icon: "🔞", label: "18+ Only", sub: "Age-verified access" },
-                { icon: "↩️", label: "Withdraw Anytime", sub: "Subject to legal limits" },
+                { icon: "ðŸ”", label: "Data Protected", sub: "GDPR compliant processing" },
+                { icon: "âœï¸", label: "E-Signatures Valid", sub: "Legal equivalence assured" },
+                { icon: "ðŸ”ž", label: "18+ Only", sub: "Age-verified access" },
+                { icon: "â†©ï¸", label: "Withdraw Anytime", sub: "Subject to legal limits" },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/3 hover:bg-[#5edc1f]/10 hover:border-[#5edc1f]/20 transition-all">
@@ -442,11 +442,11 @@ export default function ConsentPage() {
         </div>
       </section>
 
-      {/* ── Sections ─────────────────────────────────────────────── */}
+      {/* â”€â”€ Sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto space-y-5">
 
-          {/* §1 */}
+          {/* Â§1 */}
           <ConsentSection num={1} title="Your Consent Matters" accent={SECTION_ACCENTS[0]}>
             <Body>
               At CoveTrade, we believe in transparency and informed consent. This Declaration of
@@ -459,7 +459,7 @@ export default function ConsentPage() {
             </Body>
           </ConsentSection>
 
-          {/* §2 */}
+          {/* Â§2 */}
           <ConsentSection num={2} title="Consent to Terms and Policies" accent={SECTION_ACCENTS[1]}>
             <Body>
               By creating an account with CoveTrade, you confirm that you have read, understood, and
@@ -479,7 +479,7 @@ export default function ConsentPage() {
                   href={doc.href}
                   className="text-xs px-3 py-2 rounded-xl border border-teal-500/20 bg-teal-500/5 text-teal-300 hover:border-teal-500/40 hover:bg-teal-500/10 transition-all text-center"
                 >
-                  {doc.label} →
+                  {doc.label} â†’
                 </Link>
               ))}
             </div>
@@ -489,7 +489,7 @@ export default function ConsentPage() {
             </Body>
           </ConsentSection>
 
-          {/* §3 */}
+          {/* Â§3 */}
           <ConsentSection num={3} title="Consent to Data Processing" accent={SECTION_ACCENTS[2]}>
             <Body>
               You consent to the collection, processing, storage, and use of your personal data by
@@ -508,7 +508,7 @@ export default function ConsentPage() {
             </div>
           </ConsentSection>
 
-          {/* §4 */}
+          {/* Â§4 */}
           <ConsentSection num={4} title="Consent to Communications" accent={SECTION_ACCENTS[3]}>
             <Body>
               You consent to receiving communications from CoveTrade, including but not limited to:
@@ -517,17 +517,17 @@ export default function ConsentPage() {
             </Body>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
               <div className="p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5">
-                <p className="text-xs font-semibold text-emerald-300 mb-1.5">✅ Can Opt Out</p>
-                <p className="text-xs text-gray-600 dark:text-gray-400">Non-essential marketing communications — unsubscribe at any time via email link or support request.</p>
+                <p className="text-xs font-semibold text-emerald-300 mb-1.5">âœ… Can Opt Out</p>
+                <p className="text-xs text-gray-600 dark:text-gray-400">Non-essential marketing communications â€” unsubscribe at any time via email link or support request.</p>
               </div>
               <div className="p-4 rounded-xl border border-rose-500/20 bg-rose-500/5">
-                <p className="text-xs font-semibold text-lime-300 mb-1.5">⚠️ Cannot Opt Out</p>
+                <p className="text-xs font-semibold text-lime-300 mb-1.5">âš ï¸ Cannot Opt Out</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400">Transactional and regulatory communications required while your account remains active.</p>
               </div>
             </div>
           </ConsentSection>
 
-          {/* §5 */}
+          {/* Â§5 */}
           <ConsentSection num={5} title="Electronic Signatures and Records" accent={SECTION_ACCENTS[4]}>
             <Body>
               You consent to the use of electronic signatures, records, and communications in
@@ -544,7 +544,7 @@ export default function ConsentPage() {
             </div>
           </ConsentSection>
 
-          {/* §6 */}
+          {/* Â§6 */}
           <ConsentSection num={6} title="Consent to Cookies and Tracking" accent={SECTION_ACCENTS[5]}>
             <Body>
               You consent to the use of cookies and similar tracking technologies as described in
@@ -557,7 +557,7 @@ export default function ConsentPage() {
                 { label: "Marketing cookies", desc: "Enable relevant content delivery", color: "text-teal-400" },
               ].map((c, i) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/3">
-                  <span className={`text-xs font-bold mt-0.5 ${c.color}`}>🍪</span>
+                  <span className={`text-xs font-bold mt-0.5 ${c.color}`}>ðŸª</span>
                   <div>
                     <p className={`text-xs font-semibold ${c.color}`}>{c.label}</p>
                     <p className="text-xs text-gray-500">{c.desc}</p>
@@ -570,7 +570,7 @@ export default function ConsentPage() {
             </Body>
           </ConsentSection>
 
-          {/* §7 */}
+          {/* Â§7 */}
           <ConsentSection num={7} title="Consent to Identity Verification" accent={SECTION_ACCENTS[6]}>
             <Body>
               You consent to CoveTrade conducting identity verification checks as required by
@@ -594,7 +594,7 @@ export default function ConsentPage() {
             </div>
           </ConsentSection>
 
-          {/* §8 */}
+          {/* Â§8 */}
           <ConsentSection num={8} title="Consent to Recording" accent={SECTION_ACCENTS[7]}>
             <Body>
               You consent to CoveTrade recording and monitoring telephone conversations, electronic
@@ -603,10 +603,10 @@ export default function ConsentPage() {
             </Body>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3">
               {[
-                { icon: "📝", label: "Verify Instructions", desc: "Confirm legitimacy of orders and requests" },
-                { icon: "⚖️", label: "Resolve Disputes", desc: "Provide clear evidence in disagreements" },
-                { icon: "🏛️", label: "Regulatory Compliance", desc: "Meet our legal and supervisory obligations" },
-                { icon: "⭐", label: "Quality Improvement", desc: "Enhance the standard of our client services" },
+                { icon: "ðŸ“", label: "Verify Instructions", desc: "Confirm legitimacy of orders and requests" },
+                { icon: "âš–ï¸", label: "Resolve Disputes", desc: "Provide clear evidence in disagreements" },
+                { icon: "ðŸ›ï¸", label: "Regulatory Compliance", desc: "Meet our legal and supervisory obligations" },
+                { icon: "â­", label: "Quality Improvement", desc: "Enhance the standard of our client services" },
               ].map((r, i) => (
                 <div key={i} className="p-3 rounded-xl border border-rose-500/15 bg-rose-500/5">
                   <p className="text-base mb-1">{r.icon}</p>
@@ -621,11 +621,11 @@ export default function ConsentPage() {
             </Body>
           </ConsentSection>
 
-          {/* §9 */}
+          {/* Â§9 */}
           <ConsentSection num={9} title="Withdrawal of Consent" accent={SECTION_ACCENTS[8]}>
             <div className="p-4 rounded-xl border border-amber-500/25 bg-amber-500/8 mb-3">
               <div className="flex items-start gap-2">
-                <span className="text-amber-400 flex-shrink-0 text-lg">⚠️</span>
+                <span className="text-amber-400 flex-shrink-0 text-lg">âš ï¸</span>
                 <p className="text-xs text-amber-200 leading-relaxed">
                   Withdrawing certain consents may affect our ability to provide services to you and
                   may result in the closure of your account. Please review consequences carefully
@@ -640,17 +640,17 @@ export default function ConsentPage() {
               consequences of the withdrawal.
             </Body>
             <a
-              href="mailto:support@covetrade.com"
+              href="mailto:support@covetrades.com"
               className="inline-flex items-center gap-2 mt-3 px-4 py-2.5 rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-300 text-sm font-medium hover:bg-amber-500/20 transition-all"
             >
               <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">
                 <path d="M2 4h12v9a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm0 0l6 5 6-5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              support@covetrade.com
+              support@covetrades.com
             </a>
           </ConsentSection>
 
-          {/* §10 */}
+          {/* Â§10 */}
           <ConsentSection num={10} title="Consent for Minors" accent={SECTION_ACCENTS[9]}>
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#5edc1f]/15 border border-[#5edc1f]/30 flex items-center justify-center">
@@ -671,7 +671,7 @@ export default function ConsentPage() {
             </div>
           </ConsentSection>
 
-          {/* §11 */}
+          {/* Â§11 */}
           <ConsentSection num={11} title="Updates to This Declaration" accent={SECTION_ACCENTS[10]}>
             <Body>
               CoveTrade may update this Declaration of Consent from time to time to reflect changes
@@ -696,7 +696,7 @@ export default function ConsentPage() {
         </div>
       </section>
 
-      {/* ── Questions CTA ────────────────────────────────────────── */}
+      {/* â”€â”€ Questions CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal>
@@ -726,7 +726,7 @@ export default function ConsentPage() {
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <a
-                    href="mailto:support@covetrade.com"
+                    href="mailto:support@covetrades.com"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#4cc015] to-green-700 text-white font-semibold text-sm hover:from-[#5edc1f] hover:to-green-600 transition-all shadow-lg shadow-green-900/30"
                   >
                     <svg className="w-4 h-4" fill="none" viewBox="0 0 16 16">
@@ -738,7 +738,7 @@ export default function ConsentPage() {
                     href="/"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white font-semibold text-sm hover:bg-white/8 transition-all"
                   >
-                    ← Go Back Home
+                    â† Go Back Home
                   </Link>
                 </div>
               </div>

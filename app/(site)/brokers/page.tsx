@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState } from "react";
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from "framer-motion";
@@ -39,7 +39,7 @@ function Reveal({
   );
 }
 
-// ─── Network Growth SVG ───────────────────────────────────────────
+// â”€â”€â”€ Network Growth SVG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function BrokerNetwork() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -109,7 +109,7 @@ function BrokerNetwork() {
           </motion.g>
         ))}
 
-        {/* Hub — broker */}
+        {/* Hub â€” broker */}
         <circle cx="130" cy="130" r="38" fill="rgba(4,6,18,0.9)" stroke="rgba(94, 220, 31,0.5)" strokeWidth="2" />
         <motion.circle cx="130" cy="130" r="44"
           stroke="rgba(94, 220, 31,0.15)" strokeWidth="1.5"
@@ -117,8 +117,8 @@ function BrokerNetwork() {
           transition={{ repeat: Infinity, duration: 2.8, ease: "easeInOut" }}
         />
 
-        {/* Hub icon — building */}
-        <text x="130" y="126" fill="rgba(94, 220, 31,0.9)" fontSize="18" textAnchor="middle">🏦</text>
+        {/* Hub icon â€” building */}
+        <text x="130" y="126" fill="rgba(94, 220, 31,0.9)" fontSize="18" textAnchor="middle">ðŸ¦</text>
         <text x="130" y="143" fill="rgba(94, 220, 31,0.7)" fontSize="7.5" fontWeight="700" textAnchor="middle" fontFamily="monospace">BROKER</text>
 
         {/* CoveTrade badge top */}
@@ -156,7 +156,7 @@ function BrokerNetwork() {
   );
 }
 
-// ─── Animated stat counter ────────────────────────────────────────
+// â”€â”€â”€ Animated stat counter â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function StatBadge({ value, label, sub, delay = 0 }: {
   value: string; label: string; sub: string; delay?: number;
 }) {
@@ -171,7 +171,7 @@ function StatBadge({ value, label, sub, delay = 0 }: {
   );
 }
 
-// ─── Timeline step ────────────────────────────────────────────────
+// â”€â”€â”€ Timeline step â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function TimelineStep({ num, title, timing, body, icon, delay = 0, last = false }: {
   num: string; title: string; timing?: string; body: string; icon: string; delay?: number; last?: boolean;
 }) {
@@ -216,7 +216,7 @@ function TimelineStep({ num, title, timing, body, icon, delay = 0, last = false 
   );
 }
 
-// ─── Page ────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function BrokersPage() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -240,7 +240,7 @@ export default function BrokersPage() {
 
       <Navbar />
 
-      {/* ── Hero ─────────────────────────────────────────────────── */}
+      {/* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section ref={heroRef} className="relative pt-28 pb-24 px-4 overflow-hidden">
         {/* Circuit-board line texture */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.025] hidden dark:block"
@@ -292,8 +292,8 @@ export default function BrokersPage() {
                 <div className="grid grid-cols-3 gap-3 mb-8">
                   {[
                     { v: "+100%", l: "Volume Boost" },
-                    { v: "−60%",  l: "Client Churn" },
-                    { v: "−40%",  l: "Acq. Cost" },
+                    { v: "âˆ’60%",  l: "Client Churn" },
+                    { v: "âˆ’40%",  l: "Acq. Cost" },
                   ].map((s, i) => (
                     <div key={i} className="text-center p-3 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025]">
                       <p className="text-lg font-black bg-gradient-to-r from-lime-400 to-lime-300 bg-clip-text text-transparent">{s.v}</p>
@@ -318,7 +318,7 @@ export default function BrokersPage() {
                     href="#why"
                     className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-gray-200 dark:border-white/12 text-white/80 font-semibold text-sm hover:bg-gray-100 dark:bg-white/6 transition-all"
                   >
-                    See the benefits ↓
+                    See the benefits â†“
                   </a>
                 </div>
               </Reveal>
@@ -333,7 +333,7 @@ export default function BrokersPage() {
                     <BrokerNetwork />
                     <div className="mt-4 text-center">
                       <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">B2B Infrastructure</p>
-                      <p className="text-sm font-semibold text-green-300">Your Broker × CoveTrade Network</p>
+                      <p className="text-sm font-semibold text-green-300">Your Broker Ã— CoveTrade Network</p>
                     </div>
                   </div>
                 </div>
@@ -343,7 +343,7 @@ export default function BrokersPage() {
         </div>
       </section>
 
-      {/* ── Why Partner ──────────────────────────────────────────── */}
+      {/* â”€â”€ Why Partner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section id="why" className="py-20 px-4 border-t border-gray-100 dark:border-white/5 scroll-mt-20">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-14">
@@ -362,29 +362,29 @@ export default function BrokersPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
-                icon: "📊",
+                icon: "ðŸ“Š",
                 stat: "+100%",
                 title: "Boost Trading Volume",
                 body: "Increase trading volume by up to 100% and tap into entirely new revenue streams through social and copy trading.",
                 color: "blue",
               },
               {
-                icon: "🔗",
-                stat: "−60%",
+                icon: "ðŸ”—",
+                stat: "âˆ’60%",
                 title: "Enhance Client Retention",
                 body: "Reduce client churn by 60% with our platform. Social trading builds loyalty and long-term engagement.",
                 color: "cyan",
               },
               {
-                icon: "🚀",
+                icon: "ðŸš€",
                 stat: "New",
                 title: "Expand Your Offerings",
-                body: "Add social and signals trading alongside your existing capabilities — zero disruption to current infrastructure.",
+                body: "Add social and signals trading alongside your existing capabilities â€” zero disruption to current infrastructure.",
                 color: "blue",
               },
               {
-                icon: "💡",
-                stat: "−40%",
+                icon: "ðŸ’¡",
+                stat: "âˆ’40%",
                 title: "Lower Acquisition Cost",
                 body: "Cut down client acquisition expenses by up to 40% through organic growth driven by copy trading communities.",
                 color: "cyan",
@@ -411,7 +411,7 @@ export default function BrokersPage() {
         </div>
       </section>
 
-      {/* ── How It Works ─────────────────────────────────────────── */}
+      {/* â”€â”€ How It Works â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-20 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-14 items-start">
@@ -429,20 +429,20 @@ export default function BrokersPage() {
               </Reveal>
 
               <TimelineStep
-                num="1" icon="⚙️"
+                num="1" icon="âš™ï¸"
                 title="Technical Setup"
-                timing="7–9 days"
-                body="Our integration team handles the full technical setup — API connections, white-label configuration, and platform testing. You're live in under two weeks."
+                timing="7â€“9 days"
+                body="Our integration team handles the full technical setup â€” API connections, white-label configuration, and platform testing. You're live in under two weeks."
                 delay={0.05}
               />
               <TimelineStep
-                num="2" icon="🎯"
+                num="2" icon="ðŸŽ¯"
                 title="Launch Preparation"
                 body="We work alongside your team on onboarding flows, marketing assets, and go-to-market strategy to ensure a successful launch with strong day-one adoption."
                 delay={0.15}
               />
               <TimelineStep
-                num="3" icon="🟢"
+                num="3" icon="ðŸŸ¢"
                 title="Go Live"
                 body="Your platform launches with full copy trading capabilities active. Our team provides continuous support, monitoring, and optimisation from day one."
                 delay={0.25}
@@ -454,7 +454,7 @@ export default function BrokersPage() {
                   href="/affiliate"
                   className="inline-flex items-center gap-2 mt-2 text-sm font-semibold text-lime-400 hover:text-green-300 transition-colors"
                 >
-                  Become an affiliate →
+                  Become an affiliate â†’
                 </Link>
               </Reveal>
             </div>
@@ -469,10 +469,10 @@ export default function BrokersPage() {
                   <div className="space-y-4">
                     {[
                       { label: "Agreement & Kickoff",      days: "Day 1",    fill: 10 },
-                      { label: "API Integration",          days: "Day 2–5",  fill: 45 },
-                      { label: "QA & Testing",             days: "Day 6–9",  fill: 75 },
-                      { label: "Launch Preparation",       days: "Day 10–12",fill: 88 },
-                      { label: "Go Live 🟢",               days: "Day 14",   fill: 100 },
+                      { label: "API Integration",          days: "Day 2â€“5",  fill: 45 },
+                      { label: "QA & Testing",             days: "Day 6â€“9",  fill: 75 },
+                      { label: "Launch Preparation",       days: "Day 10â€“12",fill: 88 },
+                      { label: "Go Live ðŸŸ¢",               days: "Day 14",   fill: 100 },
                     ].map((row, i) => (
                       <div key={i}>
                         <div className="flex justify-between text-xs mb-1.5">
@@ -493,8 +493,8 @@ export default function BrokersPage() {
                   </div>
 
                   <div className="mt-6 p-4 rounded-2xl border border-[#5edc1f]/15 bg-[#5edc1f]/5">
-                    <p className="text-xs font-semibold text-green-300 mb-1">⚡ Fastest in the industry</p>
-                    <p className="text-xs text-gray-500">Full onboarding completed in as little as 14 days — from signed agreement to live platform.</p>
+                    <p className="text-xs font-semibold text-green-300 mb-1">âš¡ Fastest in the industry</p>
+                    <p className="text-xs text-gray-500">Full onboarding completed in as little as 14 days â€” from signed agreement to live platform.</p>
                   </div>
                 </div>
               </div>
@@ -503,7 +503,7 @@ export default function BrokersPage() {
         </div>
       </section>
 
-      {/* ── B2B Solutions ────────────────────────────────────────── */}
+      {/* â”€â”€ B2B Solutions â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-20 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-14">
@@ -519,14 +519,14 @@ export default function BrokersPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: "🔌",
+                icon: "ðŸ”Œ",
                 title: "API Integration",
                 body: "Seamlessly incorporate our copy trading technology into your existing trading infrastructure. Full REST and WebSocket API support with comprehensive documentation.",
                 features: ["REST & WebSocket APIs", "Sandbox environment", "Dedicated tech support", "99.9% uptime SLA"],
                 color: "blue",
               },
               {
-                icon: "🛠️",
+                icon: "ðŸ› ï¸",
                 title: "Custom Development",
                 body: "We tailor our solutions specifically to your business needs, providing you with the freedom and flexibility to achieve your unique goals.",
                 features: ["White-label branding", "Custom UI/UX design", "Feature customisation", "Regulatory compliance"],
@@ -534,7 +534,7 @@ export default function BrokersPage() {
                 highlight: true,
               },
               {
-                icon: "📣",
+                icon: "ðŸ“£",
                 title: "Marketing & Sales Support",
                 body: "Benefit from our expertise in social trader acquisition and retention to help you maximize your customer base and revenue effectively.",
                 features: ["Go-to-market strategy", "Creative assets library", "Co-branded campaigns", "Conversion optimisation"],
@@ -560,7 +560,7 @@ export default function BrokersPage() {
                       <div className="space-y-2">
                         {s.features.map((f, j) => (
                           <div key={j} className="flex items-center gap-2">
-                            <span className={`text-[10px] px-2 py-0.5 rounded-full border ${col.pill} font-medium`}>✓</span>
+                            <span className={`text-[10px] px-2 py-0.5 rounded-full border ${col.pill} font-medium`}>âœ“</span>
                             <p className="text-xs text-gray-600 dark:text-gray-400">{f}</p>
                           </div>
                         ))}
@@ -574,7 +574,7 @@ export default function BrokersPage() {
         </div>
       </section>
 
-      {/* ── Stats bar ────────────────────────────────────────────── */}
+      {/* â”€â”€ Stats bar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-16 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
@@ -586,7 +586,7 @@ export default function BrokersPage() {
         </div>
       </section>
 
-      {/* ── Transform CTA ────────────────────────────────────────── */}
+      {/* â”€â”€ Transform CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-16 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
@@ -613,7 +613,7 @@ export default function BrokersPage() {
 
                 <div className="relative p-10">
                   <div className="w-14 h-14 rounded-2xl bg-[#5edc1f]/15 border border-[#5edc1f]/30 flex items-center justify-center mx-auto mb-5 text-2xl">
-                    🏦
+                    ðŸ¦
                   </div>
                   <h2 className="text-2xl md:text-3xl font-bold mb-3 text-center">
                     Ready to transform your{" "}
@@ -630,7 +630,7 @@ export default function BrokersPage() {
                       href="/contact"
                       className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#5edc1f] to-lime-400 text-gray-900 dark:text-white font-bold text-sm hover:from-lime-400 hover:to-lime-400 transition-all shadow-lg shadow-green-900/30"
                     >
-                      Get started now →
+                      Get started now â†’
                     </Link>
                   </div>
                 </div>
@@ -642,7 +642,7 @@ export default function BrokersPage() {
               <div className="rounded-3xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025] p-10 h-full flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-2xl bg-gray-100 dark:bg-white/6 border border-gray-200 dark:border-white/10 flex items-center justify-center text-xl mb-6">
-                    📬
+                    ðŸ“¬
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Contact Us</h3>
                   <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
@@ -653,7 +653,7 @@ export default function BrokersPage() {
 
                 <div className="space-y-3">
                   <a
-                    href="mailto:support@covetrade.com"
+                    href="mailto:support@covetrades.com"
                     className="flex items-center gap-3 px-5 py-4 rounded-2xl border border-[#5edc1f]/20 bg-[#5edc1f]/6 hover:bg-[#5edc1f]/12 hover:border-[#5edc1f]/35 transition-all group"
                   >
                     <div className="w-10 h-10 rounded-xl bg-[#5edc1f]/15 flex items-center justify-center flex-shrink-0">
@@ -663,7 +663,7 @@ export default function BrokersPage() {
                     </div>
                     <div>
                       <p className="text-xs text-gray-500">Email our team</p>
-                      <p className="text-sm font-semibold text-green-300 group-hover:text-green-200 transition-colors">support@covetrade.com</p>
+                      <p className="text-sm font-semibold text-green-300 group-hover:text-green-200 transition-colors">support@covetrades.com</p>
                     </div>
                     <svg className="w-4 h-4 text-gray-600 group-hover:text-lime-400 transition-colors ml-auto" fill="none" viewBox="0 0 16 16">
                       <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

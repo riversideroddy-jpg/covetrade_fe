@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView, useScroll, useTransform, AnimatePresence } from "framer-motion";
@@ -40,7 +40,7 @@ function Reveal({
   );
 }
 
-// ─── Animated Copy-Trade Flow SVG ────────────────────────────────
+// â”€â”€â”€ Animated Copy-Trade Flow SVG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function CopyFlowHero() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -67,7 +67,7 @@ function CopyFlowHero() {
         />
         <text x="65" y="40" fill="rgba(56,189,248,0.8)" fontSize="7" fontWeight="700" textAnchor="middle" fontFamily="sans-serif">LEADER</text>
         <circle cx="65" cy="52" r="10" fill="rgba(56,189,248,0.15)" stroke="rgba(56,189,248,0.5)" strokeWidth="1.5" />
-        <text x="65" y="56" fill="rgba(56,189,248,0.9)" fontSize="8" textAnchor="middle">👤</text>
+        <text x="65" y="56" fill="rgba(56,189,248,0.9)" fontSize="8" textAnchor="middle">ðŸ‘¤</text>
         {/* Leader mini chart */}
         {traderBars.map((h, i) => (
           <motion.rect
@@ -107,8 +107,8 @@ function CopyFlowHero() {
         />
         <text x="217" y="40" fill="rgba(129,140,248,0.8)" fontSize="7" fontWeight="700" textAnchor="middle" fontFamily="sans-serif">YOU</text>
         <circle cx="217" cy="52" r="10" fill="rgba(129,140,248,0.15)" stroke="rgba(129,140,248,0.5)" strokeWidth="1.5" />
-        <text x="217" y="56" fill="rgba(129,140,248,0.9)" fontSize="8" textAnchor="middle">🧑</text>
-        {/* Follower chart — reveals with delay */}
+        <text x="217" y="56" fill="rgba(129,140,248,0.9)" fontSize="8" textAnchor="middle">ðŸ§‘</text>
+        {/* Follower chart â€” reveals with delay */}
         {traderBars.map((h, i) => (
           <motion.rect
             key={i}
@@ -179,7 +179,7 @@ function CopyFlowHero() {
   );
 }
 
-// ─── Step card ───────────────────────────────────────────────────
+// â”€â”€â”€ Step card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function StepCard({ num, title, body, delay = 0 }: { num: number; title: string; body: string; delay?: number }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-8% 0px" });
@@ -205,7 +205,7 @@ function StepCard({ num, title, body, delay = 0 }: { num: number; title: string;
   );
 }
 
-// ─── Check item ──────────────────────────────────────────────────
+// â”€â”€â”€ Check item â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function CheckItem({ text, delay = 0, color = "sky" }: { text: string; delay?: number; color?: string }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-10% 0px" });
@@ -233,7 +233,7 @@ function CheckItem({ text, delay = 0, color = "sky" }: { text: string; delay?: n
   );
 }
 
-// ─── Section wrapper ─────────────────────────────────────────────
+// â”€â”€â”€ Section wrapper â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function GuideSection({ id, icon, title, accent = "sky", children }: {
   id: string; icon: string; title: string; accent?: string; children: React.ReactNode;
 }) {
@@ -265,7 +265,7 @@ function GuideSection({ id, icon, title, accent = "sky", children }: {
   );
 }
 
-// ─── Nav items ───────────────────────────────────────────────────
+// â”€â”€â”€ Nav items â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const NAV = [
   { id: "start",    label: "Getting Started"   },
   { id: "account",  label: "Create Account"    },
@@ -278,7 +278,7 @@ const NAV = [
   { id: "help",     label: "Get Help"          },
 ];
 
-// ─── Page ────────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function UserGuidePage() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -302,7 +302,7 @@ export default function UserGuidePage() {
 
       <Navbar />
 
-      {/* ── Hero ─────────────────────────────────────────────────── */}
+      {/* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section ref={heroRef} className="relative pt-28 pb-24 px-4 overflow-hidden">
         {/* Blueprint grid */}
         <div
@@ -377,7 +377,7 @@ export default function UserGuidePage() {
                     href="#start"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-gray-200 dark:border-white/12 text-white/80 font-semibold text-sm hover:bg-gray-100 dark:bg-white/6 transition-all"
                   >
-                    Read the guide ↓
+                    Read the guide â†“
                   </a>
                 </div>
               </Reveal>
@@ -392,7 +392,7 @@ export default function UserGuidePage() {
                     <CopyFlowHero />
                     <div className="mt-4 text-center">
                       <p className="text-xs text-gray-500 uppercase tracking-widest font-mono">Live replication</p>
-                      <p className="text-sm font-semibold text-lime-300">Leader trades → Your account</p>
+                      <p className="text-sm font-semibold text-lime-300">Leader trades â†’ Your account</p>
                     </div>
                   </div>
                 </div>
@@ -402,7 +402,7 @@ export default function UserGuidePage() {
         </div>
       </section>
 
-      {/* ── Quick-nav ────────────────────────────────────────────── */}
+      {/* â”€â”€ Quick-nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <div className="sticky top-0 z-40 border-b border-gray-200 dark:border-white/5 bg-white/95 dark:bg-[#060b14]/85 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 py-3 overflow-x-auto">
           <div className="flex gap-2 min-w-max">
@@ -417,7 +417,7 @@ export default function UserGuidePage() {
         </div>
       </div>
 
-      {/* ── Welcome ──────────────────────────────────────────────── */}
+      {/* â”€â”€ Welcome â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section id="start" className="py-14 px-4 border-t border-gray-100 dark:border-white/5 scroll-mt-20">
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
@@ -429,10 +429,10 @@ export default function UserGuidePage() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {[
-                { icon: "🧑‍💻", label: "Create Account" },
-                { icon: "🔍", label: "Find Leaders" },
-                { icon: "📋", label: "Copy Trades" },
-                { icon: "📈", label: "Grow Portfolio" },
+                { icon: "ðŸ§‘â€ðŸ’»", label: "Create Account" },
+                { icon: "ðŸ”", label: "Find Leaders" },
+                { icon: "ðŸ“‹", label: "Copy Trades" },
+                { icon: "ðŸ“ˆ", label: "Grow Portfolio" },
               ].map((s, i) => (
                 <div key={i} className="flex flex-col items-center p-4 rounded-2xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025]">
                   <span className="text-2xl mb-2">{s.icon}</span>
@@ -444,14 +444,14 @@ export default function UserGuidePage() {
         </div>
       </section>
 
-      {/* ── Create Account ───────────────────────────────────────── */}
-      <GuideSection id="account" icon="🧑‍💻" title="Creating Your Account" accent="sky">
+      {/* â”€â”€ Create Account â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="account" icon="ðŸ§‘â€ðŸ’»" title="Creating Your Account" accent="sky">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-0">
             <StepCard num={1} title="Register" body="Visit the CoveTrade registration page and enter your email address and a strong password." delay={0.05} />
             <StepCard num={2} title="Verify Email" body="Check your inbox and click the verification link we send you to activate your account." delay={0.12} />
             <StepCard num={3} title="Complete KYC" body="Upload your government-issued identification documents to complete identity verification." delay={0.19} />
-            <StepCard num={4} title="Fund Account" body="Deposit funds using your preferred method — bank transfer, card, crypto, or e-wallet." delay={0.26} />
+            <StepCard num={4} title="Fund Account" body="Deposit funds using your preferred method â€” bank transfer, card, crypto, or e-wallet." delay={0.26} />
             <StepCard num={5} title="Start Copy Trading!" body="You are fully set up. Browse leaders and start replicating trades in seconds." delay={0.33} />
           </div>
           <Reveal delay={0.1} dir="right">
@@ -459,10 +459,10 @@ export default function UserGuidePage() {
               <p className="text-xs text-lime-400 font-mono uppercase tracking-widest mb-4">Quick Tips</p>
               <div className="space-y-3">
                 {[
-                  { icon: "🔐", tip: "Use a strong unique password — at least 12 characters with symbols" },
-                  { icon: "📄", tip: "Have your ID document ready before starting KYC — it takes under 5 minutes" },
-                  { icon: "⚡", tip: "Card and crypto deposits are instant; bank transfers may take 1–2 days" },
-                  { icon: "🛡️", tip: "Enable 2FA immediately after account creation for maximum security" },
+                  { icon: "ðŸ”", tip: "Use a strong unique password â€” at least 12 characters with symbols" },
+                  { icon: "ðŸ“„", tip: "Have your ID document ready before starting KYC â€” it takes under 5 minutes" },
+                  { icon: "âš¡", tip: "Card and crypto deposits are instant; bank transfers may take 1â€“2 days" },
+                  { icon: "ðŸ›¡ï¸", tip: "Enable 2FA immediately after account creation for maximum security" },
                 ].map((t, i) => (
                   <div key={i} className="flex items-start gap-2.5">
                     <span className="text-base flex-shrink-0">{t.icon}</span>
@@ -475,8 +475,8 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── Dashboard ────────────────────────────────────────────── */}
-      <GuideSection id="dash" icon="📊" title="Navigating the Dashboard" accent="indigo">
+      {/* â”€â”€ Dashboard â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="dash" icon="ðŸ“Š" title="Navigating the Dashboard" accent="indigo">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
             Your dashboard is the central hub for all your trading activity.
@@ -484,11 +484,11 @@ export default function UserGuidePage() {
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {[
-            { icon: "💼", label: "Portfolio Overview", desc: "See your total balance, profit/loss, and active copy trades at a glance", color: "sky" },
-            { icon: "🏆", label: "Leader Board", desc: "Browse and discover top-performing traders to copy, filtered by performance metrics", color: "yellow" },
-            { icon: "⚡", label: "Active Trades", desc: "Monitor all currently open positions across all your copied leaders in real time", color: "emerald" },
-            { icon: "📋", label: "Trade History", desc: "Review past trades including closed positions and their final outcomes", color: "violet" },
-            { icon: "⚙️", label: "Settings", desc: "Manage your account, security preferences, notification settings, and AutoGuard™ config", color: "indigo" },
+            { icon: "ðŸ’¼", label: "Portfolio Overview", desc: "See your total balance, profit/loss, and active copy trades at a glance", color: "sky" },
+            { icon: "ðŸ†", label: "Leader Board", desc: "Browse and discover top-performing traders to copy, filtered by performance metrics", color: "yellow" },
+            { icon: "âš¡", label: "Active Trades", desc: "Monitor all currently open positions across all your copied leaders in real time", color: "emerald" },
+            { icon: "ðŸ“‹", label: "Trade History", desc: "Review past trades including closed positions and their final outcomes", color: "violet" },
+            { icon: "âš™ï¸", label: "Settings", desc: "Manage your account, security preferences, notification settings, and AutoGuardâ„¢ config", color: "indigo" },
           ].map((item, i) => {
             const clrs: Record<string, string> = {
               sky:    "border-[#5edc1f]/20 bg-[#5edc1f]/5 text-lime-400",
@@ -510,8 +510,8 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── Finding Traders ──────────────────────────────────────── */}
-      <GuideSection id="find" icon="🔍" title="Finding Traders to Copy" accent="violet">
+      {/* â”€â”€ Finding Traders â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="find" icon="ðŸ”" title="Finding Traders to Copy" accent="violet">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
             CoveTrade provides powerful tools to help you find the right traders to copy.
@@ -519,10 +519,10 @@ export default function UserGuidePage() {
         </Reveal>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="space-y-3">
-            <CheckItem text="Filter by performance — sort leaders by return, win rate, drawdown, and risk score" delay={0.05} color="indigo" />
-            <CheckItem text="Review trading history — examine a leader's past trades and performance charts in detail" delay={0.1} color="indigo" />
-            <CheckItem text="Check the risk score — AutoGuard™ assigns ratings to help you choose appropriate leaders" delay={0.15} color="indigo" />
-            <CheckItem text="Read profiles — understand each leader's strategy, preferred instruments, and trading style" delay={0.2} color="indigo" />
+            <CheckItem text="Filter by performance â€” sort leaders by return, win rate, drawdown, and risk score" delay={0.05} color="indigo" />
+            <CheckItem text="Review trading history â€” examine a leader's past trades and performance charts in detail" delay={0.1} color="indigo" />
+            <CheckItem text="Check the risk score â€” AutoGuardâ„¢ assigns ratings to help you choose appropriate leaders" delay={0.15} color="indigo" />
+            <CheckItem text="Read profiles â€” understand each leader's strategy, preferred instruments, and trading style" delay={0.2} color="indigo" />
           </div>
           <Reveal delay={0.15} dir="right">
             <div className="rounded-2xl border border-[#5edc1f]/20 bg-[#5edc1f]/5 p-6">
@@ -556,8 +556,8 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── Copy Trading Setup ───────────────────────────────────── */}
-      <GuideSection id="copy" icon="📋" title="Setting Up Copy Trading" accent="cyan">
+      {/* â”€â”€ Copy Trading Setup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="copy" icon="ðŸ“‹" title="Setting Up Copy Trading" accent="cyan">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
             Once you have found a leader you want to copy, here is how to set it up in four simple steps.
@@ -565,10 +565,10 @@ export default function UserGuidePage() {
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { num: "1", icon: "👆", label: 'Click "Copy"', desc: "Hit the Copy button on the leader's profile page to begin the setup flow" },
-            { num: "2", icon: "💵", label: "Set Allocation", desc: "Choose the amount of capital you want to allocate to copying this leader" },
-            { num: "3", icon: "🛡️", label: "Configure AutoGuard™", desc: "Set your stop-loss, max drawdown threshold, and position sizing preferences" },
-            { num: "4", icon: "✅", label: "Confirm & Go", desc: "Confirm your settings — all future trades by this leader will replicate in your account" },
+            { num: "1", icon: "ðŸ‘†", label: 'Click "Copy"', desc: "Hit the Copy button on the leader's profile page to begin the setup flow" },
+            { num: "2", icon: "ðŸ’µ", label: "Set Allocation", desc: "Choose the amount of capital you want to allocate to copying this leader" },
+            { num: "3", icon: "ðŸ›¡ï¸", label: "Configure AutoGuardâ„¢", desc: "Set your stop-loss, max drawdown threshold, and position sizing preferences" },
+            { num: "4", icon: "âœ…", label: "Confirm & Go", desc: "Confirm your settings â€” all future trades by this leader will replicate in your account" },
           ].map((s, i) => (
             <Reveal key={i} delay={i * 0.1}>
               <div className="relative rounded-2xl border border-[#5edc1f]/15 bg-[#5edc1f]/5 p-5 hover:border-[#5edc1f]/30 hover:bg-[#5edc1f]/10 transition-all">
@@ -591,16 +591,16 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── Manage Portfolio ─────────────────────────────────────── */}
-      <GuideSection id="manage" icon="💼" title="Managing Your Portfolio" accent="emerald">
+      {/* â”€â”€ Manage Portfolio â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="manage" icon="ðŸ’¼" title="Managing Your Portfolio" accent="emerald">
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-3">
             {[
-              { icon: "📊", text: "Monitor overall performance from your dashboard in real time" },
-              { icon: "⚖️", text: "Adjust allocation amounts for individual leaders at any time" },
-              { icon: "⏸️", text: "Pause or stop copying a leader without affecting open positions" },
-              { icon: "🌐", text: "Diversify by copying multiple leaders with different strategies" },
-              { icon: "✋", text: "Close individual copied trades manually if needed at any time" },
+              { icon: "ðŸ“Š", text: "Monitor overall performance from your dashboard in real time" },
+              { icon: "âš–ï¸", text: "Adjust allocation amounts for individual leaders at any time" },
+              { icon: "â¸ï¸", text: "Pause or stop copying a leader without affecting open positions" },
+              { icon: "ðŸŒ", text: "Diversify by copying multiple leaders with different strategies" },
+              { icon: "âœ‹", text: "Close individual copied trades manually if needed at any time" },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="flex items-start gap-3 p-3.5 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.02] hover:border-emerald-500/20 hover:bg-emerald-500/5 transition-all">
@@ -646,8 +646,8 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── Deposits & Withdrawals ───────────────────────────────── */}
-      <GuideSection id="funds" icon="💳" title="Deposits and Withdrawals" accent="blue">
+      {/* â”€â”€ Deposits & Withdrawals â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="funds" icon="ðŸ’³" title="Deposits and Withdrawals" accent="blue">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
             CoveTrade supports multiple funding methods for your convenience.
@@ -655,10 +655,10 @@ export default function UserGuidePage() {
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {[
-            { icon: "🏦", label: "Bank Transfer",    desc: "Wire transfer — 1–2 business days", speed: "Standard" },
-            { icon: "💳", label: "Credit/Debit Card", desc: "Visa & Mastercard — instant", speed: "Instant" },
-            { icon: "₿",  label: "Cryptocurrency",   desc: "BTC, ETH, USDT & more", speed: "Fast" },
-            { icon: "📱", label: "E-Wallets",         desc: "Popular e-wallet services", speed: "Instant" },
+            { icon: "ðŸ¦", label: "Bank Transfer",    desc: "Wire transfer â€” 1â€“2 business days", speed: "Standard" },
+            { icon: "ðŸ’³", label: "Credit/Debit Card", desc: "Visa & Mastercard â€” instant", speed: "Instant" },
+            { icon: "â‚¿",  label: "Cryptocurrency",   desc: "BTC, ETH, USDT & more", speed: "Fast" },
+            { icon: "ðŸ“±", label: "E-Wallets",         desc: "Popular e-wallet services", speed: "Instant" },
           ].map((m, i) => (
             <Reveal key={i} delay={i * 0.08}>
               <div className="rounded-2xl border border-[#5edc1f]/15 bg-[#5edc1f]/5 p-5 hover:border-[#5edc1f]/30 transition-all">
@@ -678,7 +678,7 @@ export default function UserGuidePage() {
             </div>
             <div>
               <p className="text-xs text-gray-500 mb-0.5">Withdrawal Processing</p>
-              <p className="text-sm font-semibold text-gray-900 dark:text-white">1–5 business days (by method)</p>
+              <p className="text-sm font-semibold text-gray-900 dark:text-white">1â€“5 business days (by method)</p>
             </div>
             <div>
               <p className="text-xs text-gray-500 mb-0.5">Minimum Deposit</p>
@@ -688,8 +688,8 @@ export default function UserGuidePage() {
         </Reveal>
       </GuideSection>
 
-      {/* ── Security ─────────────────────────────────────────────── */}
-      <GuideSection id="security" icon="🔐" title="Account Security" accent="violet">
+      {/* â”€â”€ Security â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="security" icon="ðŸ”" title="Account Security" accent="violet">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
             Protecting your account is our top priority. Here are our security features and recommendations.
@@ -699,12 +699,12 @@ export default function UserGuidePage() {
           <CheckItem text="Enable two-factor authentication (2FA) for an extra layer of security" delay={0.05} color="violet" />
           <CheckItem text="Use a strong, unique password that you do not reuse on any other site" delay={0.1} color="violet" />
           <CheckItem text="Review your login history regularly for any unfamiliar or suspicious activity" delay={0.15} color="violet" />
-          <CheckItem text="Never share your login credentials or 2FA codes with anyone — CoveTrade staff will never ask" delay={0.2} color="violet" />
+          <CheckItem text="Never share your login credentials or 2FA codes with anyone â€” CoveTrade staff will never ask" delay={0.2} color="violet" />
         </div>
       </GuideSection>
 
-      {/* ── Help ─────────────────────────────────────────────────── */}
-      <GuideSection id="help" icon="🙋" title="Getting Help" accent="sky">
+      {/* â”€â”€ Help â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <GuideSection id="help" icon="ðŸ™‹" title="Getting Help" accent="sky">
         <Reveal>
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-6 max-w-2xl">
             If you need assistance at any point, CoveTrade offers multiple support channels.
@@ -712,10 +712,10 @@ export default function UserGuidePage() {
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { icon: "💬", label: "Live Chat",      desc: "Available 24/7 from your dashboard — fastest response", cta: "Open chat",    href: "#" },
-            { icon: "📧", label: "Email Support",  desc: "Reach us at support@covetrade.com for detailed queries", cta: "Send email",   href: "mailto:support@covetrade.com" },
-            { icon: "📚", label: "Help Center",    desc: "Browse our comprehensive FAQ and knowledge base articles", cta: "Browse FAQ",  href: "#" },
-            { icon: "🌐", label: "Community",      desc: "Join our trading community for peer support and strategy discussions", cta: "Join now", href: "#" },
+            { icon: "ðŸ’¬", label: "Live Chat",      desc: "Available 24/7 from your dashboard â€” fastest response", cta: "Open chat",    href: "#" },
+            { icon: "ðŸ“§", label: "Email Support",  desc: "Reach us at support@covetrades.com for detailed queries", cta: "Send email",   href: "mailto:support@covetrades.com" },
+            { icon: "ðŸ“š", label: "Help Center",    desc: "Browse our comprehensive FAQ and knowledge base articles", cta: "Browse FAQ",  href: "#" },
+            { icon: "ðŸŒ", label: "Community",      desc: "Join our trading community for peer support and strategy discussions", cta: "Join now", href: "#" },
           ].map((ch, i) => (
             <Reveal key={i} delay={i * 0.08}>
               <div className="rounded-2xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025] p-5 hover:border-[#5edc1f]/20 hover:bg-[#5edc1f]/5 transition-all flex flex-col">
@@ -723,7 +723,7 @@ export default function UserGuidePage() {
                 <p className="text-sm font-bold text-gray-900 dark:text-white mb-1.5">{ch.label}</p>
                 <p className="text-xs text-gray-500 leading-relaxed flex-1 mb-4">{ch.desc}</p>
                 <a href={ch.href} className="text-xs text-lime-400 font-semibold hover:text-lime-300 transition-colors">
-                  {ch.cta} →
+                  {ch.cta} â†’
                 </a>
               </div>
             </Reveal>
@@ -731,7 +731,7 @@ export default function UserGuidePage() {
         </div>
       </GuideSection>
 
-      {/* ── FAQ ──────────────────────────────────────────────────── */}
+      {/* â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto px-4">
           <Reveal>
@@ -755,7 +755,7 @@ export default function UserGuidePage() {
         <FAQMajor showHeader={false} />
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────────── */}
+      {/* â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
       <section className="py-16 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-3xl mx-auto">
           <Reveal>
@@ -779,7 +779,7 @@ export default function UserGuidePage() {
 
               <div className="relative p-10 text-center">
                 <div className="w-14 h-14 rounded-2xl bg-[#5edc1f]/15 border border-[#5edc1f]/30 flex items-center justify-center mx-auto mb-5 text-2xl">
-                  🚀
+                  ðŸš€
                 </div>
 
                 <h2 className="text-2xl md:text-4xl font-bold mb-3">
@@ -798,13 +798,13 @@ export default function UserGuidePage() {
                     href="/register"
                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#5edc1f] to-green-700 text-white font-bold text-sm hover:from-lime-400 hover:to-green-600 transition-all shadow-lg shadow-green-900/30"
                   >
-                    Get Started →
+                    Get Started â†’
                   </Link>
                   <Link
                     href="/"
                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white font-semibold text-sm hover:bg-gray-100 dark:bg-white/8 transition-all"
                   >
-                    ← Go Back Home
+                    â† Go Back Home
                   </Link>
                 </div>
               </div>

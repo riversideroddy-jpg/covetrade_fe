@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program — Refer & Earn",
+  title: "Affiliate Program â€” Refer & Earn",
   description:
     "Join the CoveTrade affiliate program. Refer traders, earn commissions, and grow your passive income by promoting the world's leading copy trading platform.",
-  alternates: { canonical: "https://covetrade.com/affiliate" },
+  alternates: { canonical: "https://covetrades.com/affiliate" },
   openGraph: {
-    title: "CoveTrade Affiliate Program — Refer & Earn",
+    title: "CoveTrade Affiliate Program â€” Refer & Earn",
     description:
       "Refer traders, earn commissions, and grow your passive income with the CoveTrade affiliate program.",
-    url: "https://covetrade.com/affiliate",
+    url: "https://covetrades.com/affiliate",
   },
 };
 

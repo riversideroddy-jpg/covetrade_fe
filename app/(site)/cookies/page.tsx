@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useRef, useState } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
@@ -25,7 +25,7 @@ function Reveal({
   );
 }
 
-// ─── Cookie browser mockup ──────────────────────────────────────
+// â”€â”€â”€ Cookie browser mockup â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function BrowserMockup() {
   const [accepted, setAccepted] = useState(false);
   return (
@@ -46,7 +46,7 @@ function BrowserMockup() {
             <svg className="w-3 h-3 text-gray-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
-            <span className="text-[10px] text-gray-500 font-mono">covetrade.com</span>
+            <span className="text-[10px] text-gray-500 font-mono">covetrades.com</span>
           </div>
         </div>
 
@@ -70,7 +70,7 @@ function BrowserMockup() {
               className="mx-3 mb-3 rounded-xl bg-[#0f1117] border border-teal-500/25 p-4"
             >
               <div className="flex items-start gap-2.5 mb-3">
-                <span className="text-lg shrink-0">🍪</span>
+                <span className="text-lg shrink-0">ðŸª</span>
                 <div>
                   <p className="text-[12px] font-bold text-white mb-1">We use cookies</p>
                   <p className="text-[10px] text-gray-500 leading-snug">
@@ -100,7 +100,7 @@ function BrowserMockup() {
               <svg className="w-4 h-4 text-emerald-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
-              <p className="text-[11px] text-emerald-400 font-semibold">Preferences saved — thank you!</p>
+              <p className="text-[11px] text-emerald-400 font-semibold">Preferences saved â€” thank you!</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -113,14 +113,14 @@ function BrowserMockup() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.2, duration: 0.5, ease: E }}
       >
-        <span className="text-sm">🍪</span>
+        <span className="text-sm">ðŸª</span>
         <p className="text-white text-[11px] font-bold">6 cookies active</p>
       </motion.div>
     </motion.div>
   );
 }
 
-// ─── Cookie type comparison ─────────────────────────────────────
+// â”€â”€â”€ Cookie type comparison â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const SESSION_USES = [
   "Maintain your login state during the session",
   "Remember preferences within a single visit",
@@ -135,7 +135,7 @@ const PERSISTENT_USES = [
   "Deliver relevant content based on your interests",
 ];
 
-// ─── Third-party providers ─────────────────────────────────────
+// â”€â”€â”€ Third-party providers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const THIRD_PARTIES = [
   { name: "Google Analytics",  purpose: "Traffic & user behaviour analysis",       icon: "GA",  color: "from-orange-500 to-amber-500"   },
   { name: "Google Ads",        purpose: "Targeted advertising & remarketing",      icon: "Ads", color: "from-[#5edc1f] to-lime-400"      },
@@ -145,14 +145,14 @@ const THIRD_PARTIES = [
   { name: "Meta Pixel",        purpose: "Social advertising & conversion tracking", icon: "FB", color: "from-[#4cc015] to-green-700"    },
 ];
 
-// ─── Web beacon steps ──────────────────────────────────────────
+// â”€â”€â”€ Web beacon steps â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BEACON_USES = [
-  { icon: "📊", t: "Campaign measurement",     b: "Track effectiveness of our marketing campaigns across channels" },
-  { icon: "📧", t: "Email engagement",          b: "See which emails are opened and which links are clicked"        },
-  { icon: "🔍", t: "Traffic analysis",          b: "Understand user navigation and behaviour on our platform"       },
+  { icon: "ðŸ“Š", t: "Campaign measurement",     b: "Track effectiveness of our marketing campaigns across channels" },
+  { icon: "ðŸ“§", t: "Email engagement",          b: "See which emails are opened and which links are clicked"        },
+  { icon: "ðŸ”", t: "Traffic analysis",          b: "Understand user navigation and behaviour on our platform"       },
 ];
 
-// ─── Accordion section ─────────────────────────────────────────
+// â”€â”€â”€ Accordion section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function AccordionSection({
   n, label, title, accentClass, borderClass, bgClass, iconBg, icon, children, delay = 0,
 }: {
@@ -202,13 +202,13 @@ function AccordionSection({
   );
 }
 
-// ─── Page ──────────────────────────────────────────────────────
+// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 export default function CookiesPolicy() {
   return (
     <div className="overflow-x-hidden bg-white dark:bg-[#070809] text-gray-900 dark:text-white">
       <Navbar />
 
-      {/* ── Hero — dark, technical feel ── */}
+      {/* â”€â”€ Hero â€” dark, technical feel â”€â”€ */}
       <section className="relative overflow-hidden bg-gray-100 dark:bg-[#0d0f16] pt-28 pb-24 sm:pt-36 sm:pb-32">
         {/* Grid overlay */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.04]"
@@ -228,8 +228,8 @@ export default function CookiesPolicy() {
                 className="inline-flex items-center gap-2 rounded-full border border-teal-500/25 bg-teal-500/[0.08] px-4 py-2 mb-7"
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, ease: E }}
               >
-                <span className="text-base">🍪</span>
-                <span className="text-[11px] font-semibold text-teal-700 dark:text-teal-300 tracking-wide">Cookie Management · CoveTrade</span>
+                <span className="text-base">ðŸª</span>
+                <span className="text-[11px] font-semibold text-teal-700 dark:text-teal-300 tracking-wide">Cookie Management Â· CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -269,7 +269,7 @@ export default function CookiesPolicy() {
               </motion.div>
             </div>
 
-            {/* Right — interactive browser mockup */}
+            {/* Right â€” interactive browser mockup */}
             <div className="relative flex justify-center lg:justify-end">
               <BrowserMockup />
             </div>
@@ -277,7 +277,7 @@ export default function CookiesPolicy() {
         </div>
       </section>
 
-      {/* ── Sticky nav ── */}
+      {/* â”€â”€ Sticky nav â”€â”€ */}
       <div className="sticky top-0 z-30 bg-white/80 dark:bg-[#070809]/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/[0.06]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -303,11 +303,11 @@ export default function CookiesPolicy() {
         </div>
       </div>
 
-      {/* ── Body ── */}
+      {/* â”€â”€ Body â”€â”€ */}
       <main className="py-16 sm:py-24 bg-gray-50 dark:bg-[#080909]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-4">
 
-          {/* §1 Introduction */}
+          {/* Â§1 Introduction */}
           <AccordionSection n={1} label="Overview" title="Introduction" delay={0}
             accentClass="text-teal-600 dark:text-teal-400"
             borderClass="border-teal-100 dark:border-teal-500/[0.15]"
@@ -323,7 +323,7 @@ export default function CookiesPolicy() {
             </p>
           </AccordionSection>
 
-          {/* §2 What is a Cookie */}
+          {/* Â§2 What is a Cookie */}
           <AccordionSection n={2} label="Definition" title="What is a Cookie?" delay={0.04}
             accentClass="text-[#4cc015] dark:text-lime-400"
             borderClass="border-green-100 dark:border-[#5edc1f]/[0.15]"
@@ -339,14 +339,14 @@ export default function CookiesPolicy() {
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 {
-                  label: "By duration", icon: "⏱️",
+                  label: "By duration", icon: "â±ï¸",
                   items: [
                     { name: "Session cookies",    desc: "Deleted when you close your browser" },
                     { name: "Persistent cookies", desc: "Remain until expiry or manual deletion" },
                   ],
                 },
                 {
-                  label: "By origin", icon: "🌐",
+                  label: "By origin", icon: "ðŸŒ",
                   items: [
                     { name: "First-party",  desc: "Set by the website you are visiting (us)" },
                     { name: "Third-party",  desc: "Set by external services on our pages" },
@@ -361,7 +361,7 @@ export default function CookiesPolicy() {
                     <div key={name} className="flex items-start gap-2.5 mb-2.5 last:mb-0">
                       <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-lime-400 dark:bg-[#5edc1f] shrink-0" />
                       <div>
-                        <span className="text-[13px] font-bold text-gray-800 dark:text-gray-200">{name} — </span>
+                        <span className="text-[13px] font-bold text-gray-800 dark:text-gray-200">{name} â€” </span>
                         <span className="text-[13px] text-gray-500 dark:text-gray-500">{desc}</span>
                       </div>
                     </div>
@@ -371,7 +371,7 @@ export default function CookiesPolicy() {
             </div>
           </AccordionSection>
 
-          {/* §3 How to Delete / Block */}
+          {/* Â§3 How to Delete / Block */}
           <AccordionSection n={3} label="Browser Controls" title="How to Delete and Block Cookies" delay={0.06}
             accentClass="text-[#4cc015] dark:text-lime-400"
             borderClass="border-green-100 dark:border-[#5edc1f]/[0.15]"
@@ -386,10 +386,10 @@ export default function CookiesPolicy() {
             {/* Browser quick-links */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
               {[
-                { name: "Chrome",  path: "Settings → Privacy → Cookies", color: "from-[#5edc1f] to-[#5edc1f]" },
-                { name: "Firefox", path: "Settings → Privacy & Security", color: "from-orange-500 to-amber-500" },
-                { name: "Safari",  path: "Preferences → Privacy",         color: "from-lime-400 to-lime-400" },
-                { name: "Edge",    path: "Settings → Cookies & data",     color: "from-teal-500 to-lime-400" },
+                { name: "Chrome",  path: "Settings â†’ Privacy â†’ Cookies", color: "from-[#5edc1f] to-[#5edc1f]" },
+                { name: "Firefox", path: "Settings â†’ Privacy & Security", color: "from-orange-500 to-amber-500" },
+                { name: "Safari",  path: "Preferences â†’ Privacy",         color: "from-lime-400 to-lime-400" },
+                { name: "Edge",    path: "Settings â†’ Cookies & data",     color: "from-teal-500 to-lime-400" },
               ].map(({ name, path, color }) => (
                 <div key={name} className="rounded-2xl border border-gray-100 dark:border-white/[0.07] bg-white dark:bg-white/[0.03] p-4 text-center">
                   <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-white text-[11px] font-black mx-auto mb-2`}>
@@ -409,7 +409,7 @@ export default function CookiesPolicy() {
             </p>
           </AccordionSection>
 
-          {/* §4 Consent */}
+          {/* Â§4 Consent */}
           <AccordionSection n={4} label="Your Agreement" title="Your Consent" delay={0.08}
             accentClass="text-emerald-600 dark:text-emerald-400"
             borderClass="border-emerald-100 dark:border-emerald-500/[0.15]"
@@ -424,9 +424,9 @@ export default function CookiesPolicy() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               {[
-                { icon: "🎛️", t: "Customise on arrival", b: "On your first visit, choose exactly which categories of cookies to allow" },
-                { icon: "🔄", t: "Withdraw anytime",     b: "Adjust your preferences through browser settings or by contacting us" },
-                { icon: "🛡️", t: "Essential only mode",  b: "Decline all non-essential cookies without losing core platform access" },
+                { icon: "ðŸŽ›ï¸", t: "Customise on arrival", b: "On your first visit, choose exactly which categories of cookies to allow" },
+                { icon: "ðŸ”„", t: "Withdraw anytime",     b: "Adjust your preferences through browser settings or by contacting us" },
+                { icon: "ðŸ›¡ï¸", t: "Essential only mode",  b: "Decline all non-essential cookies without losing core platform access" },
               ].map(({ icon, t, b }) => (
                 <div key={t} className="flex-1 rounded-2xl bg-emerald-50 dark:bg-emerald-500/[0.05] border border-emerald-100 dark:border-emerald-500/[0.15] p-4 flex items-start gap-3">
                   <span className="text-xl shrink-0">{icon}</span>
@@ -439,7 +439,7 @@ export default function CookiesPolicy() {
             </div>
           </AccordionSection>
 
-          {/* §5 + §6 Session vs Persistent — combined visual comparison */}
+          {/* Â§5 + Â§6 Session vs Persistent â€” combined visual comparison */}
           <Reveal delay={0.1}>
             <div id="s5" className="scroll-mt-20 rounded-3xl border border-gray-100 dark:border-white/[0.06] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               {/* Header */}
@@ -448,7 +448,7 @@ export default function CookiesPolicy() {
                   <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 dark:text-gray-500 mb-0.5">Sections 5 & 6</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Cookie Types: Session vs Persistent</h2>
                 </div>
-                <span className="text-2xl">🔄</span>
+                <span className="text-2xl">ðŸ”„</span>
               </div>
 
               <div id="s6" className="scroll-mt-20 grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 dark:divide-white/[0.06]">
@@ -461,7 +461,7 @@ export default function CookiesPolicy() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-[10px] font-bold text-[#4cc015] dark:text-lime-400 uppercase tracking-widest">§5 · Temporary</p>
+                      <p className="text-[10px] font-bold text-[#4cc015] dark:text-lime-400 uppercase tracking-widest">Â§5 Â· Temporary</p>
                       <p className="text-[15px] font-black text-gray-900 dark:text-white">Session Cookies</p>
                     </div>
                   </div>
@@ -490,7 +490,7 @@ export default function CookiesPolicy() {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">§6 · Stored</p>
+                      <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-widest">Â§6 Â· Stored</p>
                       <p className="text-[15px] font-black text-gray-900 dark:text-white">Persistent Cookies</p>
                     </div>
                   </div>
@@ -513,7 +513,7 @@ export default function CookiesPolicy() {
             </div>
           </Reveal>
 
-          {/* §7 Third-party */}
+          {/* Â§7 Third-party */}
           <AccordionSection n={7} label="External Providers" title="Third-Party Cookies" delay={0.12}
             accentClass="text-rose-600 dark:text-lime-400"
             borderClass="border-green-100 dark:border-rose-500/[0.15]"
@@ -523,7 +523,7 @@ export default function CookiesPolicy() {
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
               In addition to our own cookies, CoveTrade may allow third-party service providers to place cookies on
-              your device. We do not control these cookies — their use is governed by the respective provider&apos;s privacy policy.
+              your device. We do not control these cookies â€” their use is governed by the respective provider&apos;s privacy policy.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {THIRD_PARTIES.map(({ name, purpose, icon, color }) => (
@@ -540,7 +540,7 @@ export default function CookiesPolicy() {
             </div>
           </AccordionSection>
 
-          {/* §8 Web Beacons */}
+          {/* Â§8 Web Beacons */}
           <AccordionSection n={8} label="Tracking Pixels" title="Use of Web Beacons" delay={0.14}
             accentClass="text-green-700 dark:text-lime-400"
             borderClass="border-green-100 dark:border-[#5edc1f]/[0.15]"
@@ -550,7 +550,7 @@ export default function CookiesPolicy() {
           >
             <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
               In addition to cookies, CoveTrade may use web beacons (also known as pixel tags, clear GIFs, or tracking pixels)
-              — tiny, invisible graphic images — on our website and in our emails to understand user engagement.
+              â€” tiny, invisible graphic images â€” on our website and in our emails to understand user engagement.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               {BEACON_USES.map(({ icon, t, b }) => (
@@ -565,7 +565,7 @@ export default function CookiesPolicy() {
             </div>
           </AccordionSection>
 
-          {/* §9 Opt Out */}
+          {/* Â§9 Opt Out */}
           <AccordionSection n={9} label="Your Control" title="Opt Out" delay={0.16}
             accentClass="text-teal-600 dark:text-teal-400"
             borderClass="border-teal-100 dark:border-teal-500/[0.15]"
@@ -584,18 +584,18 @@ export default function CookiesPolicy() {
                 <p className="text-[13px] text-gray-500 dark:text-gray-400">Email our team and we&apos;ll update your settings within 24 hours.</p>
               </div>
               <a
-                href="mailto:support@covetrade.com"
+                href="mailto:support@covetrades.com"
                 className="shrink-0 inline-flex items-center gap-2 rounded-xl bg-teal-500 hover:bg-teal-400 text-white font-bold text-[13px] px-5 py-3 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-teal-500/30"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
-                support@covetrade.com
+                support@covetrades.com
               </a>
             </div>
           </AccordionSection>
 
-          {/* ── Footer CTA ── */}
+          {/* â”€â”€ Footer CTA â”€â”€ */}
           <Reveal delay={0.18}>
             <div
               className="relative rounded-3xl overflow-hidden text-center p-8 sm:p-10 shadow-2xl shadow-teal-900/20"
@@ -605,14 +605,14 @@ export default function CookiesPolicy() {
               <div className="absolute -top-[30%] right-[20%] w-72 h-72 rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 65%)" }} />
 
               <div className="relative z-10">
-                <span className="text-4xl block mb-4">🍪</span>
+                <span className="text-4xl block mb-4">ðŸª</span>
                 <h3 className="text-xl sm:text-2xl font-black text-white mb-3">Questions about cookies?</h3>
                 <p className="text-teal-100 text-[14px] max-w-sm mx-auto leading-relaxed mb-8">
                   Our support team is happy to explain exactly what is stored on your device and how to manage it.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                   <Link
-                    href="mailto:support@covetrade.com"
+                    href="mailto:support@covetrades.com"
                     className="rounded-full bg-white px-8 py-3.5 text-sm font-bold text-teal-700 hover:bg-teal-50 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20 transition-all duration-300"
                   >
                     Contact Support

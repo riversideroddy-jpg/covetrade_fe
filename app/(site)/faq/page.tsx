@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import PagePreloader from "@/components/PagePreloader";
 import FAQMajor from "@/components/site/FAQMajor";
 
 export const metadata: Metadata = {
-  title: "FAQ — Frequently Asked Questions",
+  title: "FAQ â€” Frequently Asked Questions",
   description: "Find answers to common questions about digital options trading, deposits, withdrawals, account verification, and more on CoveTrade.",
-  alternates: { canonical: "https://covetrade.com/faq" },
+  alternates: { canonical: "https://covetrades.com/faq" },
   openGraph: {
     title: "CoveTrade FAQ",
     description: "Answers to the most frequently asked questions about trading, accounts, and verification on CoveTrade.",
-    url: "https://covetrade.com/faq",
+    url: "https://covetrades.com/faq",
   },
 };
 
