@@ -1,12 +1,14 @@
 ﻿import type { Metadata } from "next";
+import { defaultOpenGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Become a Leader â€” Earn by Sharing Your Trades",
+  title: "Become a Leader — Earn by Sharing Your Trades",
   description:
     "Turn your trading expertise into income. Become a CoveTrade Leader, build a following of copiers, and earn performance fees as your strategies grow.",
   alternates: { canonical: "https://covetrades.com/become-a-leader" },
   openGraph: {
-    title: "Become a Leader on CoveTrade â€” Earn by Sharing Your Trades",
+    ...defaultOpenGraph,
+    title: "Become a Leader on CoveTrade — Earn by Sharing Your Trades",
     description:
       "Turn your trading expertise into income. Build a following and earn performance fees as your strategies grow.",
     url: "https://covetrades.com/become-a-leader",

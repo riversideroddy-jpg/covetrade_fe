@@ -1,12 +1,14 @@
 ﻿import type { Metadata } from "next";
+import { defaultOpenGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "AutoGuardâ„¢ â€” Smart Trade Protection",
+  title: "AutoGuard™ — Smart Trade Protection",
   description:
-    "AutoGuardâ„¢ by CoveTrade automatically protects every copied trade with intelligent take-profit, stop-loss, and delta-based guardrails. Trade smarter, not harder.",
+    "AutoGuard™ by CoveTrade automatically protects every copied trade with intelligent take-profit, stop-loss, and delta-based guardrails. Trade smarter, not harder.",
   alternates: { canonical: "https://covetrades.com/autoguard" },
   openGraph: {
-    title: "AutoGuardâ„¢ â€” Smart Trade Protection | CoveTrade",
+    ...defaultOpenGraph,
+    title: "AutoGuard™ — Smart Trade Protection | CoveTrade",
     description:
       "Automatically protect every copied trade with intelligent take-profit, stop-loss, and delta-based guardrails.",
     url: "https://covetrades.com/autoguard",

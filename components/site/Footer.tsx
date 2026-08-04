@@ -208,18 +208,18 @@ const Footer = () => {
         {/* â”€â”€ Bottom bar â”€â”€ */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            &copy; 2006â€“2026 CoveTrade â€” Your Social Investment Network. All
+            &copy; {new Date().getFullYear()} - CoveTrade Your Social Investment Network. All
             rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-400 dark:text-gray-500">
             <Link href="/terms" className="hover:text-[#5edc1f] transition-colors">
               Terms
             </Link>
-            <span className="text-gray-300 dark:text-gray-700">Â·</span>
+            
             <Link href="/privacy" className="hover:text-[#5edc1f] transition-colors">
               Privacy
             </Link>
-            <span className="text-gray-300 dark:text-gray-700">Â·</span>
+            
             <Link href="/cookies" className="hover:text-[#5edc1f] transition-colors">
               Cookies
             </Link>
