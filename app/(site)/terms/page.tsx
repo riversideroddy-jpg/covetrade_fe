@@ -6,10 +6,10 @@ import Link from "next/link";
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 
-// â”€â”€â”€ ease â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── ease ───────────────────────────────────────────────────────
 const E = [0.16, 1, 0.3, 1] as const;
 
-// â”€â”€â”€ Reveal primitive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Reveal primitive ────────────────────────────────────────────
 function Reveal({
   children,
   delay = 0,
@@ -34,7 +34,7 @@ function Reveal({
   );
 }
 
-// â”€â”€â”€ Section number badge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Section number badge ─────────────────────────────────────────
 function SectionBadge({ n }: { n: number }) {
   return (
     <span className="inline-flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-br from-[#5edc1f] to-green-700 text-white text-xs font-black shadow-lg shadow-[#5edc1f]/25 shrink-0 mt-0.5">
@@ -43,7 +43,7 @@ function SectionBadge({ n }: { n: number }) {
   );
 }
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ─────────────────────────────────────────────────────────
 const SECTIONS = [
   {
     n: 1,
@@ -101,7 +101,7 @@ const SECTIONS = [
     n: 6,
     title: "Intellectual Property",
     content: [
-      "All content, features, and functionality of the CoveTrade platform â€” including text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software â€” are the exclusive property of CoveTrade or its licensors and are protected by international copyright, trademark, patent, and other intellectual property laws.",
+      "All content, features, and functionality of the CoveTrade platform — including text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software — are the exclusive property of CoveTrade or its licensors and are protected by international copyright, trademark, patent, and other intellectual property laws.",
       "You are granted a limited, non-exclusive, non-transferable, and revocable license to access and use the Services for personal, non-commercial purposes. You may not reproduce, distribute, modify, create derivative works from, publicly display, or otherwise exploit any content from the platform without prior written permission from CoveTrade.",
     ],
   },
@@ -146,13 +146,13 @@ const ENTITIES = [
   { region: "Middle East",   entity: "CoveTrade (ME) Limited",    reg: "FSRA",   license: "Permission No. 220073"    },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ─────────────────────────────────────────────────────────
 export default function TermsOfService() {
   return (
     <div className="overflow-x-hidden bg-white dark:bg-[#070809] text-gray-900 dark:text-white">
       <Navbar />
 
-      {/* â”€â”€ Hero banner â”€â”€ */}
+      {/* ── Hero banner ── */}
       <section className="relative overflow-hidden pt-28 pb-20 sm:pt-36 sm:pb-28">
         {/* Light bg */}
         <div className="absolute inset-0 dark:hidden pointer-events-none">
@@ -199,7 +199,7 @@ export default function TermsOfService() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
             </svg>
             <span className="text-[11px] font-semibold text-green-700 dark:text-green-300 tracking-wide">
-              Legal Agreement Â· CoveTrade
+              Legal Agreement · CoveTrade
             </span>
           </motion.div>
 
@@ -240,7 +240,7 @@ export default function TermsOfService() {
         </div>
       </section>
 
-      {/* â”€â”€ Quick-nav pill row â”€â”€ */}
+      {/* ── Quick-nav pill row ── */}
       <div className="sticky top-0 z-30 bg-white/80 dark:bg-[#070809]/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/[0.06]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -259,7 +259,7 @@ export default function TermsOfService() {
         </div>
       </div>
 
-      {/* â”€â”€ Body â”€â”€ */}
+      {/* ── Body ── */}
       <main className="py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 space-y-8">
           {SECTIONS.map(({ n, title, content, list, highlight }, idx) => (
@@ -318,7 +318,7 @@ export default function TermsOfService() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
                       </svg>
                       <span className="text-[11px] font-semibold text-amber-700 dark:text-amber-400">
-                        High risk â€” only trade with funds you can afford to lose
+                        High risk — only trade with funds you can afford to lose
                       </span>
                     </div>
                   )}
@@ -327,7 +327,7 @@ export default function TermsOfService() {
             </Reveal>
           ))}
 
-          {/* â”€â”€ Regulated entities â”€â”€ */}
+          {/* ── Regulated entities ── */}
           <Reveal delay={0.1}>
             <div className="rounded-3xl border border-green-100 dark:border-[#5edc1f]/20 bg-gradient-to-br from-green-50 to-lime-50 dark:from-green-950/20 dark:to-green-950/10 overflow-hidden">
               <div className="px-7 pt-8 pb-6">
@@ -364,7 +364,7 @@ export default function TermsOfService() {
             </div>
           </Reveal>
 
-          {/* â”€â”€ Questions / CTA â”€â”€ */}
+          {/* ── Questions / CTA ── */}
           <Reveal delay={0.12}>
             <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#4cc015] via-green-700 to-green-800 p-8 sm:p-10 text-center shadow-2xl shadow-green-900/20">
               <div

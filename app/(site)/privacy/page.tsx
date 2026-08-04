@@ -40,7 +40,7 @@ function Reveal({
   );
 }
 
-// â”€â”€â”€ Color map per section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Color map per section ─────────────────────────────────────
 const SECTION_COLORS: Record<string, {
   tag: string; badge: string; bar: string; glow: string; icon: string;
 }> = {
@@ -88,7 +88,7 @@ const SECTION_COLORS: Record<string, {
   },
 };
 
-// â”€â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Data ──────────────────────────────────────────────────────
 
 const APP_INFO_FIELDS = [
   "Full name & date of birth",
@@ -185,7 +185,7 @@ const OPT_OUT_RIGHTS = [
   "Request access to, correction of, or restriction of processing of your personal data",
 ];
 
-// â”€â”€â”€ Sub-component: Info Type Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Sub-component: Info Type Card ─────────────────────────────
 function DataTypeCard({
   label, fields, color,
 }: {
@@ -208,7 +208,7 @@ function DataTypeCard({
   );
 }
 
-// â”€â”€â”€ Sub-component: Section Block â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Sub-component: Section Block ──────────────────────────────
 function PolicySection({
   n, colorKey, tagLabel, icon, title, children, delay = 0,
 }: {
@@ -277,7 +277,7 @@ function PolicySection({
   );
 }
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ──────────────────────────────────────────────────────
 export default function PrivacyPolicy() {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -287,15 +287,15 @@ export default function PrivacyPolicy() {
     <div className="overflow-x-hidden bg-white dark:bg-[#070809] text-gray-900 dark:text-white">
       <Navbar />
 
-      {/* â”€â”€ Hero â”€â”€ */}
+      {/* ── Hero ── */}
       <section ref={heroRef} className="relative overflow-hidden pt-28 pb-24 sm:pt-36 sm:pb-32">
-        {/* BG â€” light */}
+        {/* BG — light */}
         <div className="absolute inset-0 dark:hidden pointer-events-none">
           <div className="absolute inset-0 opacity-[0.18]" style={{ backgroundImage: "radial-gradient(circle, #cbd5e1 1px, transparent 1px)", backgroundSize: "26px 26px" }} />
           <div className="absolute -top-[5%] right-[15%] w-[600px] h-[600px] rounded-full opacity-[0.09]" style={{ background: "radial-gradient(circle, #2d6a0a 0%, transparent 65%)" }} />
           <div className="absolute bottom-0 left-[10%] w-[400px] h-[400px] rounded-full opacity-[0.06]" style={{ background: "radial-gradient(circle, #5edc1f 0%, transparent 65%)" }} />
         </div>
-        {/* BG â€” dark */}
+        {/* BG — dark */}
         <div className="absolute inset-0 hidden dark:block pointer-events-none">
           <div className="aurora-b absolute -top-[20%] right-[5%] w-[700px] h-[700px] rounded-full" style={{ background: "radial-gradient(circle, #4f46e5 0%, transparent 60%)" }} />
           <div className="aurora-a absolute bottom-[-10%] left-[10%] w-[500px] h-[500px] rounded-full" style={{ background: "radial-gradient(circle, #0891b2 0%, transparent 60%)" }} />
@@ -314,7 +314,7 @@ export default function PrivacyPolicy() {
                 <svg className="w-3.5 h-3.5 text-[#4cc015] dark:text-lime-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
                 </svg>
-                <span className="text-[11px] font-semibold text-[#4cc015] dark:text-lime-300 tracking-wide">Data Protection Â· CoveTrade</span>
+                <span className="text-[11px] font-semibold text-[#4cc015] dark:text-lime-300 tracking-wide">Data Protection · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -351,16 +351,16 @@ export default function PrivacyPolicy() {
               </motion.div>
             </div>
 
-            {/* Right â€” stat pills */}
+            {/* Right — stat pills */}
             <motion.div
               className="hidden lg:grid grid-cols-2 gap-4"
               initial={{ opacity: 0, x: 32 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.3, ease: E }}
             >
               {[
-                { icon: "ðŸ”’", stat: "256-bit",     label: "SSL Encryption",         c: "from-[#5edc1f] to-lime-400"    },
-                { icon: "ðŸ›¡ï¸", stat: "ISO 27001",   label: "Security Certified",     c: "from-emerald-500 to-teal-500" },
-                { icon: "ðŸŒ", stat: "GDPR",        label: "Compliant",              c: "from-[#5edc1f] to-green-700"},
-                { icon: "âš¡", stat: "<24h",        label: "Data Request Response",  c: "from-amber-500 to-orange-500" },
+                { icon: "🔒", stat: "256-bit",     label: "SSL Encryption",         c: "from-[#5edc1f] to-lime-400"    },
+                { icon: "🛡️", stat: "ISO 27001",   label: "Security Certified",     c: "from-emerald-500 to-teal-500" },
+                { icon: "🌍", stat: "GDPR",        label: "Compliant",              c: "from-[#5edc1f] to-green-700"},
+                { icon: "⚡", stat: "<24h",        label: "Data Request Response",  c: "from-amber-500 to-orange-500" },
               ].map(({ icon, stat, label, c }, i) => (
                 <motion.div
                   key={label}
@@ -381,7 +381,7 @@ export default function PrivacyPolicy() {
         </motion.div>
       </section>
 
-      {/* â”€â”€ Sticky nav â”€â”€ */}
+      {/* ── Sticky nav ── */}
       <div className="sticky top-0 z-30 bg-white/80 dark:bg-[#070809]/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/[0.06]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -406,11 +406,11 @@ export default function PrivacyPolicy() {
         </div>
       </div>
 
-      {/* â”€â”€ Body â”€â”€ */}
+      {/* ── Body ── */}
       <main className="py-16 sm:py-24">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-5">
 
-          {/* Â§1 â€” Personal Information */}
+          {/* §1 — Personal Information */}
           <PolicySection
             n={1} colorKey="collect" delay={0}
             tagLabel="Data Collection"
@@ -432,7 +432,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* Â§2 â€” Security */}
+          {/* §2 — Security */}
           <PolicySection
             n={2} colorKey="security" delay={0.05}
             tagLabel="Data Security"
@@ -465,7 +465,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* Â§3 â€” Affiliates */}
+          {/* §3 — Affiliates */}
           <PolicySection
             n={3} colorKey="affiliates" delay={0.07}
             tagLabel="Affiliated Companies"
@@ -500,7 +500,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* Â§4 â€” Third Parties */}
+          {/* §4 — Third Parties */}
           <PolicySection
             n={4} colorKey="third" delay={0.09}
             tagLabel="External Partners"
@@ -530,7 +530,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* Â§5 â€” Regulatory */}
+          {/* §5 — Regulatory */}
           <PolicySection
             n={5} colorKey="regulatory" delay={0.11}
             tagLabel="Legal Obligation"
@@ -569,7 +569,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* Â§6 â€” Opt Out / Your Rights */}
+          {/* §6 — Opt Out / Your Rights */}
           <PolicySection
             n={6} colorKey="optout" delay={0.13}
             tagLabel="Your Rights"
@@ -606,7 +606,7 @@ export default function PrivacyPolicy() {
             </div>
           </PolicySection>
 
-          {/* â”€â”€ Bottom CTA â”€â”€ */}
+          {/* ── Bottom CTA ── */}
           <Reveal delay={0.15}>
             <div className="relative rounded-3xl overflow-hidden p-8 sm:p-10 text-center shadow-2xl shadow-green-900/15"
               style={{ background: "linear-gradient(135deg, #4f46e5 0%, #7c3aed 50%, #4cc015 100%)" }}

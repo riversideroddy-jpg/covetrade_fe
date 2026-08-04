@@ -41,7 +41,7 @@ function Reveal({
   );
 }
 
-// â”€â”€â”€ Animated App / Software Icon â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Animated App / Software Icon ───────────────────────────────
 function SoftwareIcon() {
   return (
     <motion.div
@@ -85,7 +85,7 @@ function SoftwareIcon() {
         <circle cx="65" cy="58" r="3.5" fill="rgba(255,190,60,0.6)" />
         <circle cx="75" cy="58" r="3.5" fill="rgba(52,211,153,0.7)" />
 
-        {/* Code lines â€” animated */}
+        {/* Code lines — animated */}
         {[0, 1, 2, 3, 4].map((i) => (
           <motion.rect
             key={i}
@@ -159,7 +159,7 @@ function SoftwareIcon() {
   );
 }
 
-// â”€â”€â”€ License key display â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── License key display ─────────────────────────────────────────
 function LicenseKey() {
   const segments = ["KT-2026", "EULA-STD", "USER-LTD", "PERS-USE"];
   return (
@@ -171,7 +171,7 @@ function LicenseKey() {
             <span className="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300">
               {seg}
             </span>
-            {i < segments.length - 1 && <span className="text-gray-600">â€”</span>}
+            {i < segments.length - 1 && <span className="text-gray-600">—</span>}
           </React.Fragment>
         ))}
       </div>
@@ -179,7 +179,7 @@ function LicenseKey() {
   );
 }
 
-// â”€â”€â”€ Restriction item â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Restriction item ─────────────────────────────────────────────
 function Restriction({ text, delay = 0 }: { text: string; delay?: number }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-10% 0px" });
@@ -201,7 +201,7 @@ function Restriction({ text, delay = 0 }: { text: string; delay?: number }) {
   );
 }
 
-// â”€â”€â”€ Section accordion â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Section accordion ───────────────────────────────────────────
 const ACCENT_MAP: Record<string, { badge: string; border: string; top: string }> = {
   emerald: { badge: "bg-emerald-500/15 text-emerald-300 border border-emerald-500/30", border: "border-emerald-500/15 hover:border-emerald-500/35", top: "from-emerald-500/20 to-transparent" },
   green:   { badge: "bg-green-500/15 text-green-300 border border-green-500/30",     border: "border-green-500/15 hover:border-green-500/35",   top: "from-green-500/20 to-transparent" },
@@ -250,7 +250,7 @@ function Section({
       >
         <div className="flex items-center gap-3">
           <span className={`text-xs font-bold px-2.5 py-1 rounded-full font-mono ${a.badge}`}>
-            Â§{num}
+            §{num}
           </span>
           <span className="text-base font-semibold text-gray-900 dark:text-white">{title}</span>
         </div>
@@ -297,7 +297,7 @@ function Legal({ children }: { children: React.ReactNode }) {
   );
 }
 
-// â”€â”€â”€ Nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Nav ─────────────────────────────────────────────────────────
 const NAV = [
   { id: 1, label: "Overview" },
   { id: 2, label: "License Grant" },
@@ -320,7 +320,7 @@ const ACCENTS = [
   "amber","orange","indigo","slate","emerald","green","teal",
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ────────────────────────────────────────────────────────
 export default function EulaPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#07100e] text-gray-900 dark:text-white">
@@ -341,7 +341,7 @@ export default function EulaPage() {
 
       <Navbar />
 
-      {/* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Hero ─────────────────────────────────────────────────── */}
       <section className="relative pt-32 pb-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -350,7 +350,7 @@ export default function EulaPage() {
               <Reveal delay={0.05}>
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 mb-5">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-xs text-emerald-300 font-medium">Legal Document Â· Software License</span>
+                  <span className="text-xs text-emerald-300 font-medium">Legal Document · Software License</span>
                 </div>
               </Reveal>
 
@@ -376,11 +376,11 @@ export default function EulaPage() {
               <Reveal delay={0.5}>
                 <div className="flex flex-wrap gap-3 mt-6">
                   <div className="flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5">
-                    <span className="text-emerald-400">ðŸ“…</span>
+                    <span className="text-emerald-400">📅</span>
                     <span className="text-sm text-gray-700 dark:text-gray-300">Last Updated: February 2026</span>
                   </div>
                   <div className="flex items-center gap-2 px-4 py-2 rounded-xl border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5">
-                    <span className="text-teal-400">ðŸ“œ</span>
+                    <span className="text-teal-400">📜</span>
                     <span className="text-sm text-gray-700 dark:text-gray-300">14 Sections</span>
                   </div>
                 </div>
@@ -389,7 +389,7 @@ export default function EulaPage() {
               <Reveal delay={0.58}>
                 <div className="mt-6 p-4 rounded-2xl border border-rose-500/20 bg-rose-500/5">
                   <div className="flex items-start gap-3">
-                    <span className="text-lime-400 text-lg flex-shrink-0">âš ï¸</span>
+                    <span className="text-lime-400 text-lg flex-shrink-0">⚠️</span>
                     <p className="text-xs text-rose-200/80 leading-relaxed">
                       By downloading, installing, accessing, or using the Software, you agree to be
                       bound by the terms of this EULA. If you do not agree, you must not use the
@@ -424,7 +424,7 @@ export default function EulaPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Sticky nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Sticky nav ───────────────────────────────────────────── */}
       <div className="sticky top-0 z-40 border-b border-gray-200 dark:border-gray-100 dark:border-white/5 bg-white/95 dark:bg-[#07100e]/85 backdrop-blur-xl">
         <div className="max-w-6xl mx-auto px-4 py-3 overflow-x-auto">
           <div className="flex gap-2 min-w-max">
@@ -434,22 +434,22 @@ export default function EulaPage() {
                 href={`#s${n.id}`}
                 className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-400 hover:text-emerald-300 hover:border-emerald-500/40 hover:bg-emerald-500/8 transition-all whitespace-nowrap"
               >
-                Â§{n.id} {n.label}
+                §{n.id} {n.label}
               </a>
             ))}
           </div>
         </div>
       </div>
 
-      {/* â”€â”€ Key facts strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Key facts strip ──────────────────────────────────────── */}
       <section className="py-10 px-4 border-b border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: "ðŸ’»", label: "Software License", sub: "Web, mobile & desktop apps" },
-              { icon: "ðŸš«", label: "No Reverse Engineering", sub: "Source code is protected" },
-              { icon: "Â©ï¸",  label: "IP Protected", sub: "All rights reserved by CoveTrade" },
-              { icon: "ðŸ“¤", label: "Export Compliant", sub: "Follows OFAC & EAR rules" },
+              { icon: "💻", label: "Software License", sub: "Web, mobile & desktop apps" },
+              { icon: "🚫", label: "No Reverse Engineering", sub: "Source code is protected" },
+              { icon: "©️",  label: "IP Protected", sub: "All rights reserved by CoveTrade" },
+              { icon: "📤", label: "Export Compliant", sub: "Follows OFAC & EAR rules" },
             ].map((item, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="flex flex-col items-center text-center p-4 rounded-2xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.025] hover:bg-emerald-500/5 hover:border-emerald-500/20 transition-all">
@@ -463,11 +463,11 @@ export default function EulaPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Sections â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Sections ─────────────────────────────────────────────── */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto space-y-5">
 
-          {/* Â§1 */}
+          {/* §1 */}
           <Section num={1} title="Agreement Overview" accent={ACCENTS[0]}>
             <P>
               This End User License Agreement ("EULA") is a legal agreement between you ("User,"
@@ -483,7 +483,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§2 */}
+          {/* §2 */}
           <Section num={2} title="License Grant" accent={ACCENTS[1]}>
             <P>
               Subject to the terms and conditions of this EULA, CoveTrade grants you a limited,
@@ -493,10 +493,10 @@ export default function EulaPage() {
             </P>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-2">
               {[
-                { label: "Limited", icon: "ðŸ”’", color: "text-lime-400" },
-                { label: "Non-Exclusive", icon: "ðŸ‘¥", color: "text-lime-400" },
-                { label: "Non-Transferable", icon: "ðŸš«", color: "text-orange-400" },
-                { label: "Revocable", icon: "â†©ï¸", color: "text-amber-400" },
+                { label: "Limited", icon: "🔒", color: "text-lime-400" },
+                { label: "Non-Exclusive", icon: "👥", color: "text-lime-400" },
+                { label: "Non-Transferable", icon: "🚫", color: "text-orange-400" },
+                { label: "Revocable", icon: "↩️", color: "text-amber-400" },
               ].map((l, i) => (
                 <div key={i} className="flex flex-col items-center text-center p-3 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.02]">
                   <span className="text-xl mb-1">{l.icon}</span>
@@ -510,7 +510,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§3 */}
+          {/* §3 */}
           <Section num={3} title="License Restrictions" accent={ACCENTS[2]}>
             <P>You agree not to, and you will not permit others to:</P>
             <div className="space-y-2.5 mt-2">
@@ -529,7 +529,7 @@ export default function EulaPage() {
             </div>
           </Section>
 
-          {/* Â§4 */}
+          {/* §4 */}
           <Section num={4} title="Intellectual Property Rights" accent={ACCENTS[3]}>
             <P>
               The Software and all copies thereof are the intellectual property of CoveTrade and are
@@ -539,10 +539,10 @@ export default function EulaPage() {
             </P>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-2">
               {[
-                { label: "Copyright", icon: "Â©ï¸" },
-                { label: "Trademark", icon: "â„¢ï¸" },
-                { label: "Patent", icon: "ðŸ›ï¸" },
-                { label: "Trade Secret", icon: "ðŸ”" },
+                { label: "Copyright", icon: "©️" },
+                { label: "Trademark", icon: "™️" },
+                { label: "Patent", icon: "🏛️" },
+                { label: "Trade Secret", icon: "🔐" },
               ].map((ip, i) => (
                 <div key={i} className="flex flex-col items-center text-center p-3 rounded-xl border border-teal-500/15 bg-teal-500/5">
                   <span className="text-lg mb-1">{ip.icon}</span>
@@ -557,7 +557,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§5 */}
+          {/* §5 */}
           <Section num={5} title="Software Updates and Modifications" accent={ACCENTS[4]}>
             <P>
               CoveTrade may from time to time release updates, patches, bug fixes, enhancements, or
@@ -566,9 +566,9 @@ export default function EulaPage() {
             </P>
             <div className="space-y-2 mt-2">
               {[
-                { icon: "ðŸ”„", label: "Automatic updates", desc: "May be applied without prior notice to ensure security and performance" },
-                { icon: "ðŸ› ï¸", label: "Patches & bug fixes", desc: "Deployed at our discretion to maintain Software integrity" },
-                { icon: "â¸ï¸", label: "Suspension rights", desc: "CoveTrade may suspend or discontinue the Software at any time" },
+                { icon: "🔄", label: "Automatic updates", desc: "May be applied without prior notice to ensure security and performance" },
+                { icon: "🛠️", label: "Patches & bug fixes", desc: "Deployed at our discretion to maintain Software integrity" },
+                { icon: "⏸️", label: "Suspension rights", desc: "CoveTrade may suspend or discontinue the Software at any time" },
               ].map((u, i) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl border border-gray-200 dark:border-white/8 bg-gray-50 dark:bg-white/[0.02]">
                   <span className="text-xl flex-shrink-0">{u.icon}</span>
@@ -586,7 +586,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§6 */}
+          {/* §6 */}
           <Section num={6} title="Data Collection and Usage" accent={ACCENTS[5]}>
             <P>
               The Software may collect certain data from your device and usage, including but not
@@ -594,12 +594,12 @@ export default function EulaPage() {
             </P>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2">
               {[
-                { label: "Device Info", icon: "ðŸ“±" },
-                { label: "Usage Statistics", icon: "ðŸ“Š" },
-                { label: "Crash Reports", icon: "ðŸ’¥" },
-                { label: "Performance Data", icon: "âš¡" },
-                { label: "Log Files", icon: "ðŸ“‹" },
-                { label: "Diagnostics", icon: "ðŸ”" },
+                { label: "Device Info", icon: "📱" },
+                { label: "Usage Statistics", icon: "📊" },
+                { label: "Crash Reports", icon: "💥" },
+                { label: "Performance Data", icon: "⚡" },
+                { label: "Log Files", icon: "📋" },
+                { label: "Diagnostics", icon: "🔍" },
               ].map((d, i) => (
                 <div key={i} className="flex items-center gap-2 p-2.5 rounded-xl border border-[#5edc1f]/15 bg-[#5edc1f]/5">
                   <span className="text-base">{d.icon}</span>
@@ -615,7 +615,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§7 */}
+          {/* §7 */}
           <Section num={7} title="Third-Party Software and Services" accent={ACCENTS[6]}>
             <P>
               The Software may include or integrate with third-party software components, libraries,
@@ -632,10 +632,10 @@ export default function EulaPage() {
             </div>
           </Section>
 
-          {/* Â§8 */}
+          {/* §8 */}
           <Section num={8} title="Warranty Disclaimer" accent={ACCENTS[7]}>
             <div className="p-4 rounded-xl border border-amber-500/25 bg-amber-500/8 mb-3">
-              <p className="text-xs font-bold text-amber-400 mb-2 uppercase tracking-wide">âš ï¸ No Warranty</p>
+              <p className="text-xs font-bold text-amber-400 mb-2 uppercase tracking-wide">⚠️ No Warranty</p>
               <p className="text-xs text-amber-200/70 leading-relaxed">
                 The Software is provided without warranty of any kind, express or implied, including
                 warranties of merchantability, fitness for a particular purpose, or non-infringement.
@@ -652,7 +652,7 @@ export default function EulaPage() {
             </Legal>
           </Section>
 
-          {/* Â§9 */}
+          {/* §9 */}
           <Section num={9} title="Limitation of Liability" accent={ACCENTS[8]}>
             <Legal>
               TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL COVETRADE, ITS
@@ -672,7 +672,7 @@ export default function EulaPage() {
             </div>
           </Section>
 
-          {/* Â§10 */}
+          {/* §10 */}
           <Section num={10} title="Indemnification" accent={ACCENTS[9]}>
             <P>
               You agree to indemnify, defend, and hold harmless CoveTrade, its directors, officers,
@@ -697,7 +697,7 @@ export default function EulaPage() {
             <P>This indemnification obligation shall survive the termination of this EULA.</P>
           </Section>
 
-          {/* Â§11 */}
+          {/* §11 */}
           <Section num={11} title="Termination" accent={ACCENTS[10]}>
             <div className="grid sm:grid-cols-2 gap-4 mt-1">
               <div className="p-4 rounded-xl border border-rose-500/20 bg-rose-500/5">
@@ -727,7 +727,7 @@ export default function EulaPage() {
             </div>
           </Section>
 
-          {/* Â§12 */}
+          {/* §12 */}
           <Section num={12} title="Export Controls" accent={ACCENTS[11]}>
             <P>
               The Software may be subject to export control laws and regulations. You agree to
@@ -735,9 +735,9 @@ export default function EulaPage() {
             </P>
             <div className="space-y-2.5 mt-2">
               {[
-                { label: "Export Administration Regulations (EAR)", body: "Maintained by the U.S. Department of Commerce", icon: "ðŸ›ï¸" },
-                { label: "OFAC Sanctions", body: "Trade and economic sanctions maintained by the Treasury Department", icon: "ðŸš«" },
-                { label: "ITAR", body: "International Traffic in Arms Regulations by the Department of State", icon: "âš–ï¸" },
+                { label: "Export Administration Regulations (EAR)", body: "Maintained by the U.S. Department of Commerce", icon: "🏛️" },
+                { label: "OFAC Sanctions", body: "Trade and economic sanctions maintained by the Treasury Department", icon: "🚫" },
+                { label: "ITAR", body: "International Traffic in Arms Regulations by the Department of State", icon: "⚖️" },
               ].map((e, i) => (
                 <div key={i} className="flex items-start gap-3 p-3 rounded-xl border border-emerald-500/15 bg-emerald-500/5">
                   <span className="text-lg flex-shrink-0">{e.icon}</span>
@@ -755,7 +755,7 @@ export default function EulaPage() {
             </P>
           </Section>
 
-          {/* Â§13 */}
+          {/* §13 */}
           <Section num={13} title="Governing Law and Jurisdiction" accent={ACCENTS[12]}>
             <P>
               This EULA shall be governed by and construed in accordance with the laws of the
@@ -773,18 +773,18 @@ export default function EulaPage() {
             </div>
           </Section>
 
-          {/* Â§14 */}
+          {/* §14 */}
           <Section num={14} title="Severability and Entire Agreement" accent={ACCENTS[13]}>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl border border-teal-500/20 bg-teal-500/5">
-                <p className="text-xs font-semibold text-teal-300 mb-2">ðŸ”§ Severability</p>
+                <p className="text-xs font-semibold text-teal-300 mb-2">🔧 Severability</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
                   If any provision is held invalid or unenforceable, it shall be modified to the
                   minimum extent necessary. Remaining provisions continue in full force.
                 </p>
               </div>
               <div className="p-4 rounded-xl border border-lime-400/20 bg-lime-400/5">
-                <p className="text-xs font-semibold text-lime-300 mb-2">ðŸ“„ Entire Agreement</p>
+                <p className="text-xs font-semibold text-lime-300 mb-2">📄 Entire Agreement</p>
                 <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
                   This EULA constitutes the entire agreement between you and CoveTrade regarding
                   the Software, superseding all prior communications and agreements.
@@ -800,7 +800,7 @@ export default function EulaPage() {
         </div>
       </section>
 
-      {/* â”€â”€ CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── CTA ──────────────────────────────────────────────────── */}
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <Reveal>
@@ -842,7 +842,7 @@ export default function EulaPage() {
                     href="/"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white font-semibold text-sm hover:bg-white/8 transition-all"
                   >
-                    â† Go Back Home
+                    ← Go Back Home
                   </Link>
                 </div>
               </div>

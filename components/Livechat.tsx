@@ -11,7 +11,7 @@ export default function Livechat() {
         dangerouslySetInnerHTML={{
           __html: `
             var _smartsupp = _smartsupp || {};
-            _smartsupp.key = '4a296f87fc4691c6e7db2ebcc2a405ff780086b1';
+            _smartsupp.key = 'e80cd1d595852fb09a32eaa2480390cbb31bdb22';
             window.smartsupp||(function(d) {
               var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
               s=d.getElementsByTagName('script')[0];c=d.createElement('script');

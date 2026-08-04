@@ -40,7 +40,7 @@ function Reveal({
   );
 }
 
-// â”€â”€â”€ Stat pill â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Stat pill ────────────────────────────────────────────────────
 function Stat({ value, label, delay = 0 }: { value: string; label: string; delay?: number }) {
   return (
     <Reveal delay={delay}>
@@ -54,7 +54,7 @@ function Stat({ value, label, delay = 0 }: { value: string; label: string; delay
   );
 }
 
-// â”€â”€â”€ Value card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Value card ───────────────────────────────────────────────────
 function ValueCard({ icon, title, body, accent, delay = 0 }: {
   icon: string; title: string; body: string; accent: string; delay?: number;
 }) {
@@ -79,7 +79,7 @@ function ValueCard({ icon, title, body, accent, delay = 0 }: {
   );
 }
 
-// â”€â”€â”€ Regulator card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Regulator card ───────────────────────────────────────────────
 function RegCard({ flag, region, entity, regulator, license, delay = 0 }: {
   flag: string; region: string; entity: string;
   regulator: string; license: string; delay?: number;
@@ -99,7 +99,7 @@ function RegCard({ flag, region, entity, regulator, license, delay = 0 }: {
   );
 }
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ────────────────────────────────────────────────────────
 export default function AboutPage() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -124,7 +124,7 @@ export default function AboutPage() {
 
       <Navbar />
 
-      {/* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Hero ─────────────────────────────────────────────────── */}
       <section ref={heroRef} className="relative min-h-[60vh] flex items-center pt-28 pb-20 px-4 overflow-hidden">
         {/* Background image with parallax */}
         <motion.div
@@ -165,13 +165,13 @@ export default function AboutPage() {
           <Reveal delay={0.22}>
             <p className="text-white/80 text-xl leading-relaxed max-w-xl">
               We believe every investor deserves access to professional-grade trading strategies
-              â€” regardless of experience or background.
+              — regardless of experience or background.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* â”€â”€ Stats strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Stats strip ──────────────────────────────────────────── */}
       <section className="py-12 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 divide-x-0 md:divide-x divide-gray-200 dark:divide-white/8">
@@ -183,7 +183,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Our Story â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Our Story ────────────────────────────────────────────── */}
       <section className="py-24 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
@@ -213,7 +213,7 @@ export default function AboutPage() {
               </div>
             </Reveal>
 
-            {/* Images â€” stacked collage */}
+            {/* Images — stacked collage */}
             <Reveal delay={0.15} dir="right">
               <div className="relative">
                 {/* Main large image */}
@@ -260,7 +260,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Mission â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Mission ──────────────────────────────────────────────── */}
       <section className="py-24 px-4 border-t border-gray-100 dark:border-white/5 relative overflow-hidden">
         {/* Background tint */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-green-950/10 to-transparent pointer-events-none" />
@@ -287,7 +287,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Values â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Values ───────────────────────────────────────────────── */}
       <section className="py-24 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-14">
@@ -302,28 +302,28 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <ValueCard
-              icon="ðŸ”­"
+              icon="🔭"
               title="Transparency"
               body="Every trader's performance, fees, and risk metrics are openly available so you can make informed decisions at every step."
               accent="indigo"
               delay={0.05}
             />
             <ValueCard
-              icon="âš¡"
+              icon="⚡"
               title="Innovation"
-              body="From AutoGuardâ„¢ risk protection to real-time trade mirroring, we continuously build cutting-edge tools that keep you ahead."
+              body="From AutoGuard™ risk protection to real-time trade mirroring, we continuously build cutting-edge tools that keep you ahead."
               accent="violet"
               delay={0.12}
             />
             <ValueCard
-              icon="ðŸ”"
+              icon="🔐"
               title="Security"
               body="Your funds and data are protected with enterprise-grade encryption, segregated accounts, and multi-layered security protocols."
               accent="rose"
               delay={0.19}
             />
             <ValueCard
-              icon="ðŸŒ"
+              icon="🌐"
               title="Community"
               body="We foster a global network of traders who learn from each other, share strategies, and grow together every day."
               accent="emerald"
@@ -333,12 +333,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Our Team â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Our Team ─────────────────────────────────────────────── */}
       <section className="py-24 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-            {/* Images â€” side by side mosaic */}
+            {/* Images — side by side mosaic */}
             <Reveal dir="left">
               <div className="grid grid-cols-2 gap-4">
                 {/* Tall left image */}
@@ -363,7 +363,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 </div>
 
-                {/* Bottom right â€” stat card */}
+                {/* Bottom right — stat card */}
                 <motion.div
                   className="rounded-3xl border border-[#5edc1f]/25 bg-gradient-to-br from-green-950/60 to-emerald-950/40 p-6 flex flex-col justify-center"
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -416,7 +416,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Global Presence â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Global Presence ──────────────────────────────────────── */}
       <section className="py-24 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <Reveal className="text-center mb-14">
@@ -435,28 +435,28 @@ export default function AboutPage() {
 
           <div className="grid sm:grid-cols-2 gap-4">
             <RegCard
-              flag="ðŸ‡ªðŸ‡º" region="Europe"
+              flag="🇪🇺" region="Europe"
               entity="CoveTrade (Europe) Ltd."
               regulator="Cyprus Securities Exchange Commission (CySEC)"
               license="License #109/10"
               delay={0.05}
             />
             <RegCard
-              flag="ðŸ‡¬ðŸ‡§" region="United Kingdom"
+              flag="🇬🇧" region="United Kingdom"
               entity="CoveTrade (UK) Ltd."
               regulator="Financial Conduct Authority (FCA)"
               license="FRN 583263"
               delay={0.12}
             />
             <RegCard
-              flag="ðŸ‡ºðŸ‡¸" region="United States"
+              flag="🇺🇸" region="United States"
               entity="CoveTrade (USA) Ltd."
               regulator="Securities and Exchange Commission (SEC)"
               license="CRD 329900"
               delay={0.19}
             />
             <RegCard
-              flag="ðŸ‡¦ðŸ‡ª" region="Middle East"
+              flag="🇦🇪" region="Middle East"
               entity="CoveTrade (ME) Limited"
               regulator="ADGM Financial Services Regulatory Authority (FSRA)"
               license="Permission Number 220073"
@@ -466,7 +466,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* â”€â”€ Get in Touch / CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      {/* ── Get in Touch / CTA ───────────────────────────────────── */}
       <section className="py-16 px-4 border-t border-gray-100 dark:border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-6">
@@ -485,7 +485,7 @@ export default function AboutPage() {
                   <p className="text-xs text-lime-400 font-mono uppercase tracking-widest mb-2">Get in Touch</p>
                   <h3 className="text-2xl font-bold text-white mb-2">We'd love to hear from you.</h3>
                   <p className="text-sm text-white/70 mb-5">
-                    Have questions about CoveTrade? Reach out to our team â€” we are always happy to help.
+                    Have questions about CoveTrade? Reach out to our team — we are always happy to help.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <a
@@ -498,7 +498,7 @@ export default function AboutPage() {
                       support@covetrades.com
                     </a>
                     <button className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white text-sm font-medium hover:bg-white/8 transition-all">
-                      ðŸ’¬ Live Chat
+                      💬 Live Chat
                     </button>
                   </div>
                 </div>
@@ -532,13 +532,13 @@ export default function AboutPage() {
                       href="/register"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#5edc1f] to-green-700 text-gray-900 dark:text-white font-bold text-sm hover:from-[#5edc1f] hover:to-green-600 transition-all shadow-lg shadow-green-900/30"
                     >
-                      Get Started â†’
+                      Get Started →
                     </Link>
                     <Link
                       href="/"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-gray-300 dark:border-white/15 text-gray-900 dark:text-white font-semibold text-sm hover:bg-white/8 transition-all"
                     >
-                      â† Go Back Home
+                      ← Go Back Home
                     </Link>
                   </div>
                 </div>

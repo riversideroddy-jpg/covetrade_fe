@@ -23,7 +23,7 @@ function Reveal({ children, delay = 0, className = "" }: {
   );
 }
 
-// â”€â”€â”€ Animated risk gauge â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Animated risk gauge ────────────────────────────────────────
 function RiskGauge() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -102,7 +102,7 @@ function RiskGauge() {
   );
 }
 
-// â”€â”€â”€ Pulse warning dot â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Pulse warning dot ─────────────────────────────────────────
 function WarnDot() {
   return (
     <span className="relative flex w-3 h-3 shrink-0">
@@ -112,7 +112,7 @@ function WarnDot() {
   );
 }
 
-// â”€â”€â”€ Regulated entities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Regulated entities ────────────────────────────────────────
 const ENTITIES = [
   { region: "Europe",         entity: "CoveTrade (Europe) Ltd.",  reg: "CySEC", license: "License #109/10"       },
   { region: "United Kingdom", entity: "CoveTrade (UK) Ltd.",      reg: "FCA",   license: "FRN 583263"            },
@@ -120,17 +120,17 @@ const ENTITIES = [
   { region: "Middle East",    entity: "CoveTrade (ME) Limited",   reg: "FSRA",  license: "Permission No. 220073" },
 ];
 
-// â”€â”€â”€ Risk bullets â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Risk bullets ──────────────────────────────────────────────
 const RISK_BULLETS = [
-  { icon: "ðŸ’¸", t: "Total capital loss",      b: "You may lose all of your invested capital. Never invest money you cannot afford to lose." },
-  { icon: "âš¡", t: "Leverage amplification",  b: "Leveraged trading amplifies both gains and losses. A small move can cause proportionally larger losses." },
-  { icon: "ðŸŒªï¸", t: "Market volatility",       b: "Market conditions, volatility, liquidity, and geopolitical events can change rapidly and without warning." },
-  { icon: "ðŸ›‘", t: "Stop-loss slippage",      b: "Stop-loss orders may not execute at the specified price due to market gaps or slippage." },
-  { icon: "ðŸ–¥ï¸", t: "Technology failures",     b: "System outages and connectivity issues may affect your ability to manage open positions." },
-  { icon: "ðŸ“‹", t: "Copy trading risk",        b: "Past performance of copied traders is not a guarantee of future results." },
+  { icon: "💸", t: "Total capital loss",      b: "You may lose all of your invested capital. Never invest money you cannot afford to lose." },
+  { icon: "⚡", t: "Leverage amplification",  b: "Leveraged trading amplifies both gains and losses. A small move can cause proportionally larger losses." },
+  { icon: "🌪️", t: "Market volatility",       b: "Market conditions, volatility, liquidity, and geopolitical events can change rapidly and without warning." },
+  { icon: "🛑", t: "Stop-loss slippage",      b: "Stop-loss orders may not execute at the specified price due to market gaps or slippage." },
+  { icon: "🖥️", t: "Technology failures",     b: "System outages and connectivity issues may affect your ability to manage open positions." },
+  { icon: "📋", t: "Copy trading risk",        b: "Past performance of copied traders is not a guarantee of future results." },
 ];
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ──────────────────────────────────────────────────────
 export default function RiskDisclaimer() {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -140,7 +140,7 @@ export default function RiskDisclaimer() {
     <div className="overflow-x-hidden bg-white dark:bg-[#070809] text-gray-900 dark:text-white">
       <Navbar />
 
-      {/* â”€â”€ Hero â€” dark red/amber palette â”€â”€ */}
+      {/* ── Hero — dark red/amber palette ── */}
       <section ref={heroRef} className="relative overflow-hidden bg-gray-100 dark:bg-[#0e0a08] pt-28 pb-24 sm:pt-36 sm:pb-32">
         {/* Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.035]"
@@ -161,7 +161,7 @@ export default function RiskDisclaimer() {
                 initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.55, ease: E }}
               >
                 <WarnDot />
-                <span className="text-[11px] font-semibold text-red-600 dark:text-red-300 tracking-wide">Important Legal Notice Â· CoveTrade</span>
+                <span className="text-[11px] font-semibold text-red-600 dark:text-red-300 tracking-wide">Important Legal Notice · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -200,7 +200,7 @@ export default function RiskDisclaimer() {
               </motion.div>
             </div>
 
-            {/* Right â€” risk gauge */}
+            {/* Right — risk gauge */}
             <motion.div
               className="flex flex-col items-center justify-center gap-8"
               initial={{ opacity: 0, x: 32 }} animate={{ opacity: 1, x: 0 }}
@@ -221,7 +221,7 @@ export default function RiskDisclaimer() {
         </motion.div>
       </section>
 
-      {/* â”€â”€ Quick-nav â”€â”€ */}
+      {/* ── Quick-nav ── */}
       <div className="sticky top-0 z-30 bg-white/80 dark:bg-[#070809]/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/[0.06]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -243,11 +243,11 @@ export default function RiskDisclaimer() {
         </div>
       </div>
 
-      {/* â”€â”€ Body â”€â”€ */}
+      {/* ── Body ── */}
       <main className="py-16 sm:py-24 bg-gray-50 dark:bg-[#080909]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-5">
 
-          {/* Â§1 About CoveTrade */}
+          {/* §1 About CoveTrade */}
           <Reveal delay={0}>
             <div id="rd1" className="scroll-mt-20 rounded-3xl border border-gray-100 dark:border-white/[0.06] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-gray-50/80 dark:bg-white/[0.02] border-b border-gray-100 dark:border-white/[0.05]">
@@ -257,7 +257,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 mb-0.5">Section 1 Â· Global Regulator</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-gray-500 dark:text-gray-400 mb-0.5">Section 1 · Global Regulator</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">About CoveTrade</h2>
                 </div>
               </div>
@@ -284,7 +284,7 @@ export default function RiskDisclaimer() {
             </div>
           </Reveal>
 
-          {/* Â§2 Full Disclaimer */}
+          {/* §2 Full Disclaimer */}
           <Reveal delay={0.05}>
             <div id="rd2" className="scroll-mt-20 rounded-3xl border border-orange-100 dark:border-orange-500/[0.15] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-orange-50/60 dark:bg-orange-500/[0.04] border-b border-orange-100 dark:border-orange-500/[0.12]">
@@ -294,7 +294,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-orange-600 dark:text-orange-400 mb-0.5">Section 2 Â· Legal Notice</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-orange-600 dark:text-orange-400 mb-0.5">Section 2 · Legal Notice</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Full Disclaimer</h2>
                 </div>
               </div>
@@ -319,7 +319,7 @@ export default function RiskDisclaimer() {
             </div>
           </Reveal>
 
-          {/* Â§3 Performance Results */}
+          {/* §3 Performance Results */}
           <Reveal delay={0.07}>
             <div id="rd3" className="scroll-mt-20 rounded-3xl border border-amber-100 dark:border-amber-500/[0.15] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-amber-50/60 dark:bg-amber-500/[0.04] border-b border-amber-100 dark:border-amber-500/[0.12]">
@@ -329,7 +329,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-600 dark:text-amber-400 mb-0.5">Section 3 Â· Limitations</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-amber-600 dark:text-amber-400 mb-0.5">Section 3 · Limitations</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Performance Results & Limitations</h2>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export default function RiskDisclaimer() {
                   <p className="text-white text-lg sm:text-xl font-black leading-snug mb-1">
                     &ldquo;Past performance is not necessarily indicative of future results.&rdquo;
                   </p>
-                  <p className="text-amber-100 text-[12px]">â€” CoveTrade Risk Disclaimer, applicable to all displayed statistics</p>
+                  <p className="text-amber-100 text-[12px]">— CoveTrade Risk Disclaimer, applicable to all displayed statistics</p>
                 </div>
                 <div className="space-y-4">
                   {[
@@ -360,7 +360,7 @@ export default function RiskDisclaimer() {
             </div>
           </Reveal>
 
-          {/* Â§4 Risk Warnings */}
+          {/* §4 Risk Warnings */}
           <Reveal delay={0.09}>
             <div id="rd4" className="scroll-mt-20 rounded-3xl border border-red-100 dark:border-red-500/[0.18] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-red-50/70 dark:bg-red-500/[0.05] border-b border-red-100 dark:border-red-500/[0.14]">
@@ -370,7 +370,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <div className="flex-1">
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-red-600 dark:text-red-400 mb-0.5">Section 4 Â· Read Carefully</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-red-600 dark:text-red-400 mb-0.5">Section 4 · Read Carefully</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Risk Warnings</h2>
                 </div>
                 <WarnDot />
@@ -401,7 +401,7 @@ export default function RiskDisclaimer() {
             </div>
           </Reveal>
 
-          {/* Â§5 Important Notice */}
+          {/* §5 Important Notice */}
           <Reveal delay={0.11}>
             <div id="rd5" className="scroll-mt-20 rounded-3xl border border-green-100 dark:border-rose-500/[0.15] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-rose-50/60 dark:bg-rose-500/[0.04] border-b border-green-100 dark:border-rose-500/[0.12]">
@@ -411,7 +411,7 @@ export default function RiskDisclaimer() {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-rose-600 dark:text-lime-400 mb-0.5">Section 5 Â· Mandatory Disclosure</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-rose-600 dark:text-lime-400 mb-0.5">Section 5 · Mandatory Disclosure</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Important Notice</h2>
                 </div>
               </div>
@@ -437,7 +437,7 @@ export default function RiskDisclaimer() {
             </div>
           </Reveal>
 
-          {/* â”€â”€ Acknowledgement strip â”€â”€ */}
+          {/* ── Acknowledgement strip ── */}
           <Reveal delay={0.13}>
             <div className="rounded-3xl border border-gray-200 dark:border-white/[0.07] bg-gray-100 dark:bg-white/[0.03] px-7 py-5 flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <div className="flex items-center gap-3 flex-1">
@@ -454,12 +454,12 @@ export default function RiskDisclaimer() {
                 href="/register"
                 className="shrink-0 rounded-full bg-gray-900 dark:bg-white px-6 py-2.5 text-[12px] font-bold text-white dark:text-gray-900 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
               >
-                I Understand â€” Get Started
+                I Understand — Get Started
               </Link>
             </div>
           </Reveal>
 
-          {/* â”€â”€ CTA â”€â”€ */}
+          {/* ── CTA ── */}
           <Reveal delay={0.15}>
             <div
               className="relative rounded-3xl overflow-hidden text-center p-8 sm:p-10 shadow-2xl"

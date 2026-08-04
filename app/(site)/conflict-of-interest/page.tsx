@@ -23,7 +23,7 @@ function Reveal({ children, delay = 0, className = "", dir = "up" }: {
   );
 }
 
-// â”€â”€â”€ Animated balance scales â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Animated balance scales ────────────────────────────────────
 function BalanceScales() {
   return (
     <motion.div
@@ -37,7 +37,7 @@ function BalanceScales() {
         <line x1="100" y1="20" x2="100" y2="150" stroke="rgba(255,255,255,0.15)" strokeWidth="3" strokeLinecap="round" />
         <circle cx="100" cy="18" r="5" fill="#f59e0b" />
 
-        {/* Beam â€” gently rocking */}
+        {/* Beam — gently rocking */}
         <motion.g
           animate={{ rotate: [-4, 4, -4] }}
           transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
@@ -69,7 +69,7 @@ function BalanceScales() {
   );
 }
 
-// â”€â”€â”€ Conflict management cycle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Conflict management cycle ──────────────────────────────────
 const CYCLE_STEPS = [
   { n: "01", label: "Identify",  body: "Employees spot potential conflicts and report to compliance",      color: "from-[#5edc1f] to-green-700",    dot: "#2d6a0a" },
   { n: "02", label: "Assess",    body: "Compliance evaluates severity and potential client impact",         color: "from-amber-500 to-orange-500",   dot: "#f59e0b" },
@@ -77,15 +77,15 @@ const CYCLE_STEPS = [
   { n: "04", label: "Disclose",  body: "Inform affected clients clearly before proceeding",                color: "from-[#5edc1f] to-green-700",  dot: "#8b5cf6" },
 ];
 
-// â”€â”€â”€ CoI Types â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── CoI Types ─────────────────────────────────────────────────
 const COI_TYPES = [
-  { icon: "ðŸ’°", label: "Financial Interests",      desc: "Where CoveTrade or its employees may benefit financially at the expense of a client" },
-  { icon: "ðŸ¤", label: "Personal Relationships",   desc: "Where personal connections between employees and clients may influence decision-making" },
-  { icon: "âš–ï¸", label: "Competing Interests",      desc: "Where CoveTrade provides services to multiple clients whose interests may conflict" },
-  { icon: "ðŸ”—", label: "Third-Party Arrangements", desc: "Where relationships with third parties create incentives conflicting with client interests" },
+  { icon: "💰", label: "Financial Interests",      desc: "Where CoveTrade or its employees may benefit financially at the expense of a client" },
+  { icon: "🤝", label: "Personal Relationships",   desc: "Where personal connections between employees and clients may influence decision-making" },
+  { icon: "⚖️", label: "Competing Interests",      desc: "Where CoveTrade provides services to multiple clients whose interests may conflict" },
+  { icon: "🔗", label: "Third-Party Arrangements", desc: "Where relationships with third parties create incentives conflicting with client interests" },
 ];
 
-// â”€â”€â”€ Management measures â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Management measures ───────────────────────────────────────
 const MEASURES = [
   {
     icon: <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>,
@@ -121,7 +121,7 @@ const MEASURES = [
   },
 ];
 
-// â”€â”€â”€ Regulatory frameworks â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Regulatory frameworks ─────────────────────────────────────
 const REGULATORS = [
   { name: "MiFID II",   full: "Markets in Financial Instruments Directive II", region: "EU",           color: "from-[#5edc1f] to-green-700" },
   { name: "FCA",        full: "Financial Conduct Authority",                    region: "UK",           color: "from-red-500 to-rose-600"    },
@@ -130,7 +130,7 @@ const REGULATORS = [
   { name: "ADGM FSRA",  full: "Financial Services Regulatory Authority",        region: "Middle East",  color: "from-[#5edc1f] to-green-700"},
 ];
 
-// â”€â”€â”€ Simple section card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Simple section card ────────────────────────────────────────
 function Section({ id, n, label, title, iconEl, accentTw, borderTw, bgTw, children, delay = 0 }: {
   id: string; n: number; label: string; title: string; iconEl: React.ReactNode;
   accentTw: string; borderTw: string; bgTw: string;
@@ -144,7 +144,7 @@ function Section({ id, n, label, title, iconEl, accentTw, borderTw, bgTw, childr
             {iconEl}
           </div>
           <div className="flex-1 min-w-0">
-            <p className={`text-[10px] font-bold tracking-[0.2em] uppercase mb-0.5`} style={{ color: "currentColor", opacity: 0.55 }}>{label} Â· Â§{n}</p>
+            <p className={`text-[10px] font-bold tracking-[0.2em] uppercase mb-0.5`} style={{ color: "currentColor", opacity: 0.55 }}>{label} · §{n}</p>
             <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white leading-snug">{title}</h2>
           </div>
           <span className="hidden sm:flex w-8 h-8 rounded-xl bg-white/60 dark:bg-white/[0.06] items-center justify-center text-[11px] font-black text-gray-500 dark:text-gray-500 shrink-0">
@@ -161,7 +161,7 @@ function Body({ children }: { children: React.ReactNode }) {
   return <p className="text-[14px] sm:text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed">{children}</p>;
 }
 
-// â”€â”€â”€ Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ─── Page ──────────────────────────────────────────────────────
 export default function ConflictOfInterestPolicy() {
   const heroRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
@@ -171,7 +171,7 @@ export default function ConflictOfInterestPolicy() {
     <div className="overflow-x-hidden bg-white dark:bg-[#070809] text-gray-900 dark:text-white">
       <Navbar />
 
-      {/* â”€â”€ Hero â€” deep navy + gold â”€â”€ */}
+      {/* ── Hero — deep navy + gold ── */}
       <section ref={heroRef} className="relative overflow-hidden bg-gray-100 dark:bg-[#080c18] pt-28 pb-24 sm:pt-36 sm:pb-32">
         {/* Grid */}
         <div className="absolute inset-0 pointer-events-none opacity-[0.035]"
@@ -194,7 +194,7 @@ export default function ConflictOfInterestPolicy() {
                 <svg className="w-3.5 h-3.5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
                 </svg>
-                <span className="text-[11px] font-semibold text-amber-700 dark:text-amber-300 tracking-wide">Compliance Framework Â· CoveTrade</span>
+                <span className="text-[11px] font-semibold text-amber-700 dark:text-amber-300 tracking-wide">Compliance Framework · CoveTrade</span>
               </motion.div>
 
               <motion.h1
@@ -214,7 +214,7 @@ export default function ConflictOfInterestPolicy() {
                 initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, delay: 0.15, ease: E }}
               >
                 We recognise that conflicts of interest may arise in the ordinary course of business.
-                This policy explains how CoveTrade identifies, prevents, and manages them â€” always
+                This policy explains how CoveTrade identifies, prevents, and manages them — always
                 putting client interests first.
               </motion.p>
 
@@ -232,7 +232,7 @@ export default function ConflictOfInterestPolicy() {
               </motion.div>
             </div>
 
-            {/* Right â€” animated scales */}
+            {/* Right — animated scales */}
             <motion.div
               className="hidden lg:flex flex-col items-center justify-center gap-6"
               initial={{ opacity: 0, x: 32 }} animate={{ opacity: 1, x: 0 }}
@@ -241,10 +241,10 @@ export default function ConflictOfInterestPolicy() {
               <BalanceScales />
               <div className="grid grid-cols-2 gap-3 w-full max-w-xs">
                 {[
-                  { icon: "ðŸ›¡ï¸", t: "Client-first",  c: "from-amber-500 to-yellow-400"   },
-                  { icon: "ðŸ”", t: "Full transparency", c: "from-[#5edc1f] to-green-700" },
-                  { icon: "âš–ï¸", t: "Fair practice",  c: "from-[#5edc1f] to-green-700" },
-                  { icon: "ðŸ“‹", t: "Fully regulated", c: "from-emerald-500 to-teal-500" },
+                  { icon: "🛡️", t: "Client-first",  c: "from-amber-500 to-yellow-400"   },
+                  { icon: "🔍", t: "Full transparency", c: "from-[#5edc1f] to-green-700" },
+                  { icon: "⚖️", t: "Fair practice",  c: "from-[#5edc1f] to-green-700" },
+                  { icon: "📋", t: "Fully regulated", c: "from-emerald-500 to-teal-500" },
                 ].map(({ icon, t, c }) => (
                   <div key={t} className="flex items-center gap-2.5 rounded-2xl border border-white/[0.07] bg-white/[0.03] px-3 py-2.5">
                     <div className={`w-7 h-7 rounded-lg bg-gradient-to-br ${c} flex items-center justify-center text-sm shrink-0`}>{icon}</div>
@@ -257,7 +257,7 @@ export default function ConflictOfInterestPolicy() {
         </motion.div>
       </section>
 
-      {/* â”€â”€ Sticky nav â”€â”€ */}
+      {/* ── Sticky nav ── */}
       <div className="sticky top-0 z-30 bg-white/80 dark:bg-[#070809]/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/[0.06]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="flex items-center gap-2 py-3 overflow-x-auto no-scrollbar">
@@ -279,11 +279,11 @@ export default function ConflictOfInterestPolicy() {
         </div>
       </div>
 
-      {/* â”€â”€ Body â”€â”€ */}
+      {/* ── Body ── */}
       <main className="py-16 sm:py-24 bg-gray-50 dark:bg-[#080909]">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-4">
 
-          {/* Â§1 Commitment */}
+          {/* §1 Commitment */}
           <Section id="coi1" n={1} label="Our Promise" title="Our Commitment to Fair Practice" delay={0}
             accentTw="from-amber-500 to-yellow-600" borderTw="border-amber-100 dark:border-amber-500/[0.15]"
             bgTw="bg-amber-50/60 dark:bg-amber-500/[0.04]"
@@ -297,7 +297,7 @@ export default function ConflictOfInterestPolicy() {
             </Body>
           </Section>
 
-          {/* Â§2 Definition */}
+          {/* §2 Definition */}
           <Section id="coi2" n={2} label="Definition" title="What is a Conflict of Interest?" delay={0.04}
             accentTw="from-[#5edc1f] to-green-700" borderTw="border-green-100 dark:border-[#5edc1f]/[0.15]"
             bgTw="bg-green-50/60 dark:bg-[#5edc1f]/[0.04]"
@@ -320,7 +320,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Section>
 
-          {/* Â§3 Identifying */}
+          {/* §3 Identifying */}
           <Section id="coi3" n={3} label="Detection" title="Identifying Conflicts of Interest" delay={0.06}
             accentTw="from-[#5edc1f] to-green-700" borderTw="border-green-100 dark:border-[#5edc1f]/[0.15]"
             bgTw="bg-green-50/60 dark:bg-[#5edc1f]/[0.04]"
@@ -334,7 +334,7 @@ export default function ConflictOfInterestPolicy() {
             </Body>
           </Section>
 
-          {/* Â§4 Managing â€” with cycle diagram */}
+          {/* §4 Managing — with cycle diagram */}
           <Reveal delay={0.08}>
             <div id="coi4" className="scroll-mt-20 rounded-3xl border border-gray-100 dark:border-white/[0.06] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-gray-50/80 dark:bg-white/[0.02] border-b border-gray-100 dark:border-white/[0.05]">
@@ -342,7 +342,7 @@ export default function ConflictOfInterestPolicy() {
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold text-gray-500 dark:text-gray-400 tracking-[0.2em] uppercase mb-0.5">Section 4 Â· Resolution</p>
+                  <p className="text-[10px] font-bold text-gray-500 dark:text-gray-400 tracking-[0.2em] uppercase mb-0.5">Section 4 · Resolution</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Managing Conflicts of Interest</h2>
                 </div>
               </div>
@@ -385,7 +385,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Reveal>
 
-          {/* Â§5 Order Execution */}
+          {/* §5 Order Execution */}
           <Section id="coi5" n={5} label="Best Execution" title="Order Execution and Best Execution" delay={0.09}
             accentTw="from-lime-400 to-[#4cc015]" borderTw="border-green-100 dark:border-lime-400/[0.15]"
             bgTw="bg-cyan-50/60 dark:bg-lime-400/[0.04]"
@@ -406,7 +406,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Section>
 
-          {/* Â§6 Employee Trading */}
+          {/* §6 Employee Trading */}
           <Section id="coi6" n={6} label="Internal Controls" title="Employee Trading & Personal Account Dealing" delay={0.1}
             accentTw="from-slate-600 to-gray-800" borderTw="border-gray-100 dark:border-white/[0.06]"
             bgTw="bg-gray-50/80 dark:bg-white/[0.02]"
@@ -433,7 +433,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Section>
 
-          {/* Â§7 Inducements */}
+          {/* §7 Inducements */}
           <Section id="coi7" n={7} label="Remuneration" title="Inducements and Remuneration" delay={0.11}
             accentTw="from-amber-500 to-yellow-600" borderTw="border-amber-100 dark:border-amber-500/[0.15]"
             bgTw="bg-amber-50/60 dark:bg-amber-500/[0.04]"
@@ -448,7 +448,7 @@ export default function ConflictOfInterestPolicy() {
             </Body>
           </Section>
 
-          {/* Â§8 Third-Party */}
+          {/* §8 Third-Party */}
           <Section id="coi8" n={8} label="External Partners" title="Third-Party Relationships" delay={0.12}
             accentTw="from-[#5edc1f] to-green-700" borderTw="border-green-100 dark:border-rose-500/[0.15]"
             bgTw="bg-rose-50/60 dark:bg-rose-500/[0.04]"
@@ -462,7 +462,7 @@ export default function ConflictOfInterestPolicy() {
             </Body>
           </Section>
 
-          {/* Â§9 + Â§10 â€” Monitoring & Records side by side */}
+          {/* §9 + §10 — Monitoring & Records side by side */}
           <Reveal delay={0.13}>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
@@ -504,7 +504,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Reveal>
 
-          {/* Â§11 Disclosure */}
+          {/* §11 Disclosure */}
           <Section id="coi11" n={11} label="Transparency" title="Disclosure to Clients" delay={0.14}
             accentTw="from-[#5edc1f] to-cyan-600" borderTw="border-green-100 dark:border-[#5edc1f]/[0.15]"
             bgTw="bg-green-50/60 dark:bg-[#5edc1f]/[0.04]"
@@ -518,7 +518,7 @@ export default function ConflictOfInterestPolicy() {
             </Body>
           </Section>
 
-          {/* Â§12 Reporting */}
+          {/* §12 Reporting */}
           <Section id="coi12" n={12} label="Escalation" title="Reporting Concerns and Complaints" delay={0.15}
             accentTw="from-emerald-500 to-teal-600" borderTw="border-emerald-100 dark:border-emerald-500/[0.15]"
             bgTw="bg-emerald-50/60 dark:bg-emerald-500/[0.04]"
@@ -544,7 +544,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Section>
 
-          {/* Â§13 Regulatory */}
+          {/* §13 Regulatory */}
           <Reveal delay={0.16}>
             <div id="coi13" className="scroll-mt-20 rounded-3xl border border-amber-100 dark:border-amber-500/[0.15] overflow-hidden bg-white dark:bg-[#0c0d0f]">
               <div className="flex items-center gap-4 px-7 py-5 bg-amber-50/60 dark:bg-amber-500/[0.04] border-b border-amber-100 dark:border-amber-500/[0.12]">
@@ -552,7 +552,7 @@ export default function ConflictOfInterestPolicy() {
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" /></svg>
                 </div>
                 <div>
-                  <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tracking-[0.2em] uppercase mb-0.5">Section 13 Â· Compliance</p>
+                  <p className="text-[10px] font-bold text-amber-600 dark:text-amber-400 tracking-[0.2em] uppercase mb-0.5">Section 13 · Compliance</p>
                   <h2 className="text-base sm:text-[17px] font-black text-gray-900 dark:text-white">Regulatory Compliance</h2>
                 </div>
               </div>
@@ -580,7 +580,7 @@ export default function ConflictOfInterestPolicy() {
             </div>
           </Reveal>
 
-          {/* â”€â”€ CTA â”€â”€ */}
+          {/* ── CTA ── */}
           <Reveal delay={0.18}>
             <div
               className="relative rounded-3xl overflow-hidden text-center p-8 sm:p-10 shadow-2xl"

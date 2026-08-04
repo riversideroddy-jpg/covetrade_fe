@@ -1,6 +1,5 @@
 ﻿"use client";
 
-import React from "react";
 import Link from "next/link";
 
 const columns = [
@@ -15,7 +14,7 @@ const columns = [
   {
     title: "Features",
     links: [
-      { label: "AutoGuardâ„¢", href: "/autoguard" },
+      { label: "AutoGuard", href: "/autoguard" },
       { label: "Affiliate Program", href: "/affiliate" },
       { label: "Leader Guide", href: "/leader-guide" },
       { label: "User Guide", href: "/user-guide" },
@@ -95,7 +94,7 @@ const Footer = () => {
       {/* Top gradient bar */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#5edc1f]/60 to-transparent" />
 
-      {/* Subtle grid texture â€” dark mode only */}
+      {/* Subtle grid texture — dark mode only */}
       <div
         className="pointer-events-none absolute inset-0 hidden dark:block opacity-[0.025]"
         style={{
@@ -109,7 +108,7 @@ const Footer = () => {
       <div className="pointer-events-none absolute top-0 left-0 w-[500px] h-[300px] rounded-full bg-[#5edc1f]/[0.04] blur-[100px] hidden dark:block" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* â”€â”€ Main grid â”€â”€ */}
+        {/* ── Main grid ── */}
         <div className="pt-14 pb-10 grid grid-cols-1 gap-12 lg:grid-cols-12">
           {/* Brand column */}
           <div className="lg:col-span-4 flex flex-col gap-6">
@@ -179,7 +178,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* â”€â”€ Disclaimer â”€â”€ */}
+        {/* ── Disclaimer ── */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-8 space-y-4 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
           <p>
             <span className="font-semibold text-gray-500 dark:text-gray-400">Disclaimer:</span>{" "}
@@ -205,7 +204,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* â”€â”€ Bottom bar â”€â”€ */}
+        {/* ── Bottom bar ── */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400 dark:text-gray-500">
             &copy; {new Date().getFullYear()} - CoveTrade Your Social Investment Network. All
