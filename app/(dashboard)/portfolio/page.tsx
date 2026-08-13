@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Plus, Minus, ArrowUpFromLine, Clock } from "lucide-react";
 import { apiFetch } from "@/lib/api";
 import {
   AssetAllocationCard,
@@ -388,64 +389,52 @@ export default function PortfolioPage() {
           </div>
 
           {/* ── Action buttons ── */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: "8px",
-            padding: "20px 0 0",
-          }}>
-            <button
-              onClick={() => setShowDeposit(true)}
-              style={{
-                display: "flex", flexDirection: "column", alignItems: "center",
-                gap: "5px", padding: "12px 4px", borderRadius: "14px",
-                background: "rgb(94,220,31)", border: "none",
-                boxShadow: "rgba(94,220,31,0.27) 0px 4px 14px", cursor: "pointer",
-              }}
-            >
-              <span style={{ fontSize: "17px", color: "rgb(255,255,255)", lineHeight: 1 }}>↓</span>
-              <span style={{ fontSize: "9px", fontWeight: 600, color: "rgba(255,255,255,0.9)" }}>Deposit</span>
-            </button>
-            <button
-              onClick={() => setShowWithdraw(true)}
-              style={{
-                display: "flex", flexDirection: "column", alignItems: "center",
-                gap: "5px", padding: "12px 4px", borderRadius: "14px",
-                background: "#ffffff", border: "none",
-                boxShadow: "rgba(0,0,0,0.07) 0px 2px 8px", cursor: "pointer",
-                colorScheme: "light",
-              }}
-            >
-              <span style={{ fontSize: "17px", color: "rgb(51,51,51)", lineHeight: 1 }}>↑</span>
-              <span style={{ fontSize: "9px", fontWeight: 600, color: "rgb(136,136,136)" }}>Withdraw</span>
-            </button>
-            <Link
-              href="/transfer"
-              style={{
-                display: "flex", flexDirection: "column", alignItems: "center",
-                gap: "5px", padding: "12px 4px", borderRadius: "14px",
-                background: "#ffffff",
-                boxShadow: "rgba(0,0,0,0.07) 0px 2px 8px",
-                textDecoration: "none",
-                colorScheme: "light",
-              }}
-            >
-              <span style={{ fontSize: "17px", color: "rgb(51,51,51)", lineHeight: 1 }}>⇄</span>
-              <span style={{ fontSize: "9px", fontWeight: 600, color: "rgb(136,136,136)" }}>Transfer</span>
-            </Link>
-            <button
-              onClick={() => setShowHistory(true)}
-              style={{
-                display: "flex", flexDirection: "column", alignItems: "center",
-                gap: "5px", padding: "12px 4px", borderRadius: "14px",
-                background: "#ffffff", border: "none",
-                boxShadow: "rgba(0,0,0,0.07) 0px 2px 8px", cursor: "pointer",
-                colorScheme: "light",
-              }}
-            >
-              <span style={{ fontSize: "17px", color: "rgb(51,51,51)", lineHeight: 1 }}>◷</span>
-              <span style={{ fontSize: "9px", fontWeight: 600, color: "rgb(136,136,136)" }}>History</span>
-            </button>
+          <div className="flex flex-row justify-center gap-1.5 sm:gap-3" style={{ padding: "20px 0 0" }}>
+            {[
+              { label: "Deposit", icon: Plus, onClick: () => setShowDeposit(true), href: null, primary: true },
+              { label: "Withdraw", icon: Minus, onClick: () => setShowWithdraw(true), href: null, primary: false },
+              { label: "Transfer", icon: ArrowUpFromLine, onClick: null, href: "/transfer", primary: false },
+              { label: "History", icon: Clock, onClick: () => setShowHistory(true), href: null, primary: false },
+            ].map((action) => {
+              const content = (
+                <>
+                  <action.icon className={`w-3 h-3 sm:w-4 sm:h-4 shrink-0 ${action.primary ? "text-white" : "text-[#5edc1f] dark:text-lime-400"}`} />
+                  <span className={`text-[10px] sm:text-xs font-medium whitespace-nowrap ${action.primary ? "text-white font-semibold" : "text-gray-600 dark:text-gray-300"}`}>
+                    {action.label}
+                  </span>
+                </>
+              );
+
+              const className = action.primary
+                ? "group bg-[#4cc015] hover:bg-[#4cc015] dark:bg-[#5edc1f] dark:hover:bg-[#4cc015] border border-[#5edc1f] dark:border-[#5edc1f] rounded-full py-1.5 px-2.5 sm:py-2.5 sm:px-5 flex flex-row items-center gap-1.5 sm:gap-2 transition-all duration-200 shadow-sm shadow-[#5edc1f]/30"
+                : "group bg-white dark:bg-white/4 border border-gray-200 dark:border-white/[0.07] rounded-full py-1.5 px-2.5 sm:py-2.5 sm:px-5 flex flex-row items-center gap-1.5 sm:gap-2 transition-all duration-200 hover:border-[#5edc1f] dark:hover:border-[#5edc1f]/40 hover:bg-[#5edc1f]/8 dark:hover:bg-white/8 shadow-sm";
+
+              if (action.href) {
+                return (
+                  <Link key={action.label} href={action.href}>
+                    <motion.div
+                      whileHover={{ scale: 1.03, y: -2 }}
+                      whileTap={{ scale: 0.97 }}
+                      className={className}
+                    >
+                      {content}
+                    </motion.div>
+                  </Link>
+                );
+              }
+
+              return (
+                <motion.button
+                  key={action.label}
+                  whileHover={{ scale: 1.03, y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                  onClick={action.onClick || undefined}
+                  className={className}
+                >
+                  {content}
+                </motion.button>
+              );
+            })}
           </div>
         </motion.div>
 
