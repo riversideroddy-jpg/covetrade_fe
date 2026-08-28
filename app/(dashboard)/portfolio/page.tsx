@@ -119,10 +119,10 @@ export default function PortfolioPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const { balance, totalDeposits, isVerified, firstName, target, showPortfolioGrowth } = dashboardData;
+  const { balance, isVerified, firstName, target, showPortfolioGrowth } = dashboardData;
 
-  // Progress bar: how far completed deposits are toward the admin-set target
-  const progressWidth = target > 0 ? Math.min((totalDeposits / target) * 100, 100) : 0;
+  // Progress bar: how far profit is toward the admin-set target
+  const progressWidth = target > 0 ? Math.max(0, Math.min((dashboardData.totalProfits / target) * 100, 100)) : 0;
   const totalBalance = dashboardData.balance + dashboardData.totalProfits;
   const isProfitPositive = dashboardData.profitToday >= 0;
   const profitPercent = balance > 0 ? (dashboardData.profitToday / balance) * 100 : 0;
@@ -460,6 +460,9 @@ export default function PortfolioPage() {
                 transition={{ duration: 1.3, ease: [0.22, 1, 0.36, 1], delay: 0.3 }}
                 className="h-full rounded-full bg-[#5edc1f]"
               />
+            </div>
+            <div className="mt-1.5 text-[10px] text-gray-400 dark:text-gray-500">
+              {fmt(dashboardData.totalProfits)} profit of {fmt(target)}
             </div>
           </motion.div>
           )}
