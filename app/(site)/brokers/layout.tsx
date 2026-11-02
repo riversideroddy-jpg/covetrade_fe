@@ -4,14 +4,14 @@ import { defaultOpenGraph } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Supported Brokers — Connect Your Brokerage",
   description:
-    "CoveTrade integrates with leading brokers worldwide. Connect your existing brokerage account and start copy trading in minutes.",
-  alternates: { canonical: "https://covetrades.com/brokers" },
+    "VersoTrades integrates with leading brokers worldwide. Connect your existing brokerage account and start copy trading in minutes.",
+  alternates: { canonical: "https://versotrades.com/brokers" },
   openGraph: {
     ...defaultOpenGraph,
-    title: "Supported Brokers | CoveTrade",
+    title: "Supported Brokers | VersoTrades",
     description:
-      "Connect your existing brokerage account and start copy trading in minutes with CoveTrade's broker integrations.",
-    url: "https://covetrades.com/brokers",
+      "Connect your existing brokerage account and start copy trading in minutes with VersoTrades's broker integrations.",
+    url: "https://versotrades.com/brokers",
   },
 };
 

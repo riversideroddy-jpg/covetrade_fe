@@ -2,10 +2,10 @@
 import { defaultOpenGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://covetrades.com" },
+  alternates: { canonical: "https://versotrades.com" },
   openGraph: {
     ...defaultOpenGraph,
-    url: "https://covetrades.com",
+    url: "https://versotrades.com",
   },
 };
 

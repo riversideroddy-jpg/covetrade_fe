@@ -7,13 +7,13 @@ import { defaultOpenGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions",
-  description: "Find answers to common questions about digital options trading, deposits, withdrawals, account verification, and more on CoveTrade.",
-  alternates: { canonical: "https://covetrades.com/faq" },
+  description: "Find answers to common questions about digital options trading, deposits, withdrawals, account verification, and more on VersoTrades.",
+  alternates: { canonical: "https://versotrades.com/faq" },
   openGraph: {
     ...defaultOpenGraph,
-    title: "CoveTrade FAQ",
-    description: "Answers to the most frequently asked questions about trading, accounts, and verification on CoveTrade.",
-    url: "https://covetrades.com/faq",
+    title: "VersoTrades FAQ",
+    description: "Answers to the most frequently asked questions about trading, accounts, and verification on VersoTrades.",
+    url: "https://versotrades.com/faq",
   },
 };
 

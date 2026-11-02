@@ -37,7 +37,7 @@ const columns = [
     title: "Contact",
     links: [
       { label: "+1 (929) 512-0241", href: "tel:+19295120241" },
-      { label: "support@covetrades.com", href: "mailto:support@covetrades.com" },
+      { label: "support@versotrades.com", href: "mailto:support@versotrades.com" },
     ],
   },
 ];
@@ -182,21 +182,21 @@ const Footer = () => {
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-8 space-y-4 text-[11px] leading-relaxed text-gray-400 dark:text-gray-500">
           <p>
             <span className="font-semibold text-gray-500 dark:text-gray-400">Disclaimer:</span>{" "}
-            CoveTrade (Europe) Ltd., authorised and regulated by the Cyprus
+            VersoTrades (Europe) Ltd., authorised and regulated by the Cyprus
             Securities Exchange Commission (CySEC) under license #109/10.
             Registered in Cyprus, Company No. HE 200595. Registered Office: 4
             Profiti Ilia Str., Kanika Business Centre, 7th floor, Germasogeia,
-            4046, Limassol, Cyprus. CoveTrade (UK) Ltd, authorised and regulated
+            4046, Limassol, Cyprus. VersoTrades (UK) Ltd, authorised and regulated
             by the Financial Conduct Authority (FCA) under FRN 583263. Registered
             Office: 24th floor, One Canada Square, Canary Wharf, London E14 5AB.
-            CoveTrade (USA) Ltd, authorised and regulated by the SEC; CRD 329900.
-            CoveTrade (ME) Limited, licensed and regulated by the Abu Dhabi Global
+            VersoTrades (USA) Ltd, authorised and regulated by the SEC; CRD 329900.
+            VersoTrades (ME) Limited, licensed and regulated by the Abu Dhabi Global
             Market (ADGM) Financial Services Regulatory Authority (FSRA) under
             Financial Services Permission Number 220073.
           </p>
           <p>
             Past performance is not an indication of future results. Trading with
-            CoveTrade by following and/or copying the trades of other traders
+            VersoTrades by following and/or copying the trades of other traders
             involves a high level of risk, even when following top-performing
             traders. You should seek advice from an independent and suitably
             licensed financial advisor and ensure that you have the risk appetite,
@@ -207,7 +207,7 @@ const Footer = () => {
         {/* ── Bottom bar ── */}
         <div className="border-t border-gray-100 dark:border-[#5edc1f]/[0.06] py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-400 dark:text-gray-500">
-            &copy; {new Date().getFullYear()} - CoveTrade Your Social Investment Network. All
+            &copy; {new Date().getFullYear()} - VersoTrades Your Social Investment Network. All
             rights reserved.
           </p>
           <div className="flex items-center gap-4 text-xs text-gray-400 dark:text-gray-500">

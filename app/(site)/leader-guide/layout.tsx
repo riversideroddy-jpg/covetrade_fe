@@ -4,14 +4,14 @@ import { defaultOpenGraph } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Leader Guide — Grow Your Copier Base",
   description:
-    "Everything you need to know about becoming a successful CoveTrade Leader. Tips on strategy, risk management, communication, and growing your copier base.",
-  alternates: { canonical: "https://covetrades.com/leader-guide" },
+    "Everything you need to know about becoming a successful VersoTrades Leader. Tips on strategy, risk management, communication, and growing your copier base.",
+  alternates: { canonical: "https://versotrades.com/leader-guide" },
   openGraph: {
     ...defaultOpenGraph,
-    title: "CoveTrade Leader Guide — Grow Your Copier Base",
+    title: "VersoTrades Leader Guide — Grow Your Copier Base",
     description:
-      "Tips on strategy, risk management, and growing your copier base as a CoveTrade Leader.",
-    url: "https://covetrades.com/leader-guide",
+      "Tips on strategy, risk management, and growing your copier base as a VersoTrades Leader.",
+    url: "https://versotrades.com/leader-guide",
   },
 };
 

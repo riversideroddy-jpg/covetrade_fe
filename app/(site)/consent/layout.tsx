@@ -2,8 +2,8 @@
 
 export const metadata: Metadata = {
   title: "Consent & Cookie Preferences",
-  description: "Manage your data consent and cookie preferences on CoveTrade.",
-  alternates: { canonical: "https://covetrades.com/consent" },
+  description: "Manage your data consent and cookie preferences on VersoTrades.",
+  alternates: { canonical: "https://versotrades.com/consent" },
   robots: { index: false, follow: false },
 };
 

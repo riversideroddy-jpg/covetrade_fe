@@ -3,10 +3,10 @@ import { defaultOpenGraph } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Read CoveTrade's Terms of Service. Understand the rules, rights, and responsibilities governing use of the CoveTrade platform.",
-  alternates: { canonical: "https://covetrades.com/terms" },
+  description: "Read VersoTrades's Terms of Service. Understand the rules, rights, and responsibilities governing use of the VersoTrades platform.",
+  alternates: { canonical: "https://versotrades.com/terms" },
   robots: { index: true, follow: false },
-  openGraph: { ...defaultOpenGraph, title: "Terms of Service | CoveTrade", url: "https://covetrades.com/terms" },
+  openGraph: { ...defaultOpenGraph, title: "Terms of Service | VersoTrades", url: "https://versotrades.com/terms" },
 };
 
 export default function TermsLayout({ children }: { children: React.ReactNode }) {

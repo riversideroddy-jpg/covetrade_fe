@@ -20,13 +20,13 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const BASE_URL = "https://covetrades.com";
+const BASE_URL = "https://versotrades.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
-    template: "%s | CoveTrade",
+    default: "VersoTrades — Copy Top Traders. Grow Your Portfolio.",
+    template: "%s | VersoTrades",
   },
   description:
     "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
     "trade copying platform",
     "automated trading",
     "copy trader",
-    "CoveTrade",
+    "VersoTrades",
     "investment platform",
     "portfolio growth",
     "mirror trading",
   ],
-  authors: [{ name: "CoveTrade", url: BASE_URL }],
-  creator: "CoveTrade",
-  publisher: "CoveTrade",
+  authors: [{ name: "VersoTrades", url: BASE_URL }],
+  creator: "VersoTrades",
+  publisher: "VersoTrades",
   category: "Finance",
-  applicationName: "CoveTrade",
+  applicationName: "VersoTrades",
   referrer: "origin-when-cross-origin",
   robots: {
     index: true,
@@ -64,15 +64,15 @@ export const metadata: Metadata = {
   openGraph: {
     ...defaultOpenGraph,
     url: BASE_URL,
-    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    title: "VersoTrades — Copy Top Traders. Grow Your Portfolio.",
     description:
       "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required. Trusted by 50M+ investors.",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@CoveTrade",
-    creator: "@CoveTrade",
-    title: "CoveTrade — Copy Top Traders. Grow Your Portfolio.",
+    site: "@VersoTrades",
+    creator: "@VersoTrades",
+    title: "VersoTrades — Copy Top Traders. Grow Your Portfolio.",
     description:
       "Mirror real-time stock and options trades from the world's top-performing traders. Start in minutes — no experience required.",
     images: ["/images/og-image.png"],
