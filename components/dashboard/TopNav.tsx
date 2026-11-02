@@ -113,8 +113,8 @@ export default function TopNav({ onMenuClick, user }: TopNavProps) {
 
           {/* Logo */}
           <Link href="/" className="inline-flex items-baseline gap-0.5">
-            <span className="text-xl font-black tracking-tight text-gray-900 dark:text-white">Verso</span>
-            <span className="text-xl font-black tracking-tight text-[#5edc1f]">Trades</span>
+            <span className="text-base sm:text-lg lg:text-xl font-black tracking-tight text-gray-900 dark:text-white">Verso</span>
+            <span className="text-base sm:text-lg lg:text-xl font-black tracking-tight text-[#5edc1f]">Trades</span>
           </Link>
 
           {/* Desktop Nav Links */}
