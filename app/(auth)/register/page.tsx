@@ -275,8 +275,8 @@ function RegisterPageContent() {
         >
           {/* Logo */}
           <Link href="/" className="inline-flex items-baseline gap-0.5 self-center mb-8">
-            <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
-            <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trade</span>
+            <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Verso</span>
+            <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trades</span>
           </Link>
 
           {/* Theme toggle */}

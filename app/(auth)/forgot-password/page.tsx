@@ -118,8 +118,8 @@ export default function ForgotPasswordPage() {
       >
         {/* Logo */}
         <Link href="/" className="inline-flex items-baseline gap-0.5 justify-center mb-2">
-          <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
-          <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trade</span>
+          <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Verso</span>
+          <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trades</span>
         </Link>
 
         <div className="space-y-2">

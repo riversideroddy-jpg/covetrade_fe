@@ -116,10 +116,10 @@ const Footer = () => {
             <div>
               <Link href="/" className="inline-flex items-baseline gap-0.5">
                 <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">
-                  Cove
+                  Verso
                 </span>
                 <span className="text-3xl font-black tracking-tight text-[#5edc1f]">
-                  Trade
+                  Trades
                 </span>
               </Link>
               <p className="mt-3 text-sm leading-relaxed text-gray-500 dark:text-gray-400 max-w-xs">

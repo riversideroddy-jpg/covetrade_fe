@@ -105,8 +105,8 @@ export default function LoginPage() {
           className="w-full max-w-sm space-y-6 flex flex-col p-4 rounded-3xl bg-white dark:bg-white/[0.025] backdrop-blur-sm"
         >
           <Link href="/" className="inline-flex items-baseline gap-0.5 self-center mb-8">
-            <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Cove</span>
-            <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trade</span>
+            <span className="text-3xl font-black tracking-tight text-gray-900 dark:text-white">Verso</span>
+            <span className="text-3xl font-black tracking-tight text-[#5edc1f]">Trades</span>
           </Link>
 
           <div className="flex items-center justify-between">

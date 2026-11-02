@@ -260,8 +260,8 @@ export default function PortfolioPage() {
               <div className="flex items-center justify-between mb-5">
                 <div className="flex flex-col gap-1">
                   <span className="text-[15px] font-bold leading-none">
-                    <span style={{ color: "#ffffff" }}>Cove</span>
-                    <span style={{ color: "#5edc1f" }}>Trade</span>
+                    <span style={{ color: "#ffffff" }}>Verso</span>
+                    <span style={{ color: "#5edc1f" }}>Trades</span>
                   </span>
                   {isVerified && (
                     <div className="flex items-center gap-1 rounded-full px-2 py-0.5 w-fit" style={{ background: "rgba(94,220,31,0.15)" }}>
